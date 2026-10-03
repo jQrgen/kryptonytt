@@ -19,3 +19,4 @@ tools/probe.py
 tools/discover.py
 tools/evprobe.py
 tools/seed_orgchart.py
+research/

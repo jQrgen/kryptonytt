@@ -13,6 +13,13 @@ E = lambda s: html.escape(str(s if s is not None else ""), quote=True)
 def snippets(url, title):
     return json.loads(subprocess.check_output(["node", P("tools", "snippets.js"), url, title]))
 MONTHS = ["jan.", "feb.", "mars", "april", "mai", "juni", "juli", "aug.", "sep.", "okt.", "nov.", "des."]
+# Akademia-siden bygges bare når jQrgen har godkjent den (queue/approved.json -> akademia.enabled = true),
+# eller lokalt for forhåndsvisning med KRYPTONYTT_PREVIEW_AKADEMIA=1. Da publiserer heller ikke nattjobben den for tidlig.
+def _akademia_on():
+    try: ap = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "queue", "approved.json"), encoding="utf-8"))
+    except FileNotFoundError: ap = {}
+    return bool((ap.get("akademia") or {}).get("enabled")) or os.environ.get("KRYPTONYTT_PREVIEW_AKADEMIA") == "1"
+AKADEMIA_ON = _akademia_on()
 MORGEN = "Nyheter oppdateres daglig av kunstig intelligens"
 
 def nodate(iso):
@@ -87,7 +94,7 @@ table.list th{font-size:13px;color:var(--muted)}
 def page(slug, title, nav, body, desc, extra_script=""):
     url = BASE + (slug + "/" if slug else "")
     s = snippets(url, f"{title} – Kryptonytt Norge" if slug else "Kryptonytt Norge – norske kryptonyheter")
-    navs = [("", "Nyheter"), ("organisasjonskart", "Hvem er hvem"), ("kalender", "Kalender"), ("kilder", "Kilder"), ("om", "Om")]
+    navs = [("", "Nyheter"), ("organisasjonskart", "Hvem er hvem"), ("kalender", "Kalender")] + ([("akademia", "Akademia")] if AKADEMIA_ON else []) + [("kilder", "Kilder"), ("om", "Om")]
     rel = "../" if slug else "./"
     nav_html = "".join(f'<a href="{rel}{n + "/" if n else ""}"{" aria-current=page" if n == nav else ""}>{E(t)}</a>' for n, t in navs)
     doc = f"""<!doctype html>
@@ -103,7 +110,7 @@ def page(slug, title, nav, body, desc, extra_script=""):
 {body}
 {s['top']}
 </main>
-<footer><div class="wrap">Kryptonytt Norge drives av Jørgen S. Notland (jQrgen), Oslo, med hjelp av kunstig intelligens. Ansvarlig redaktør: «Kryptonytt redaktør» (en bot basert på kunstig intelligens), med jQrgen som ansvarlig person. Ingen investeringsråd. Ingen sporing eller informasjonskapsler. <a href="{rel}om/">Om, rettelser og fjerning</a>.<p class="morgen">{E(MORGEN)}</p></div></footer>
+<footer><div class="wrap">Kryptonytt Norge drives av Jørgen S. Notland (jQrgen), Oslo, med hjelp av kunstig intelligens. Ansvarlig redaktør: «Kryptonytt redaktør» (en bot basert på kunstig intelligens), med jQrgen som ansvarlig person. Ingen investeringsråd. Ingen sporing eller informasjonskapsler. <a href="{rel}om/">Om, rettelser og fjerning</a> · <a href="{rel}endringer/">Endringslogg</a>.<p class="morgen">{E(MORGEN)}</p></div></footer>
 {s['script']}{extra_script}
 </body></html>"""
     d = os.path.join(SITE, slug); os.makedirs(d, exist_ok=True)
@@ -205,6 +212,10 @@ sel.addEventListener('change',function(){apply(1)});chips.forEach(function(c){c.
 <p class="meta">Mangler en kilde? Foreslå den som en sak på <a href="https://github.com/jQrgen/kryptonytt/issues" rel="noopener">GitHub</a>.</p>"""
     page("kilder", "Kilder", "kilder", body, "Norske aviser, myndigheter, blogger og podkaster som Kryptonytt Norge følger.")
 
+    # ---- Akademia ----
+    if AKADEMIA_ON: build_akademia()
+    # ---- Endringslogg ----
+    build_changelog()
     # ---- Kalender ----
     build_calendar(cfg, status)
     # ---- Om ----
@@ -240,6 +251,65 @@ def events_for_site():
         e["past"] = end < now
         out.append({k: e.get(k) for k in ("id", "title", "start", "end", "place", "city", "online", "organiser", "url", "source", "paid", "sponsored", "note", "past")})
     return sorted(out, key=lambda e: e["start"]), now
+
+def build_changelog():
+    import datetime as dt
+    from zoneinfo import ZoneInfo
+    log = load(P("endringer.json"), {"entries": []}); apf = P("queue", "approved.json"); ap = load(apf, {}) or {}
+    flags = {"akademia": AKADEMIA_ON and bool((ap.get("akademia") or {}).get("enabled"))}
+    out = []
+    for e in log["entries"]:
+        f = e.get("feature")
+        if f:
+            if not flags.get(f): continue
+            cfgf = ap.setdefault(f, {})
+            if not cfgf.get("live_date"):  # første bygg der funksjonen er på = dagen den går live
+                cfgf["live_date"] = dt.datetime.now(ZoneInfo("Europe/Oslo")).date().isoformat()
+                json.dump(ap, open(apf, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+            e = dict(e, date=cfgf["live_date"])
+        if e.get("date"): out.append(e)
+    out.sort(key=lambda e: e["date"], reverse=True)
+    lis = "".join(f'<li><time datetime="{E(e["date"])}"><b>{nodate(e["date"] + "T12:00:00+02:00")}</b></time><p class="sum">{E(e["text"])}</p></li>' for e in out)
+    body = f"""<h1>Endringslogg</h1>
+<p class="lead">Endringer på Kryptonytt Norge: nye sider, seksjoner og funksjoner. Nyeste først. Daglige nyheter står ikke her.</p>
+<ol class="news">{lis or '<li class="empty">Ingen endringer ennå.</li>'}</ol>
+<p class="meta">Kildekoden og hele historikken ligger på <a href="https://github.com/jQrgen/kryptonytt/commits/main" rel="noopener">GitHub</a>.</p>"""
+    page("endringer", "Endringslogg – Kryptonytt Norge", "endringer", body, "Endringslogg for Kryptonytt Norge: nye sider, seksjoner og funksjoner.")
+    print(f"endringslogg: {len(out)} oppføringer")
+
+def build_akademia():
+    subprocess.run([os.sys.executable, P("tools", "import_akademia.py")], check=True)
+    a = load(P("data", "akademia.json"), {})
+    G = {k: [r for r in a.get(k, []) if r.get("status") == "godkjent"] for k in ("courses", "groups", "publications", "research")}  # bare redaktørgodkjente rader
+    def lk(u, t): return f'<a href="{E(u)}" rel="noopener" target="_blank">{E(t)}</a>' if u else E(t)
+    def ver(r):
+        v = r.get("verification") or ""
+        if v.startswith("🟡"): return f'<div class="meta"><span class="tag pw">delvis bekreftet</span> {E(re.sub(r"^🟡\s*delvis bekreftet\s*", "", v).strip(" ()"))}</div>'
+        return ""
+    def chk(r): return f'Sjekket {E(r.get("checked") or "")}'
+    rows = "".join(f'<tr><td><b>{E(r.get("code") or "")}</b></td><td>{lk(r.get("url"), r.get("name") or "")}<div class="meta">{E(r.get("about") or "")}</div>{ver(r)}</td>'
+                   f'<td>{E(r.get("institution") or "")}</td><td>{E(r.get("level") or "")}</td><td>{E(r.get("offered") or "")}</td><td class="meta">{chk(r)}</td></tr>' for r in G["courses"])
+    grp = "".join(f'<li><h3>{lk(r.get("url"), r.get("name") or "")} <span class="tag">{E(r.get("activity") or "inaktiv")}</span></h3>'
+                  f'<div class="meta">{E(r.get("institution") or "")} · Siste dokumenterte aktivitet: {E(r.get("last_activity") or "ukjent")} · {chk(r)}</div>{ver(r)}</li>' for r in G["groups"])
+    def doi(r):
+        d = r.get("doi") or ""; x = lk(r.get("url"), "DOI " + d) if d else ""
+        return x + (" · " + lk(r["nva"], "NVA/Cristin") if r.get("nva") else "")
+    pubs = "".join(f'<li><h3>{lk(r.get("url"), r.get("title") or "")}</h3><div class="meta">{E(", ".join(r.get("authors") or []))} · {E(str(r.get("year") or ""))}'
+                   f'{(" · <i>" + E(r["venue"]) + "</i>") if r.get("venue") else ""}</div><div class="meta">Norsk institusjon: {E(r.get("institution") or "")} · {doi(r)} · {chk(r)}</div>{ver(r)}</li>' for r in G["publications"])
+    res = "".join(f'<li><h3>{lk(r.get("url"), r.get("name") or "")}</h3><div class="meta">{E(r.get("institution") or "")}{(" · " + E(r["funding"])) if r.get("funding") else ""}{(" · " + E(r["period"])) if r.get("period") else ""} · {chk(r)}</div>'
+                  f'<p class="sum">{E(r.get("about") or "")}</p>{ver(r)}</li>' for r in G["research"])
+    n = {k: len(v) for k, v in G.items()}
+    body = f"""<h1>Akademia: blokkjede og krypto ved norske universiteter og høyskoler</h1>
+<p class="lead">Emner, studentinitiativer, forskning og publikasjoner om blokkjede, bitcoin og kryptovaluta i norsk akademia. Hver rad har lenke til kilden og dato for når vi sjekket den. Oversikten er laget med hjelp av kunstig intelligens og gjennomgått av redaksjonen{(" (kartlagt per " + E(a["updated"]) + ")") if a.get("updated") else ""}.</p>
+<p class="notice">Vi tar med et emne bare når blokkjede eller krypto er en vesentlig del av pensum ifølge emnesiden. Publikasjoner har DOI- eller NVA/Cristin-lenke. Studentgrupper merkes «aktiv» bare med datert aktivitet de siste 12 månedene. Utvalget er representativt, ikke fullstendig. Mangler noe? Send det som en sak på <a href="https://github.com/jQrgen/kryptonytt/issues" rel="noopener">GitHub</a>.</p>
+<nav class="meta" aria-label="Seksjoner"><a href="#emner">Emner ({n["courses"]})</a> · <a href="#studenter">Linjeforeninger og studentinitiativer ({n["groups"]})</a> · <a href="#publikasjoner">Publikasjoner ({n["publications"]})</a> · <a href="#forskning">Forskningsmiljøer og prosjekter ({n["research"]})</a></nav>
+<h2 id="emner">Emner og studieprogrammer</h2>
+<table class="list"><thead><tr><th>Emnekode</th><th>Emne</th><th>Institusjon</th><th>Studiepoeng / nivå</th><th>Tilbys</th><th>Sjekket</th></tr></thead><tbody>{rows or '<tr><td colspan=6>Ingen godkjente emner ennå.</td></tr>'}</tbody></table>
+<h2 id="studenter">Linjeforeninger og studentinitiativer</h2><ol class="news">{grp or '<li class="empty">Vi har ikke funnet noen aktiv linjeforening eller studentforening for blokkjede eller krypto med dokumentert aktivitet de siste 12 månedene. Kjenner du til en? Send oss en lenke på <a href="https://github.com/jQrgen/kryptonytt/issues" rel="noopener">GitHub</a>.</li>'}</ol>
+<h2 id="publikasjoner">Akademiske publikasjoner</h2><ol class="news">{pubs or '<li class="empty">Ingen godkjente publikasjoner ennå.</li>'}</ol>
+<h2 id="forskning">Forskningsmiljøer og prosjekter</h2><ol class="news">{res or '<li class="empty">Ingen godkjente oppføringer ennå.</li>'}</ol>"""
+    page("akademia", "Akademia – blokkjede og krypto i norsk akademia", "akademia", body, "Emner, studentinitiativer, publikasjoner og forskningsmiljøer om blokkjede og krypto ved norske universiteter og høyskoler.")
+    print("akademia-side: " + ", ".join(f"{k}={v}" for k, v in n.items()))
 
 def build_calendar(cfg, status):
     import calendar, datetime as dt
