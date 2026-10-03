@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "site": "kryptonytt",
- "exported_at": "2026-10-03T23:06:37+02:00",
+ "exported_at": "2026-10-03T23:38:39+02:00",
  "articles": [
   {
    "site": "kryptonytt",
@@ -13,12 +13,16 @@
    "source_name": "Kaupr",
    "published_at": "2026-09-24T12:00:00+00:00",
    "first_published_on_site": "2026-10-03T16:57:45+02:00",
-   "last_seen_on_site": "2026-10-03T16:57:45+02:00",
+   "last_seen_on_site": "2026-10-03T23:38:39+02:00",
    "languages": [
-    "nb"
+    "nn",
+    "nb",
+    "en"
    ],
    "summaries": {
-    "nb": "Den finske kryptomegleren Coinmotion har valgt K33 til å utføre større, institusjonelle handler, mens Coinmotion beholder kundeforholdet. Begge selskapene har MiCA-tillatelse."
+    "nb": "Den finske kryptomegleren Coinmotion har valgt K33 til å utføre større, institusjonelle handler, mens Coinmotion beholder kundeforholdet. Begge selskapene har MiCA-tillatelse.",
+    "nn": "Den finske kryptomeklaren Coinmotion har valt K33 til å utføre større, institusjonelle handlar, medan Coinmotion held på kundeforholdet. Begge selskapa har MiCA-løyve.",
+    "en": "Finnish crypto broker Coinmotion has chosen K33 to execute larger institutional trades, while Coinmotion keeps the customer relationship. Both companies hold MiCA licences."
    },
    "titles": {},
    "topics": [
@@ -28,7 +32,7 @@
    "removed": 0,
    "removed_at": null,
    "removal_reason": null,
-   "updated_at": "2026-10-03T23:06:37+02:00"
+   "updated_at": "2026-10-03T23:38:39+02:00"
   },
   {
    "site": "kryptonytt",
@@ -40,12 +44,16 @@
    "source_name": "Aftenposten",
    "published_at": "2026-10-02T11:07:26+00:00",
    "first_published_on_site": "2026-10-03T16:57:45+02:00",
-   "last_seen_on_site": "2026-10-03T16:57:45+02:00",
+   "last_seen_on_site": "2026-10-03T23:38:39+02:00",
    "languages": [
-    "nb"
+    "nn",
+    "nb",
+    "en"
    ],
    "summaries": {
-    "nb": "Fire personer, tre nordmenn og en svenske, er tiltalt i en stor narkotikasak der stoffene skal ha blitt solgt mot kryptovaluta på det mørke nettet. Ingen er dømt i saken."
+    "nb": "Fire personer, tre nordmenn og en svenske, er tiltalt i en stor narkotikasak der stoffene skal ha blitt solgt mot kryptovaluta på det mørke nettet. Ingen er dømt i saken.",
+    "nn": "Fire personar, tre nordmenn og ein svenske, er tiltalte i ei stor narkotikasak der stoffa skal ha vorte selde mot kryptovaluta på det mørke nettet. Ingen er dømde i saka.",
+    "en": "Four people, three Norwegians and one Swede, have been charged in a major drug case in which the drugs were allegedly sold for cryptocurrency on the dark web. No one has been convicted in the case."
    },
    "titles": {},
    "topics": [
@@ -55,7 +63,7 @@
    "removed": 0,
    "removed_at": null,
    "removal_reason": null,
-   "updated_at": "2026-10-03T23:06:37+02:00"
+   "updated_at": "2026-10-03T23:38:39+02:00"
   },
   {
    "site": "kryptonytt",
@@ -67,12 +75,16 @@
    "source_name": "Kaupr",
    "published_at": "2026-09-08T12:00:00+00:00",
    "first_published_on_site": "2026-10-03T16:57:45+02:00",
-   "last_seen_on_site": "2026-10-03T16:57:45+02:00",
+   "last_seen_on_site": "2026-10-03T23:38:39+02:00",
    "languages": [
-    "nb"
+    "nn",
+    "nb",
+    "en"
    ],
    "summaries": {
-    "nb": "Norges Bank navnga i et LinkedIn-innlegg 07.09.2026 tolv finansinstitusjoner i arbeidet med å utforske tokenisering, blant dem DNB, Nordea og SpareBank 1. Innlegget er ikke publisert på norges-bank.no."
+    "nb": "Norges Bank navnga i et LinkedIn-innlegg 07.09.2026 tolv finansinstitusjoner i arbeidet med å utforske tokenisering, blant dem DNB, Nordea og SpareBank 1. Innlegget er ikke publisert på norges-bank.no.",
+    "nn": "Noregs Bank namngav i eit LinkedIn-innlegg 07.09.2026 tolv finansinstitusjonar i arbeidet med å utforske tokenisering, mellom dei DNB, Nordea og SpareBank 1. Innlegget er ikkje publisert på norges-bank.no.",
+    "en": "In a LinkedIn post on 7 September 2026, Norges Bank named twelve financial institutions involved in its work on exploring tokenisation, including DNB, Nordea and SpareBank 1. The post has not been published on norges-bank.no."
    },
    "titles": {},
    "topics": [
@@ -82,7 +94,7 @@
    "removed": 0,
    "removed_at": null,
    "removal_reason": null,
-   "updated_at": "2026-10-03T23:06:37+02:00"
+   "updated_at": "2026-10-03T23:38:39+02:00"
   },
   {
    "site": "kryptonytt",
@@ -94,14 +106,21 @@
    "source_name": "Stortinget",
    "published_at": "2026-09-18T12:00:00+00:00",
    "first_published_on_site": "2026-10-03T16:57:45+02:00",
-   "last_seen_on_site": "2026-10-03T16:57:45+02:00",
+   "last_seen_on_site": "2026-10-03T23:38:39+02:00",
    "languages": [
-    "nb"
+    "nn",
+    "nb",
+    "en"
    ],
    "summaries": {
-    "nb": "Sofie Marhaug (R) spurte når regjeringen kommer med tiltak mot kryptoutvinning. Digitaliserings- og forvaltningsminister Torgeir Micaelsen svarte 18.09.2026 at regjeringen utreder et midlertidig forbud mot nye kraftkrevende kryptodatasentre i en statlig planbestemmelse; ingenting er vedtatt, oppfølgingen kommer i budsjettet for 2027, og ni slike datasentre er registrert i dag."
+    "nb": "Sofie Marhaug (R) spurte når regjeringen kommer med tiltak mot kryptoutvinning. Digitaliserings- og forvaltningsminister Torgeir Micaelsen svarte 18.09.2026 at regjeringen utreder et midlertidig forbud mot nye kraftkrevende kryptodatasentre i en statlig planbestemmelse; ingenting er vedtatt, oppfølgingen kommer i budsjettet for 2027, og ni slike datasentre er registrert i dag.",
+    "nn": "Sofie Marhaug (R) spurde når regjeringa kjem med tiltak mot kryptoutvinning. Digitaliserings- og forvaltningsminister Torgeir Micaelsen svarte 18.09.2026 at regjeringa greier ut eit mellombels forbod mot nye kraftkrevjande kryptodatasenter i ei statleg planføresegn; ingenting er vedteke, oppfølginga kjem i budsjettet for 2027, og ni slike datasenter er registrerte i dag.",
+    "en": "Sofie Marhaug (Red Party) asked when the government will act on crypto mining. On 18 September 2026, Minister of Digitalisation and Public Governance Torgeir Micaelsen replied that the government is considering a temporary ban on new power-intensive crypto data centres through a state planning provision. Nothing has been decided, follow-up will come in the 2027 budget, and nine such data centres are registered today."
    },
-   "titles": {},
+   "titles": {
+    "nn": "Regjeringa greier ut mellombels forbod mot nye kryptodatasenter (skriftleg spørsmål 15:3707)",
+    "en": "Government considers a temporary ban on new crypto data centres (written question 15:3707)"
+   },
    "topics": [
     "bitcoin",
     "regulering"
@@ -109,7 +128,7 @@
    "removed": 0,
    "removed_at": null,
    "removal_reason": null,
-   "updated_at": "2026-10-03T23:06:37+02:00"
+   "updated_at": "2026-10-03T23:38:39+02:00"
   },
   {
    "site": "kryptonytt",
@@ -121,12 +140,16 @@
    "source_name": "Kaupr",
    "published_at": "2026-09-16T12:00:00+00:00",
    "first_published_on_site": "2026-10-03T16:57:45+02:00",
-   "last_seen_on_site": "2026-10-03T16:57:45+02:00",
+   "last_seen_on_site": "2026-10-03T23:38:39+02:00",
    "languages": [
-    "nb"
+    "nn",
+    "nb",
+    "en"
    ],
    "summaries": {
-    "nb": "DNB er med i CBMT, en sandkasse der europeiske banker tester tokeniserte bankinnskudd, og tar med norske kroner inn i testene, ifølge Kaupr."
+    "nb": "DNB er med i CBMT, en sandkasse der europeiske banker tester tokeniserte bankinnskudd, og tar med norske kroner inn i testene, ifølge Kaupr.",
+    "nn": "DNB er med i CBMT, ei sandkasse der europeiske bankar testar tokeniserte bankinnskot, og tek norske kroner med inn i testane, ifølgje Kaupr.",
+    "en": "DNB is taking part in CBMT, a sandbox where European banks test tokenised bank deposits, and is bringing Norwegian kroner into the tests, according to Kaupr."
    },
    "titles": {},
    "topics": [
@@ -136,7 +159,7 @@
    "removed": 0,
    "removed_at": null,
    "removal_reason": null,
-   "updated_at": "2026-10-03T23:06:37+02:00"
+   "updated_at": "2026-10-03T23:38:39+02:00"
   },
   {
    "site": "kryptonytt",
@@ -148,12 +171,16 @@
    "source_name": "Shifter",
    "published_at": "2026-09-15T12:00:00+00:00",
    "first_published_on_site": "2026-10-03T16:57:45+02:00",
-   "last_seen_on_site": "2026-10-03T16:57:45+02:00",
+   "last_seen_on_site": "2026-10-03T23:38:39+02:00",
    "languages": [
-    "nb"
+    "nn",
+    "nb",
+    "en"
    ],
    "summaries": {
-    "nb": "Firi åpnet for svenske kunder samme dag som det ble kjent at kryptobørsen hadde 42 millioner kroner i inntekter og 43,6 millioner i underskudd i første halvår, ifølge Shifter."
+    "nb": "Firi åpnet for svenske kunder samme dag som det ble kjent at kryptobørsen hadde 42 millioner kroner i inntekter og 43,6 millioner i underskudd i første halvår, ifølge Shifter.",
+    "nn": "Firi opna for svenske kundar same dagen som det vart kjent at kryptobørsen hadde 42 millionar kroner i inntekter og 43,6 millionar i underskot i første halvår, ifølgje Shifter.",
+    "en": "Firi opened to Swedish customers on the same day it emerged that the crypto exchange had NOK 42 million in revenue and a NOK 43.6 million deficit in the first half of the year, according to Shifter."
    },
    "titles": {},
    "topics": [
@@ -163,7 +190,7 @@
    "removed": 0,
    "removed_at": null,
    "removal_reason": null,
-   "updated_at": "2026-10-03T23:06:37+02:00"
+   "updated_at": "2026-10-03T23:38:39+02:00"
   },
   {
    "site": "kryptonytt",
@@ -175,12 +202,16 @@
    "source_name": "Kaupr",
    "published_at": "2026-09-18T12:00:00+00:00",
    "first_published_on_site": "2026-10-03T16:57:45+02:00",
-   "last_seen_on_site": "2026-10-03T16:57:45+02:00",
+   "last_seen_on_site": "2026-10-03T23:38:39+02:00",
    "languages": [
-    "nb"
+    "nn",
+    "nb",
+    "en"
    ],
    "summaries": {
-    "nb": "NBX fikk MiCA-tillatelse i første halvår, men driftsinntektene falt 45 prosent til 6,05 millioner kroner, og tapet etter skatt økte til 16,6 millioner, ifølge selskapets halvårsrapport."
+    "nb": "NBX fikk MiCA-tillatelse i første halvår, men driftsinntektene falt 45 prosent til 6,05 millioner kroner, og tapet etter skatt økte til 16,6 millioner, ifølge selskapets halvårsrapport.",
+    "nn": "NBX fekk MiCA-løyve i første halvår, men driftsinntektene fall 45 prosent til 6,05 millionar kroner, og tapet etter skatt auka til 16,6 millionar, ifølgje halvårsrapporten til selskapet.",
+    "en": "NBX obtained a MiCA licence in the first half of the year, but operating revenue fell 45 per cent to NOK 6.05 million and the loss after tax grew to NOK 16.6 million, according to the company's half-year report."
    },
    "titles": {},
    "topics": [
@@ -190,7 +221,7 @@
    "removed": 0,
    "removed_at": null,
    "removal_reason": null,
-   "updated_at": "2026-10-03T23:06:37+02:00"
+   "updated_at": "2026-10-03T23:38:39+02:00"
   },
   {
    "site": "kryptonytt",
@@ -202,14 +233,21 @@
    "source_name": "NBX (børsmelding)",
    "published_at": "2026-09-17T12:00:00+00:00",
    "first_published_on_site": "2026-10-03T16:57:45+02:00",
-   "last_seen_on_site": "2026-10-03T16:57:45+02:00",
+   "last_seen_on_site": "2026-10-03T23:38:39+02:00",
    "languages": [
-    "nb"
+    "nn",
+    "nb",
+    "en"
    ],
    "summaries": {
-    "nb": "NBX er registrert som agent for MoneyGram fra 4. oktober, noe som skal gi kundene mulighet til å ta ut kontanter gjennom MoneyGrams nettverk. Når tjenesten lanseres teknisk, er ikke fastsatt, ifølge selskapets børsmelding 17.09."
+    "nb": "NBX er registrert som agent for MoneyGram fra 4. oktober, noe som skal gi kundene mulighet til å ta ut kontanter gjennom MoneyGrams nettverk. Når tjenesten lanseres teknisk, er ikke fastsatt, ifølge selskapets børsmelding 17.09.",
+    "nn": "NBX er registrert som agent for MoneyGram frå 4. oktober, noko som skal gje kundane høve til å ta ut kontantar gjennom nettverket til MoneyGram. Når tenesta blir lansert teknisk, er ikkje fastsett, ifølgje børsmeldinga til selskapet 17.09.",
+    "en": "NBX is registered as a MoneyGram agent from 4 October, which is meant to let customers withdraw cash through MoneyGram's network. When the service will go live technically has not been set, according to the company's stock exchange release of 17 September."
    },
-   "titles": {},
+   "titles": {
+    "nn": "NBX registrert som MoneyGram-agent (børsmelding, engelsk)",
+    "en": "NBX registered as MoneyGram agent (stock exchange release)"
+   },
    "topics": [
     "krypto",
     "selskaper"
@@ -217,7 +255,7 @@
    "removed": 0,
    "removed_at": null,
    "removal_reason": null,
-   "updated_at": "2026-10-03T23:06:37+02:00"
+   "updated_at": "2026-10-03T23:38:39+02:00"
   },
   {
    "site": "kryptonytt",
@@ -229,12 +267,16 @@
    "source_name": "Kaupr",
    "published_at": "2026-09-13T12:00:00+00:00",
    "first_published_on_site": "2026-10-03T16:57:45+02:00",
-   "last_seen_on_site": "2026-10-03T16:57:45+02:00",
+   "last_seen_on_site": "2026-10-03T23:38:39+02:00",
    "languages": [
-    "nb"
+    "nn",
+    "nb",
+    "en"
    ],
    "summaries": {
-    "nb": "Sander Andersen, styreleder i H100 Group, mener bitcoinselskaper under én milliard dollar bør kjøpe hverandre, og at det å stå stille er den største risikoen, ifølge Kaupr."
+    "nb": "Sander Andersen, styreleder i H100 Group, mener bitcoinselskaper under én milliard dollar bør kjøpe hverandre, og at det å stå stille er den største risikoen, ifølge Kaupr.",
+    "nn": "Sander Andersen, styreleiar i H100 Group, meiner at bitcoinselskap som er verde under éin milliard dollar, bør kjøpe kvarandre, og at det å stå stille er den største risikoen, ifølgje Kaupr.",
+    "en": "Sander Andersen, chair of H100 Group, believes bitcoin companies worth less than one billion dollars should buy each other, and that standing still is the biggest risk, according to Kaupr."
    },
    "titles": {},
    "topics": [
@@ -244,7 +286,7 @@
    "removed": 0,
    "removed_at": null,
    "removal_reason": null,
-   "updated_at": "2026-10-03T23:06:37+02:00"
+   "updated_at": "2026-10-03T23:38:39+02:00"
   },
   {
    "site": "kryptonytt",
@@ -256,14 +298,21 @@
    "source_name": "Euronews",
    "published_at": "2026-10-01T12:00:00+00:00",
    "first_published_on_site": "2026-10-03T16:57:45+02:00",
-   "last_seen_on_site": "2026-10-03T16:57:45+02:00",
+   "last_seen_on_site": "2026-10-03T23:38:39+02:00",
    "languages": [
-    "nb"
+    "nn",
+    "nb",
+    "en"
    ],
    "summaries": {
-    "nb": "EUs verdipapirmyndighet ESMA og flere nasjonale tilsyn stiller spørsmål ved at Binance fortsatt betjener kunder i EU uten MiCA-tillatelse. Det er en gjennomgang, ikke en sanksjon; MiCA gjelder også i Norge gjennom kryptoeiendelsloven."
+    "nb": "EUs verdipapirmyndighet ESMA og flere nasjonale tilsyn stiller spørsmål ved at Binance fortsatt betjener kunder i EU uten MiCA-tillatelse. Det er en gjennomgang, ikke en sanksjon; MiCA gjelder også i Norge gjennom kryptoeiendelsloven.",
+    "nn": "Verdipapirtilsynet i EU, ESMA, og fleire nasjonale tilsyn stiller spørsmål ved at Binance framleis tener kundar i EU utan MiCA-løyve. Det er ein gjennomgang, ikkje ein sanksjon; MiCA gjeld òg i Noreg gjennom kryptoeiendelsloven.",
+    "en": "The EU securities regulator ESMA and several national supervisors are questioning why Binance still serves customers in the EU without a MiCA licence. It is a review, not a sanction; MiCA also applies in Norway through the Crypto-Assets Act (kryptoeiendelsloven)."
    },
-   "titles": {},
+   "titles": {
+    "nn": "EU-tilsyn stiller spørsmål ved verksemda til Binance utan lisens (engelsk)",
+    "en": "EU watchdogs question Binance over unlicensed European operations"
+   },
    "topics": [
     "krypto",
     "regulering",
@@ -272,7 +321,7 @@
    "removed": 0,
    "removed_at": null,
    "removal_reason": null,
-   "updated_at": "2026-10-03T23:06:37+02:00"
+   "updated_at": "2026-10-03T23:38:39+02:00"
   }
  ],
  "events": [
@@ -355,6 +404,86 @@
    "at": "2026-10-03T16:57:45+02:00",
    "event": "backfill",
    "detail": null
+  },
+  {
+   "seq": 11,
+   "site": "kryptonytt",
+   "id": "1a95167a3af8",
+   "at": "2026-10-03T23:38:39+02:00",
+   "event": "updated",
+   "detail": "summaries"
+  },
+  {
+   "seq": 12,
+   "site": "kryptonytt",
+   "id": "ffc8a438f9ba",
+   "at": "2026-10-03T23:38:39+02:00",
+   "event": "updated",
+   "detail": "summaries"
+  },
+  {
+   "seq": 13,
+   "site": "kryptonytt",
+   "id": "12425cc1e7ff",
+   "at": "2026-10-03T23:38:39+02:00",
+   "event": "updated",
+   "detail": "summaries"
+  },
+  {
+   "seq": 14,
+   "site": "kryptonytt",
+   "id": "831bb86ab20c",
+   "at": "2026-10-03T23:38:39+02:00",
+   "event": "updated",
+   "detail": "summaries"
+  },
+  {
+   "seq": 15,
+   "site": "kryptonytt",
+   "id": "55643fb5a215",
+   "at": "2026-10-03T23:38:39+02:00",
+   "event": "updated",
+   "detail": "summaries"
+  },
+  {
+   "seq": 16,
+   "site": "kryptonytt",
+   "id": "e1e3eef6ecff",
+   "at": "2026-10-03T23:38:39+02:00",
+   "event": "updated",
+   "detail": "summaries"
+  },
+  {
+   "seq": 17,
+   "site": "kryptonytt",
+   "id": "5f757489d23c",
+   "at": "2026-10-03T23:38:39+02:00",
+   "event": "updated",
+   "detail": "summaries"
+  },
+  {
+   "seq": 18,
+   "site": "kryptonytt",
+   "id": "6e2887720a32",
+   "at": "2026-10-03T23:38:39+02:00",
+   "event": "updated",
+   "detail": "summaries"
+  },
+  {
+   "seq": 19,
+   "site": "kryptonytt",
+   "id": "eb685890cbc3",
+   "at": "2026-10-03T23:38:39+02:00",
+   "event": "updated",
+   "detail": "summaries"
+  },
+  {
+   "seq": 20,
+   "site": "kryptonytt",
+   "id": "2034a42ac260",
+   "at": "2026-10-03T23:38:39+02:00",
+   "event": "updated",
+   "detail": "summaries"
   }
  ]
 }
