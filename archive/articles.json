@@ -1,0 +1,360 @@
+{
+ "schema": 1,
+ "site": "kryptonytt",
+ "exported_at": "2026-10-03T23:06:37+02:00",
+ "articles": [
+  {
+   "site": "kryptonytt",
+   "id": "12425cc1e7ff",
+   "url": "https://www.kaupr.io/nyheter/coinmotion-og-k33-inngar-nordisk-kryptosamarbeid-om-institusjonell-handel",
+   "canonical_url": "https://kaupr.io/nyheter/coinmotion-og-k33-inngar-nordisk-kryptosamarbeid-om-institusjonell-handel",
+   "title": "Coinmotion og K33 inngår nordisk kryptosamarbeid om institusjonell handel",
+   "source": "kaupr",
+   "source_name": "Kaupr",
+   "published_at": "2026-09-24T12:00:00+00:00",
+   "first_published_on_site": "2026-10-03T16:57:45+02:00",
+   "last_seen_on_site": "2026-10-03T16:57:45+02:00",
+   "languages": [
+    "nb"
+   ],
+   "summaries": {
+    "nb": "Den finske kryptomegleren Coinmotion har valgt K33 til å utføre større, institusjonelle handler, mens Coinmotion beholder kundeforholdet. Begge selskapene har MiCA-tillatelse."
+   },
+   "titles": {},
+   "topics": [
+    "krypto",
+    "selskaper"
+   ],
+   "removed": 0,
+   "removed_at": null,
+   "removal_reason": null,
+   "updated_at": "2026-10-03T23:06:37+02:00"
+  },
+  {
+   "site": "kryptonytt",
+   "id": "1a95167a3af8",
+   "url": "https://www.aftenposten.no/norge/i/vlQARB/tiltalt-for-dopsalg-mot-kryptovaluta-paa-det-moerke-nettet",
+   "canonical_url": "https://aftenposten.no/norge/i/vlQARB/tiltalt-for-dopsalg-mot-kryptovaluta-paa-det-moerke-nettet",
+   "title": "Tiltalt for dopsalg mot kryptovaluta på det mørke nettet",
+   "source": "aftenposten",
+   "source_name": "Aftenposten",
+   "published_at": "2026-10-02T11:07:26+00:00",
+   "first_published_on_site": "2026-10-03T16:57:45+02:00",
+   "last_seen_on_site": "2026-10-03T16:57:45+02:00",
+   "languages": [
+    "nb"
+   ],
+   "summaries": {
+    "nb": "Fire personer, tre nordmenn og en svenske, er tiltalt i en stor narkotikasak der stoffene skal ha blitt solgt mot kryptovaluta på det mørke nettet. Ingen er dømt i saken."
+   },
+   "titles": {},
+   "topics": [
+    "krypto",
+    "regulering"
+   ],
+   "removed": 0,
+   "removed_at": null,
+   "removal_reason": null,
+   "updated_at": "2026-10-03T23:06:37+02:00"
+  },
+  {
+   "site": "kryptonytt",
+   "id": "2034a42ac260",
+   "url": "https://www.kaupr.io/nyheter/norges-bank-utforsker-tokenisering-med-tolv-aktorer",
+   "canonical_url": "https://kaupr.io/nyheter/norges-bank-utforsker-tokenisering-med-tolv-aktorer",
+   "title": "Norges Bank utforsker tokenisering med tolv aktører",
+   "source": "kaupr",
+   "source_name": "Kaupr",
+   "published_at": "2026-09-08T12:00:00+00:00",
+   "first_published_on_site": "2026-10-03T16:57:45+02:00",
+   "last_seen_on_site": "2026-10-03T16:57:45+02:00",
+   "languages": [
+    "nb"
+   ],
+   "summaries": {
+    "nb": "Norges Bank navnga i et LinkedIn-innlegg 07.09.2026 tolv finansinstitusjoner i arbeidet med å utforske tokenisering, blant dem DNB, Nordea og SpareBank 1. Innlegget er ikke publisert på norges-bank.no."
+   },
+   "titles": {},
+   "topics": [
+    "blokkjede",
+    "regulering"
+   ],
+   "removed": 0,
+   "removed_at": null,
+   "removal_reason": null,
+   "updated_at": "2026-10-03T23:06:37+02:00"
+  },
+  {
+   "site": "kryptonytt",
+   "id": "55643fb5a215",
+   "url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Sporsmal/Skriftlige-sporsmal-og-svar/Skriftlig-sporsmal/?qnid=127181",
+   "canonical_url": "https://stortinget.no/no/Saker-og-publikasjoner/Sporsmal/Skriftlige-sporsmal-og-svar/Skriftlig-sporsmal?qnid=127181",
+   "title": "Regjeringen utreder midlertidig forbud mot nye kryptodatasentre (skriftlig spørsmål 15:3707)",
+   "source": "stortinget",
+   "source_name": "Stortinget",
+   "published_at": "2026-09-18T12:00:00+00:00",
+   "first_published_on_site": "2026-10-03T16:57:45+02:00",
+   "last_seen_on_site": "2026-10-03T16:57:45+02:00",
+   "languages": [
+    "nb"
+   ],
+   "summaries": {
+    "nb": "Sofie Marhaug (R) spurte når regjeringen kommer med tiltak mot kryptoutvinning. Digitaliserings- og forvaltningsminister Torgeir Micaelsen svarte 18.09.2026 at regjeringen utreder et midlertidig forbud mot nye kraftkrevende kryptodatasentre i en statlig planbestemmelse; ingenting er vedtatt, oppfølgingen kommer i budsjettet for 2027, og ni slike datasentre er registrert i dag."
+   },
+   "titles": {},
+   "topics": [
+    "bitcoin",
+    "regulering"
+   ],
+   "removed": 0,
+   "removed_at": null,
+   "removal_reason": null,
+   "updated_at": "2026-10-03T23:06:37+02:00"
+  },
+  {
+   "site": "kryptonytt",
+   "id": "5f757489d23c",
+   "url": "https://www.kaupr.io/nyheter/dnb-tester-tokeniserte-innskudd-i-kroner-med-europeiske-banker",
+   "canonical_url": "https://kaupr.io/nyheter/dnb-tester-tokeniserte-innskudd-i-kroner-med-europeiske-banker",
+   "title": "DNB tester tokeniserte innskudd i kroner med europeiske banker",
+   "source": "kaupr",
+   "source_name": "Kaupr",
+   "published_at": "2026-09-16T12:00:00+00:00",
+   "first_published_on_site": "2026-10-03T16:57:45+02:00",
+   "last_seen_on_site": "2026-10-03T16:57:45+02:00",
+   "languages": [
+    "nb"
+   ],
+   "summaries": {
+    "nb": "DNB er med i CBMT, en sandkasse der europeiske banker tester tokeniserte bankinnskudd, og tar med norske kroner inn i testene, ifølge Kaupr."
+   },
+   "titles": {},
+   "topics": [
+    "blokkjede",
+    "selskaper"
+   ],
+   "removed": 0,
+   "removed_at": null,
+   "removal_reason": null,
+   "updated_at": "2026-10-03T23:06:37+02:00"
+  },
+  {
+   "site": "kryptonytt",
+   "id": "6e2887720a32",
+   "url": "https://www.shifter.no/nyheter/firi-lanserer-i-sverige-etter-permitteringer-og-milliontap/475990",
+   "canonical_url": "https://shifter.no/nyheter/firi-lanserer-i-sverige-etter-permitteringer-og-milliontap/475990",
+   "title": "Firi lanserer i Sverige – etter permitteringer og milliontap",
+   "source": "shifter",
+   "source_name": "Shifter",
+   "published_at": "2026-09-15T12:00:00+00:00",
+   "first_published_on_site": "2026-10-03T16:57:45+02:00",
+   "last_seen_on_site": "2026-10-03T16:57:45+02:00",
+   "languages": [
+    "nb"
+   ],
+   "summaries": {
+    "nb": "Firi åpnet for svenske kunder samme dag som det ble kjent at kryptobørsen hadde 42 millioner kroner i inntekter og 43,6 millioner i underskudd i første halvår, ifølge Shifter."
+   },
+   "titles": {},
+   "topics": [
+    "krypto",
+    "selskaper"
+   ],
+   "removed": 0,
+   "removed_at": null,
+   "removal_reason": null,
+   "updated_at": "2026-10-03T23:06:37+02:00"
+  },
+  {
+   "site": "kryptonytt",
+   "id": "831bb86ab20c",
+   "url": "https://www.kaupr.io/nyheter/nbx-mer-enn-doblet-tapet-i-halvaret-da-mica-lisensen-kom",
+   "canonical_url": "https://kaupr.io/nyheter/nbx-mer-enn-doblet-tapet-i-halvaret-da-mica-lisensen-kom",
+   "title": "NBX mer enn doblet tapet i halvåret da MiCA-lisensen kom",
+   "source": "kaupr",
+   "source_name": "Kaupr",
+   "published_at": "2026-09-18T12:00:00+00:00",
+   "first_published_on_site": "2026-10-03T16:57:45+02:00",
+   "last_seen_on_site": "2026-10-03T16:57:45+02:00",
+   "languages": [
+    "nb"
+   ],
+   "summaries": {
+    "nb": "NBX fikk MiCA-tillatelse i første halvår, men driftsinntektene falt 45 prosent til 6,05 millioner kroner, og tapet etter skatt økte til 16,6 millioner, ifølge selskapets halvårsrapport."
+   },
+   "titles": {},
+   "topics": [
+    "krypto",
+    "selskaper"
+   ],
+   "removed": 0,
+   "removed_at": null,
+   "removal_reason": null,
+   "updated_at": "2026-10-03T23:06:37+02:00"
+  },
+  {
+   "site": "kryptonytt",
+   "id": "e1e3eef6ecff",
+   "url": "https://www.inderes.se/en/releases/nbx-nbx-registered-as-moneygram-agent",
+   "canonical_url": "https://inderes.se/en/releases/nbx-nbx-registered-as-moneygram-agent",
+   "title": "NBX registrert som MoneyGram-agent (børsmelding, engelsk)",
+   "source": "nbx-ir",
+   "source_name": "NBX (børsmelding)",
+   "published_at": "2026-09-17T12:00:00+00:00",
+   "first_published_on_site": "2026-10-03T16:57:45+02:00",
+   "last_seen_on_site": "2026-10-03T16:57:45+02:00",
+   "languages": [
+    "nb"
+   ],
+   "summaries": {
+    "nb": "NBX er registrert som agent for MoneyGram fra 4. oktober, noe som skal gi kundene mulighet til å ta ut kontanter gjennom MoneyGrams nettverk. Når tjenesten lanseres teknisk, er ikke fastsatt, ifølge selskapets børsmelding 17.09."
+   },
+   "titles": {},
+   "topics": [
+    "krypto",
+    "selskaper"
+   ],
+   "removed": 0,
+   "removed_at": null,
+   "removal_reason": null,
+   "updated_at": "2026-10-03T23:06:37+02:00"
+  },
+  {
+   "site": "kryptonytt",
+   "id": "eb685890cbc3",
+   "url": "https://www.kaupr.io/nyheter/h100-styrelederen-vil-ha-flere-oppkjop-i-bitcoinbransjen",
+   "canonical_url": "https://kaupr.io/nyheter/h100-styrelederen-vil-ha-flere-oppkjop-i-bitcoinbransjen",
+   "title": "H100-styrelederen vil ha flere oppkjøp i bitcoinbransjen",
+   "source": "kaupr",
+   "source_name": "Kaupr",
+   "published_at": "2026-09-13T12:00:00+00:00",
+   "first_published_on_site": "2026-10-03T16:57:45+02:00",
+   "last_seen_on_site": "2026-10-03T16:57:45+02:00",
+   "languages": [
+    "nb"
+   ],
+   "summaries": {
+    "nb": "Sander Andersen, styreleder i H100 Group, mener bitcoinselskaper under én milliard dollar bør kjøpe hverandre, og at det å stå stille er den største risikoen, ifølge Kaupr."
+   },
+   "titles": {},
+   "topics": [
+    "bitcoin",
+    "selskaper"
+   ],
+   "removed": 0,
+   "removed_at": null,
+   "removal_reason": null,
+   "updated_at": "2026-10-03T23:06:37+02:00"
+  },
+  {
+   "site": "kryptonytt",
+   "id": "ffc8a438f9ba",
+   "url": "https://www.euronews.com/2026/10/01/eu-watchdogs-question-binance-over-unlicensed-european-operations",
+   "canonical_url": "https://euronews.com/2026/10/01/eu-watchdogs-question-binance-over-unlicensed-european-operations",
+   "title": "EU-tilsyn stiller spørsmål ved Binances virksomhet uten lisens (engelsk)",
+   "source": "euronews.com",
+   "source_name": "Euronews",
+   "published_at": "2026-10-01T12:00:00+00:00",
+   "first_published_on_site": "2026-10-03T16:57:45+02:00",
+   "last_seen_on_site": "2026-10-03T16:57:45+02:00",
+   "languages": [
+    "nb"
+   ],
+   "summaries": {
+    "nb": "EUs verdipapirmyndighet ESMA og flere nasjonale tilsyn stiller spørsmål ved at Binance fortsatt betjener kunder i EU uten MiCA-tillatelse. Det er en gjennomgang, ikke en sanksjon; MiCA gjelder også i Norge gjennom kryptoeiendelsloven."
+   },
+   "titles": {},
+   "topics": [
+    "krypto",
+    "regulering",
+    "selskaper"
+   ],
+   "removed": 0,
+   "removed_at": null,
+   "removal_reason": null,
+   "updated_at": "2026-10-03T23:06:37+02:00"
+  }
+ ],
+ "events": [
+  {
+   "seq": 1,
+   "site": "kryptonytt",
+   "id": "1a95167a3af8",
+   "at": "2026-10-03T16:57:45+02:00",
+   "event": "backfill",
+   "detail": null
+  },
+  {
+   "seq": 2,
+   "site": "kryptonytt",
+   "id": "ffc8a438f9ba",
+   "at": "2026-10-03T16:57:45+02:00",
+   "event": "backfill",
+   "detail": null
+  },
+  {
+   "seq": 3,
+   "site": "kryptonytt",
+   "id": "12425cc1e7ff",
+   "at": "2026-10-03T16:57:45+02:00",
+   "event": "backfill",
+   "detail": null
+  },
+  {
+   "seq": 4,
+   "site": "kryptonytt",
+   "id": "831bb86ab20c",
+   "at": "2026-10-03T16:57:45+02:00",
+   "event": "backfill",
+   "detail": null
+  },
+  {
+   "seq": 5,
+   "site": "kryptonytt",
+   "id": "55643fb5a215",
+   "at": "2026-10-03T16:57:45+02:00",
+   "event": "backfill",
+   "detail": null
+  },
+  {
+   "seq": 6,
+   "site": "kryptonytt",
+   "id": "e1e3eef6ecff",
+   "at": "2026-10-03T16:57:45+02:00",
+   "event": "backfill",
+   "detail": null
+  },
+  {
+   "seq": 7,
+   "site": "kryptonytt",
+   "id": "5f757489d23c",
+   "at": "2026-10-03T16:57:45+02:00",
+   "event": "backfill",
+   "detail": null
+  },
+  {
+   "seq": 8,
+   "site": "kryptonytt",
+   "id": "6e2887720a32",
+   "at": "2026-10-03T16:57:45+02:00",
+   "event": "backfill",
+   "detail": null
+  },
+  {
+   "seq": 9,
+   "site": "kryptonytt",
+   "id": "eb685890cbc3",
+   "at": "2026-10-03T16:57:45+02:00",
+   "event": "backfill",
+   "detail": null
+  },
+  {
+   "seq": 10,
+   "site": "kryptonytt",
+   "id": "2034a42ac260",
+   "at": "2026-10-03T16:57:45+02:00",
+   "event": "backfill",
+   "detail": null
+  }
+ ]
+}

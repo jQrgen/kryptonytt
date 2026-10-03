@@ -26,6 +26,8 @@ find .publish -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} + && cp -a si
 git -C .publish add -A
 if git -C .publish diff --cached --quiet; then echo "gh-pages: ingen endringer"; else
   git -C .publish commit -q -m "Publiser $(date '+%Y-%m-%d %H:%M %Z')" && git -C .publish push -q origin gh-pages && echo "gh-pages: pushet"; fi
+# Artikkelarkiv: før opp alt som no er publisert (berre tillegg, aldri sletting; archive/articles.db + archive/articles.json)
+.venv/bin/python tools/article_archive.py record || echo "advarsel: artikkelarkivet vart ikkje oppdatert"
 # 2) main: bare kode og konfig (se .gitignore)
 git add -A && { git diff --cached --quiet || git commit -q -m "Oppdater pipeline $(date '+%Y-%m-%d')"; } && git push -q origin main || echo "advarsel: push av main feilet"
 # 3) sjekk at siden svarer

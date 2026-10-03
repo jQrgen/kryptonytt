@@ -20,3 +20,5 @@ tools/discover.py
 tools/evprobe.py
 tools/seed_orgchart.py
 research/
+archive/*.db
+archive/*.db-*
