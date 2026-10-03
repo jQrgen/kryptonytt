@@ -1,0 +1,38 @@
+(function(){
+var D=JSON.parse(document.getElementById('orgdata').textContent),E=D.entities,R=D.relations,by={};E.forEach(function(e){by[e.id]=e});
+var chart=document.getElementById('chart'),det=document.getElementById('detail'),q=document.getElementById('osearch'),tb=document.querySelector('#olist tbody');
+function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+function ini(n){return n.split(/[\s-]+/).filter(Boolean).slice(0,2).map(function(w){return w[0]}).join('').toUpperCase()}
+function av(e,big){var c='av'+(big?' big':'');if(e.image&&e.image.file)return '<img class="'+c+'" src="../'+esc(e.image.file)+'" alt="'+esc(e.name)+'" loading="lazy" width="'+(big?96:34)+'" height="'+(big?96:34)+'">';return '<span class="'+c+'" aria-hidden="true">'+esc(ini(e.name))+'</span>'}
+function rel(id){return R.filter(function(r){return r.from===id||r.to===id})}
+function xs(e){var s={};rel(e.id).forEach(function(r){var o=by[r.from===e.id?r.to:r.from];if(o&&o.sector!==e.sector)s[o.sector]=1});
+ if(e.type==='person'&&e.org&&by[e.org]&&by[e.org].sector!==e.sector)s[by[e.org].sector]=1;
+ return Object.keys(s).map(function(k){return '<span class="xl '+(k==='offentlig'?'pub':'priv')+'" title="Kobling til '+k+' sektor">↔ '+k+'</span>'}).join('')}
+function people(o){return E.filter(function(p){return p.type==='person'&&p.org===o.id})}
+function render(){var h='';['privat','offentlig'].forEach(function(sec){var orgs=E.filter(function(e){return e.sector===sec&&e.type!=='person'}),groups={};
+ orgs.forEach(function(o){(groups[o.group||'Annet']=groups[o.group||'Annet']||[]).push(o)});
+ h+='<div class="col col-'+sec+'"><h2>'+(sec==='privat'?'Privat sektor':'Offentlig sektor')+'</h2>';
+ Object.keys(groups).sort().forEach(function(g){h+='<div class="grp"><h3>'+esc(g)+'</h3>';groups[g].sort(function(a,b){return a.name.localeCompare(b.name,'no')}).forEach(function(o){
+  var pp=people(o).map(function(p){return '<span class="person" role="button" tabindex="0" data-id="'+esc(p.id)+'">'+av(p)+'<span><b>'+esc(p.name)+'</b><br>'+esc(p.role||'')+'</span></span>'}).join('');
+  h+='<div class="card" role="button" tabindex="0" data-id="'+esc(o.id)+'"><div class="nm">'+esc(o.name)+xs(o)+'</div><div class="ds">'+esc(o.description||'')+'</div>'+(pp?'<div class="people">'+pp+'</div>':'')+'</div>'});h+='</div>'});
+ var loose=E.filter(function(p){return p.type==='person'&&p.sector===sec&&!(p.org&&by[p.org])});
+ if(loose.length){h+='<div class="grp"><h3>Personer</h3><div class="people">'+loose.map(function(p){return '<span class="person" role="button" tabindex="0" data-id="'+esc(p.id)+'">'+av(p)+'<span><b>'+esc(p.name)+'</b><br>'+esc(p.role||'')+'</span></span>'}).join('')+'</div></div>'}
+ h+='</div>'});chart.innerHTML=h}
+function srcs(list){return '<ul>'+list.map(function(s){return '<li><a href="'+esc(s.url)+'" target="_blank" rel="noopener">'+esc(s.title||s.url)+'</a> <span class="meta">('+esc(s.source_name||'')+(s.date?', '+esc(s.date):'')+')</span></li>'}).join('')+'</ul>'}
+function show(id){var e=by[id];if(!e)return;var rs=rel(id),ids={};ids[id]=1;rs.forEach(function(r){ids[r.from]=1;ids[r.to]=1});if(e.org)ids[e.org]=1;people(e).forEach(function(p){ids[p.id]=1});
+ [].forEach.call(chart.querySelectorAll('[data-id]'),function(n){n.classList.toggle('hl',!!ids[n.dataset.id]&&n.dataset.id!==id?false:n.dataset.id===id);n.classList.toggle('hl',!!ids[n.dataset.id])});
+ var img=e.image&&e.image.file?'<div>'+av(e,1)+'<div class="credit">Foto: '+esc(e.image.author||'')+', <a href="'+esc(e.image.license_url||'#')+'" rel="noopener license" target="_blank">'+esc(e.image.license)+'</a>, <a href="'+esc(e.image.source_page)+'" rel="noopener" target="_blank">kilde</a></div></div>':(e.type==='person'?'<div>'+av(e,1)+(e.profile_url?'<div class="credit"><a href="'+esc(e.profile_url)+'" target="_blank" rel="noopener">Se bilde hos kilden</a></div>':'')+'</div>':'');
+ var rl=rs.map(function(r){var o=by[r.from===id?r.to:r.from];return '<li><b>'+esc(r.label||r.type)+'</b>: <a href="#" data-go="'+esc(o.id)+'">'+esc(o.name)+'</a>'+(o.sector!==e.sector?' <span class="xl '+(o.sector==='offentlig'?'pub':'priv')+'">↔ '+o.sector+'</span>':'')+' – kilde: '+r.sources.map(function(s){return '<a href="'+esc(s.url)+'" target="_blank" rel="noopener">'+esc(s.source_name||'sak')+'</a>'}).join(', ')+'</li>'}).join('');
+ var org=e.org&&by[e.org]?'<p>'+esc(e.role||'')+', <a href="#" data-go="'+esc(e.org)+'">'+esc(by[e.org].name)+'</a></p>':(e.role?'<p>'+esc(e.role)+'</p>':'');
+ det.innerHTML='<button class="close" type="button" aria-label="Lukk">×</button><div class="row">'+img+'<div><h3>'+esc(e.name)+'</h3><div class="meta">'+(e.type==='person'?'Person':esc(e.group||'Organisasjon'))+' · '+(e.sector==='offentlig'?'Offentlig sektor':'Privat sektor')+(e.url?' · <a href="'+esc(e.url)+'" target="_blank" rel="noopener">nettside</a>':'')+'</div>'+org+(e.description?'<p>'+esc(e.description)+'</p>':'')+'</div></div>'+(rl?'<b>Koblinger</b><ul>'+rl+'</ul>':'')+'<b>Kilder</b>'+srcs(e.sources);
+ det.hidden=false;history.replaceState(null,'','#'+encodeURIComponent(id))}
+chart.addEventListener('click',function(ev){var n=ev.target.closest('[data-id]');if(n){ev.stopPropagation();show(n.dataset.id)}});
+chart.addEventListener('keydown',function(ev){if(ev.key==='Enter'||ev.key===' '){var n=ev.target.closest('[data-id]');if(n){ev.preventDefault();show(n.dataset.id)}}});
+det.addEventListener('click',function(ev){var g=ev.target.closest('[data-go]');if(g){ev.preventDefault();show(g.dataset.go);var c=chart.querySelector('[data-id="'+g.dataset.go+'"]');if(c)c.scrollIntoView({block:'center',behavior:'smooth'})}if(ev.target.closest('.close')){det.hidden=true;[].forEach.call(chart.querySelectorAll('.hl'),function(n){n.classList.remove('hl')});history.replaceState(null,'',location.pathname)}});
+[].forEach.call(document.querySelectorAll('.seg button'),function(b){b.addEventListener('click',function(){[].forEach.call(document.querySelectorAll('.seg button'),function(x){x.setAttribute('aria-pressed',x===b)});chart.className='cols'+(b.dataset.v==='begge'?'':' only-'+b.dataset.v)})});
+function list(){var t=(q.value||'').toLowerCase();tb.innerHTML=E.slice().sort(function(a,b){return a.name.localeCompare(b.name,'no')}).filter(function(e){var o=e.org&&by[e.org]?by[e.org].name:'';return !t||(e.name+' '+(e.role||'')+' '+o+' '+(e.description||'')+' '+(e.group||'')).toLowerCase().indexOf(t)>=0}).map(function(e){var o=e.org&&by[e.org]?by[e.org].name:'';
+ return '<tr><td><a href="#" data-go="'+esc(e.id)+'">'+esc(e.name)+'</a></td><td>'+(e.type==='person'?'Person':esc(e.group||'Organisasjon'))+'</td><td>'+(e.sector==='offentlig'?'Offentlig':'Privat')+'</td><td>'+esc(e.type==='person'?(e.role||'')+(o?', '+o:''):(e.description||''))+'</td><td>'+e.sources.map(function(s,i){return '<a href="'+esc(s.url)+'" target="_blank" rel="noopener">'+esc(s.source_name||('kilde '+(i+1)))+'</a>'}).join(', ')+'</td></tr>'}).join('');
+ [].forEach.call(chart.querySelectorAll('[data-id]'),function(n){var e=by[n.dataset.id],o=e.org&&by[e.org]?by[e.org].name:'';n.classList.toggle('dim',!!t&&(e.name+' '+(e.role||'')+' '+o+' '+(e.description||'')).toLowerCase().indexOf(t)<0&&!n.querySelector('.person:not(.dim)'))})}
+document.getElementById('olist').addEventListener('click',function(ev){var g=ev.target.closest('[data-go]');if(g){ev.preventDefault();show(g.dataset.go);var c=chart.querySelector('[data-id="'+g.dataset.go+'"]');if(c)c.scrollIntoView({block:'center'})}});
+q.addEventListener('input',list);render();list();if(location.hash.length>1)show(decodeURIComponent(location.hash.slice(1)));
+})();

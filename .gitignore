@@ -1,0 +1,21 @@
+# Arbeidsfiler som aldri publiseres i repoet (bare på boksen)
+data/
+state/
+queue/
+logs/
+site/
+.publish/
+.venv/
+__pycache__/
+logs_probe*.txt
+assets/img/people/*.orig
+__pycache__/
+*.pyc
+shots/
+/*.png
+.env
+*.token
+tools/probe.py
+tools/discover.py
+tools/evprobe.py
+tools/seed_orgchart.py
