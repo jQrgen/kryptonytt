@@ -110,6 +110,14 @@ def main():
             if e.get("add_description"): E[e["id"]]["description"] = (E[e["id"]].get("description") or "") + " " + e["add_description"]
             continue
         e = dict(e); e.setdefault("image", imgs.get(e["id"])); E[e["id"]] = e
+    # forslag som ventar på redaktøren (data/orgchart_pending.json): nye aktørar/personar og profillenkjer, alltid status pending
+    pend = load(P("data", "orgchart_pending.json"), {"entities": [], "profiles": []})
+    for e in pend.get("entities", []):
+        if e["id"] not in E: e = dict(e, status="pending"); e.setdefault("image", imgs.get(e["id"])); E[e["id"]] = e
+    for pr in pend.get("profiles", []):
+        if pr["person"] in E and pr.get("url") and pr.get("source"):
+            lst = E[pr["person"]].setdefault("profiles", [])
+            if pr["url"] not in {x["url"] for x in lst}: lst.append({k: pr[k] for k in ("id", "kind", "url", "source", "verification") if k in pr} | {"status": "pending"})
     for r in extra.get("relations", []):
         if r["from"] in E and r["to"] in E: R.append(dict(r, status="published"))
         else: skipped.append(f"relasjon {r['id']} (mangler entitet)")

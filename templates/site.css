@@ -94,3 +94,4 @@ ol.steps{max-width:80ch}ol.steps li{margin:0 0 12px}ol.steps .src{font-size:13px
 ol.steps li{position:relative;animation:nodein .5s ease both}
 @media(max-width:700px){ol.steps li::after{content:"";position:absolute;left:-18px;top:1.4em;bottom:-12px;border-left:2px dashed var(--muted)}ol.steps li:last-child::after{display:none}}
 @media (prefers-reduced-motion: reduce){ol.steps li{animation:none}}
+.imap .kaupr-note{grid-column:1/-1}

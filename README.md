@@ -57,3 +57,10 @@ Rettelser og fjerning: opprett en sak på https://github.com/jQrgen/kryptonytt/i
 - **Nattrutinen** (`fetch.sh`) og **morgonrutinen** (`publish.sh`) køyrer `tools/check_i18n.py`, som legg det som manglar i `queue/review.json` -> `translations_needed`. Manglar ein variant, viser sida bokmål med `lang="nb"`.
 - **Researcheren** kan levere skildringar på bokmål som før; organisasjonskart- og Akademia-skildringar blir viste på bokmål (merkte `lang="nb"`) på nynorsk- og engelsksidene til vi har omsette felt.
 - Skriv «kunstig intelligens» (engelsk «artificial intelligence»), aldri AI eller KI.
+
+## Forslag til organisasjonskartet (pending)
+`data/orgchart_pending.json` holder nye aktører, personer (Brønnøysund-roller: bare navn og rolle) og profillenker som venter på redaktøren.
+`tools/import_industrikart.py` tar dem inn med status `pending`; `tools/apply_approvals.py` publiserer dem bare når id-en står i
+`queue/approved.json` → `entities.approve` / `profiles.approve` (avvis med `.reject`), og lister alt som venter i `queue/review.json` → `org_pending` / `profiles_pending`.
+Kategorien «Internasjonale aktørar i Noreg» (`industry: "internasjonal"`) er for globale aktører med verifiserbar norsk aktivitet.
+Kildesjekken for Kaupr-aktørene står i `research/kaupr-kildesjekk.md`. Kaupr er sponsor og kilde; industrikartet viser en opplysningsmerknad når en publisert aktør har Kaupr som kilde.

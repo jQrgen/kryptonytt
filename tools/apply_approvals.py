@@ -46,6 +46,11 @@ ea, er = set(ap.get("entities", {}).get("approve", [])), set(ap.get("entities", 
 for e in org["entities"]:  # industrikart-rader er allerede redaktørgodkjent (status published fra import); approve/reject overstyrer
     if e["id"] in er: e["status"] = "rejected"
     elif e["id"] in ea: e["status"] = "published"
+pa, pr_ = set(ap.get("profiles", {}).get("approve", [])), set(ap.get("profiles", {}).get("reject", []))
+for e in org["entities"]:  # profillenkjer: berre publiserte etter eksplisitt godkjenning
+    for p in e.get("profiles", []):
+        if p.get("id") in pr_: p["status"] = "rejected"
+        elif p.get("id") in pa: p["status"] = "published"
 ra, rr = set(ap.get("relations", {}).get("approve", [])), set(ap.get("relations", {}).get("reject", []))
 for r in org["relations"]:
     if r["id"] in rr: r["status"] = "rejected"
@@ -54,6 +59,12 @@ save(P("data", "news.json"), news); save(P("data", "orgchart.json"), org)
 q = load(P("queue", "review.json"), None)
 if q:
     q["items_needing_summary"] = [x for x in q["items_needing_summary"] if any(i["id"] == x["id"] and i["status"] == "pending" for i in news["items"])]
+    names = {e["id"]: e["name"] for e in org["entities"]}
+    q["org_pending"] = [{k: e.get(k) for k in ("id", "name", "type", "org", "role", "industry", "description", "sources", "verification", "origin")} | {"org_name": names.get(e.get("org"))}
+                        for e in org["entities"] if e.get("status") == "pending"]
+    q["profiles_pending"] = [{"id": p.get("id"), "person": e["name"], "kind": p["kind"], "url": p["url"], "source": p["source"], "verification": p.get("verification")}
+                             for e in org["entities"] if e.get("status") == "published" or e.get("status") == "pending" for p in e.get("profiles", []) if p.get("status") == "pending"]
+    q["_org_how_to"] = "Godkjenn med queue/approved.json -> entities.approve [id] og profiles.approve [id] (avvis: .reject). Personar frå Brreg viser berre namn og rolle."
     save(P("queue", "review.json"), q)
 print(f"godkjenninger: {n_pub} saker publisert, {n_rej} avvist, {sum(e['status']=='published' for e in org['entities'])} entiteter og "
       f"{sum(r['status']=='published' for r in org['relations'])} relasjoner godkjent" + (f"; {len(missing)} godkjente URL-er mangler i news.json (kjør ./fetch.sh --add URL --days 60): {missing}" if missing else ""))

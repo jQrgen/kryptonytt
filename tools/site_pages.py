@@ -125,6 +125,7 @@ ICATS = [("bors", "Børsar og meklarar", "Børser og meglere", "Exchanges and br
          ("bank", "Bank og finans", "Bank og finans", "Banks and finance", "priv"),
          ("radgjeving", "Rådgjeving, juss og revisjon", "Rådgivning, juss og revisjon", "Consulting, legal and audit", "priv"),
          ("media", "Medium, foreiningar og miljø", "Medier, foreninger og miljøer", "Media and communities", "priv"),
+         ("internasjonal", "Internasjonale aktørar i Noreg", "Internasjonale aktører i Norge", "International players in Norway", "priv"),
          ("akademia", "Akademia", "Akademia", "Academia", "aka"),
          ("offentleg", "Offentleg sektor", "Offentlig sektor", "Public sector", "pub")]
 GROUP2CAT = {"Børser/meglere": "bors", "Utvinning/datasentre": "infra", "Betaling": "betaling", "Banker": "bank", "Investorer/fond": "bank",
@@ -168,6 +169,10 @@ def industry_map(ctx, root, home):
             out.append(f'<section class="icat {cls}" aria-label="{E(name)}"><h3>{E(name)}</h3><div class="tiles">{"".join(cats[k])}</div></section>')
         else:
             out.append(f'<section class="icat {cls} empty"><h3>{E(name)}</h3><p>{L("Ingen kjeldebelagde aktørar i kartet enno.", "Ingen kildebelagte aktører i kartet ennå.", "No sourced organisations in the map yet.")}</p></section>')
+    if any("kaupr.io/pages" in x.get("url", "") for e in ents for x in e.get("sources", [])):  # openheit: Kaupr er sponsor og kjelde
+        out.append('<p class="meta kaupr-note">' + L("Nokre aktørar er henta frå Kaupr sine Onchain Pages. Kaupr er sponsor av Kryptonytt og ei av kjeldene våre. Kvar slik aktør er sjekka mot selskapet si eiga nettside eller offentlege register (Brønnøysund, ESMA) før han kom med, og Kaupr er oppgitt som kjelde.",
+            "Noen aktører er hentet fra Kauprs Onchain Pages. Kaupr er sponsor av Kryptonytt og en av kildene våre. Hver slik aktør er sjekket mot selskapets egen nettside eller offentlige registre (Brønnøysund, ESMA) før den kom med, og Kaupr er oppgitt som kilde.",
+            "Some organisations come from Kaupr’s Onchain Pages. Kaupr sponsors Kryptonytt and is one of our sources. Each one was checked against the company’s own website or public registers (Brønnøysund, ESMA) before being included, and Kaupr is credited as a source.") + '</p>')
     return '<div class="imap">' + "".join(out) + "</div>"
 
 def build_org(ctx):
