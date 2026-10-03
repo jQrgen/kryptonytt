@@ -28,6 +28,7 @@ def prepare():
             if e.get(k): e[k] = re.sub(r"\bKI/HPC\b", "kunstig intelligens og HPC", re.sub(r"\bKI-", "kunstig intelligens-", e[k]))
     for e in ents:  # profilar: berre godkjende lenkjer med kjelde
         pr = [p for p in e.get("profiles", []) if p.get("url") and p.get("source") and p.get("status") == "published"]
+        for k in ("verification", "verification_nb", "verification_en", "origin"): e.pop(k, None)  # interne notat for redaktøren, ikkje publiserte
         if pr: e["profiles"] = [{k: p[k] for k in ("kind", "url", "source") if k in p} for p in pr]
         else: e.pop("profiles", None)
     logos = (load(P("data", "logos.json"), {}) or {}).get("logos", {})
@@ -187,6 +188,9 @@ def build_org(ctx):
 "Companies, organisations, authorities and people in public professional roles, as covered in the news we link to. Every entry and every connection links to its source. Click a card for details and links across the private and public sectors.")}</p>
 <p class="meta"><a href="#industrikart">{L("Industrikart: aktørane etter kategori ↓", "Industrikart: aktørene etter kategori ↓", "Industry map: organisations by category ↓")}</a>{rules}</p>
 {nbnote}
+<p class="meta kaupr-note">{L(f'Openheit: Kaupr er sponsor av Kryptonytt og ei av kjeldene våre. Aktørar henta frå Kaupr sine Onchain Pages er sjekka mot eiga nettside eller offentlege register, og Kaupr er oppgitt som kjelde. <a href="{home}om/#sponsor">Meir om dette</a>.',
+f'Åpenhet: Kaupr er sponsor av Kryptonytt og en av kildene våre. Aktører hentet fra Kauprs Onchain Pages er sjekket mot egen nettside eller offentlige registre, og Kaupr er oppgitt som kilde. <a href="{home}om/#sponsor">Mer om dette</a>.',
+f'Disclosure: Kaupr sponsors Kryptonytt and is one of our sources. Organisations taken from Kaupr’s Onchain Pages were checked against their own websites or public registers, and Kaupr is credited as a source. <a href="{home}om/#sponsor">More about this</a>.')}</p>
 {('<details class="notice" open lang="nb"><summary><b>' + L("Oversikt: slik heng norsk kryptoregulering og -bransje saman", "Oversikt: slik henger norsk kryptoregulering og -bransje sammen", "Overview: how Norwegian crypto regulation and the industry fit together") + '</b> (' + L("per", "per", "as of") + ' ' + E(org.get("updated") or "") + ')</summary>' + "".join(f"<p>{E(x)}</p>" for x in summ) + '</details>') if summ else ''}
 {('<details class="notice" lang="nb"><summary>' + L("Atterhald", "Forbehold", "Caveats") + '</summary><ul>' + "".join(f"<li>{E(x)}</li>" for x in org.get("caveats", [])) + '</ul></details>') if org.get("caveats") else ''}
 <div class="filters"><div class="seg" role="group" aria-label="{L("Vis sektor", "Vis sektor", "Show sector")}"><button type="button" data-v="begge" aria-pressed="true">{L("Begge", "Begge", "Both")}</button><button type="button" data-v="privat" aria-pressed="false">{ORG_T[S.lang]["Privat sektor"]}</button><button type="button" data-v="offentlig" aria-pressed="false">{ORG_T[S.lang]["Offentlig sektor"]}</button></div>

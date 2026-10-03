@@ -12,6 +12,7 @@ EOS_AVT = "https://lovdata.no/dokument/TRAKTAT/traktat/1992-05-02-1"
 UTGREIING = "https://lovdata.no/dokument/INS/forskrift/2016-02-19-184"
 INNST = "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2024-2025/inns-202425-254l/"
 SKATT = "https://www.skatteetaten.no/person/skatt/hjelp-til-riktig-skatt/aksjer-og-verdipapirer/om/virtuell-valuta/skatteregler---virtuell-valuta/"
+OKO_PDF = "https://img8.custompublish.com/getfile.php/5491970.2528.wnkamapwmzsupp/%C3%98kokrim-%C3%A5rsrapport2025.pdf?return=www.okokrim.no#page=32"
 OKO_AR = "https://okokrim.custompublish.com/aarsrapporter.616105.no.html"
 FT_REG = "https://www.finanstilsynet.no/en/finanstilsynets-registry/"
 
@@ -100,17 +101,17 @@ def build():
         "Finanstilsynet is the supervisory authority and supervises firms licensed under the crypto-assets regulation (section 2 of the Crypto-Assets Act). Among other things, the act has rules on orders (section 5), revocation of licences (section 12) and penalties (section 18). Licensed firms are listed in Finanstilsynet’s register."),
       f"{KK}: {src(LOV_MICA, 'kryptoeiendelsloven §§ 2, 5, 12, 18 (Lovdata)')} · {src(FT_REG, L('registeret til Finanstilsynet', 'Finanstilsynets register', 'Finanstilsynet’s register'))} · {org(home, 'finanstilsynet', 'Finanstilsynet ' + oc)}"),
      (L("Økokrim og politiet: handheving", "Økokrim og politiet: håndheving", "Økokrim and the police: enforcement"),
-      L("Økokrim tek imot rapportar om mistenkjelege transaksjonar etter hvitvaskingsloven § 26. Ifølgje årsrapporten for 2025 har Økokrim ei eiga kryptovalutagruppe. Kryptoeiendelsloven § 15 har reglar om bistand frå politiet til tilsynet.",
-        "Økokrim mottar rapporter om mistenkelige transaksjoner etter hvitvaskingsloven § 26. Ifølge årsrapporten for 2025 har Økokrim en egen kryptovalutagruppe. Kryptoeiendelsloven § 15 har regler om bistand fra politiet til tilsynet.",
-        "Økokrim receives suspicious transaction reports under section 26 of the Anti-Money Laundering Act. According to its 2025 annual report, Økokrim has a dedicated cryptocurrency group. Section 15 of the Crypto-Assets Act has rules on police assistance to the supervisor."),
-      f"{KK}: {src(LOV_HVIT, 'hvitvaskingsloven § 26 (Lovdata)')} · {src(OKO_AR, L('Økokrim, årsrapportar', 'Økokrim, årsrapporter', 'Økokrim, annual reports'))} · {src(LOV_MICA, 'kryptoeiendelsloven § 15 (Lovdata)')} · {org(home, 'okokrim', 'Økokrim ' + oc)}"),
+      L("Økokrim tek imot rapportar om mistenkjelege transaksjonar etter hvitvaskingsloven § 26. Ifølgje årsrapporten for 2025 (s. 32) har kryptovalutagruppa i Økokrim delteke i etterforskinga i fleire av Økokrims eigne saker og bistått politidistrikt og andre særorgan. Kryptoeiendelsloven § 15 har reglar om bistand frå politiet til tilsynet.",
+        "Økokrim mottar rapporter om mistenkelige transaksjoner etter hvitvaskingsloven § 26. Ifølge årsrapporten for 2025 (s. 32) har Økokrims kryptovalutagruppe deltatt i etterforskningen i flere av Økokrims egne saker og bistått politidistrikter og andre særorganer. Kryptoeiendelsloven § 15 har regler om bistand fra politiet til tilsynet.",
+        "Økokrim receives suspicious transaction reports under section 26 of the Anti-Money Laundering Act. According to its 2025 annual report (p. 32), Økokrim’s cryptocurrency group took part in investigating several of Økokrim’s own cases and assisted police districts and other specialist bodies. Section 15 of the Crypto-Assets Act has rules on police assistance to the supervisor."),
+      f"{KK}: {src(LOV_HVIT, 'hvitvaskingsloven § 26 (Lovdata)')} · {src(OKO_PDF, L('Økokrim, årsrapport 2025, s. 32 (PDF)', 'Økokrim, årsrapport 2025, s. 32 (PDF)', 'Økokrim, annual report 2025, p. 32 (PDF, Norwegian)'))} · {src(LOV_MICA, 'kryptoeiendelsloven § 15 (Lovdata)')} · {org(home, 'okokrim', 'Økokrim ' + oc)}"),
      (L("Skatteetaten: skatt", "Skatteetaten: skatt", "Tax Administration: tax"),
       L("Gevinst, inntekt og formue i kryptoeigedelar skal oppgjevast i skattemeldinga. Inntekt blir skattlagd som kapitalinntekt med 22 prosent.", "Gevinst, inntekt og formue i kryptoeiendeler skal oppgis i skattemeldingen. Inntekt skattlegges som kapitalinntekt med 22 prosent.", "Gains, income and wealth in crypto-assets must be reported in the tax return. Income is taxed as capital income at 22 per cent."),
       f"{K}: {src(SKATT, 'Skatteetaten: skatteregler for virtuelle eiendeler')} · {org(home, 'skatteetaten', 'Skatteetaten ' + oc)}"),
      (L("Noregs Bank, der det er relevant", "Norges Bank, der det er relevant", "Norges Bank, where relevant"),
-      L("Noregs Bank skal mellom anna fremje stabilitet i det finansielle systemet og eit effektivt og sikkert betalingssystem (sentralbanklova § 1-2). Banken fører ikkje tilsyn etter kryptoeiendelsloven.",
-        "Norges Bank skal blant annet fremme stabilitet i det finansielle systemet og et effektivt og sikkert betalingssystem (sentralbankloven § 1-2). Banken fører ikke tilsyn etter kryptoeiendelsloven.",
-        "Norges Bank’s purposes include promoting financial stability and an efficient and secure payment system (section 1-2 of the Central Bank Act). It is not the supervisor under the Crypto-Assets Act."),
+      L("Noregs Bank skal mellom anna fremje stabilitet i det finansielle systemet og eit effektivt og sikkert betalingssystem (sentralbanklova § 1-2). Det er Finanstilsynet, ikkje Noregs Bank, som er tilsynsmyndigheit etter kryptoeiendelsloven (§ 2).",
+        "Norges Bank skal blant annet fremme stabilitet i det finansielle systemet og et effektivt og sikkert betalingssystem (sentralbankloven § 1-2). Det er Finanstilsynet, ikke Norges Bank, som er tilsynsmyndighet etter kryptoeiendelsloven (§ 2).",
+        "Norges Bank’s purposes include promoting financial stability and an efficient and secure payment system (section 1-2 of the Central Bank Act). It is Finanstilsynet, not Norges Bank, that is the supervisory authority under the Crypto-Assets Act (section 2)."),
       f"{KK}: {src(LOV_SENTRAL, 'sentralbankloven § 1-2 (Lovdata)')} · {src(LOV_MICA, 'kryptoeiendelsloven § 2 (Lovdata)')} · {org(home, 'norges-bank', 'Norges Bank ' + oc)}"),
     ]
     lis = "".join(f'<li><b>{E(t)}</b><br>{E(x)}<div class="src">{s}</div></li>' for t, x, s in steps)

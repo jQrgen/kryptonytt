@@ -19,9 +19,9 @@ Førehandsvising: `KRYPTONYTT_PREVIEW_REGLAR=1 ./build.sh`.
 | 12 | Kryptoeigedelar er formuesobjekt; inntekt skattepliktig, 22 % kapitalinntekt; skal i skattemeldinga | https://www.skatteetaten.no/person/skatt/hjelp-til-riktig-skatt/aksjer-og-verdipapirer/om/virtuell-valuta/skatteregler---virtuell-valuta/ | Stadfesta |
 | 13 | Finanstilsynet er tilsynsmyndigheit og fører tilsyn med føretak med løyve (§ 2); lova har reglar om pålegg (§ 5), tilbakekall av løyve (§ 12), straff (§ 18), bistand frå politiet (§ 15) | Lovdata kryptoeiendelsloven (paragrafoverskrifter og § 2) | Stadfesta (§§ 5/12/15/18: overskrifter) |
 | 14 | Føretak med løyve står i registeret til Finanstilsynet | https://www.finanstilsynet.no/en/finanstilsynets-registry/ | Stadfesta (registeret finst; CASP-oppføringar sjekka 03.10.2026 i researchen til organisasjonskartet) |
-| 15 | Økokrim har ei eiga kryptovalutagruppe (årsrapport 2025) | Økokrim årsrapport 2025 (PDF, lenkja frå https://okokrim.custompublish.com/aarsrapporter.616105.no.html) | Stadfesta i tidlegare research (organisasjonskartet); ikkje lese på nytt i dag |
+| 15 | Kryptovalutagruppa i Økokrim deltok i 2025 i etterforsking i eigne saker og bistod distrikt og særorgan | Økokrim årsrapport 2025, s. 32 (PDF): «Økokrims kryptovalutagruppe har i 2025 deltatt i etterforskingen i flere av Økokrims egne saker og bistått distrikter og andre særorgan …» | Stadfesta 03.10.2026 kl. 23:40 (lese i PDF-en); teksten følgjer rapporten direkte |
 | 16 | Noregs Bank skal fremje stabilitet og eit effektivt og sikkert betalingssystem (§ 1-2) | https://lovdata.no/dokument/NL/lov/2019-06-21-31 § 1-2 | Stadfesta |
-| 17 | Noregs Bank fører ikkje tilsyn etter kryptoeiendelsloven | kryptoeiendelsloven § 2 (Finanstilsynet er tilsynsmyndigheit) | Stadfesta (slutning frå § 2) |
+| 17 | Det er Finanstilsynet, ikkje Noregs Bank, som er tilsynsmyndigheit etter kryptoeiendelsloven | kryptoeiendelsloven § 2 (Lovdata) | Stadfesta; omskriven etter redaktøren for å følgje § 2 direkte |
 
 ## Teke ut / mjuka opp
 - **Verdipapirsentralloven** (LOV-2019-03-15-6): teken ut av flytskissa. Lovteksten nemner verken kryptoeigedelar, DLT eller forordning (EU) 2022/858, så vi har inga kjelde for at ho er relevant for krypto. Open spørsmål 1.
