@@ -10,6 +10,8 @@
 const social = require("./social.js");
 const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 const LABELS = {
+  nb: { aria: "Del artikkelen", share: "Del:", email: "E-post", copy: "Kopier lenke", copied: "Lenken er kopiert", body: "Kanskje interessant for deg:" },
+  nn: { aria: "Del artikkelen", share: "Del:", email: "E-post", copy: "Kopier lenkja", copied: "Lenkja er kopiert", body: "Kanskje interessant for deg:" },
   no: { aria: "Del artikkelen", share: "Del:", email: "E-post", copy: "Kopier lenke", copied: "Lenken er kopiert", body: "Kanskje interessant for deg:" },
   en: { aria: "Share this article", share: "Share:", email: "Email", copy: "Copy link", copied: "Link copied", body: "You might find this interesting:" },
 };

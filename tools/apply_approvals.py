@@ -3,7 +3,8 @@
 Kjøres automatisk av publish.sh før bygging. Bare det som står som godkjent her blir publisert.
 
 queue/approved.json:
-  items:    [{"url": ..., "summary": "1–2 egne setninger", "topics": [valgfritt], "title": valgfri rettet tittel,
+  items:    [{"url": ..., "summary": "1–2 egne setninger (bokmål)", "summary_nn": "nynorsk", "summary_en": "engelsk",
+              "title_nn"/"title_en": valgfrie egne titler, "topics": [valgfritt], "title": valgfri rettet tittel,
               "approved_by": "Kryptonytt redaktør", "approved_at": "YYYY-MM-DD"}]
   rejected: [{"url": ... | "title_contains": ..., "reason": ...}]   # holdes ute, også når feeden finner dem igjen
   entities: {"approve": [entity-id, ...], "reject": [entity-id, ...]}
@@ -30,8 +31,9 @@ for a in ap.get("items", []):
     s = (a.get("summary") or "").strip()
     if not s: print(f"advarsel: mangler summary for {a['url']}", file=sys.stderr); continue
     it.update(status="published", summary=s, approved_by=a.get("approved_by", "Kryptonytt redaktør"), approved_at=a.get("approved_at"))
-    for k in ("topics", "title", "source_name", "links"):
+    for k in ("topics", "title", "source_name", "links", "summary_nn", "summary_en", "title_nn", "title_en"):
         if a.get(k): it[k] = a[k]
+        elif k.endswith(("_nn", "_en")): it.pop(k, None)  # variant fjerna av redaktøren
     n_pub += 1
 for r in ap.get("rejected", []):
     for it in news["items"]:

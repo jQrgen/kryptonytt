@@ -11,7 +11,7 @@ const PROFILES = [
   { key: "gitlab", label: "GitLab", href: "https://gitlab.com/jQrgen", source: "personal site jqrgen.github.io" },
   { key: "medium", label: "Medium", href: "https://jqrgen.medium.com/", source: "presentations home page (his articles are published under jqrgen.medium.com)" },
 ];
-const LABELS = { no: { aria: "Jørgen på nett", follow: "Følg meg:" }, en: { aria: "Jørgen online", follow: "Follow me:" } };
+const LABELS = { no: { aria: "Jørgen på nett", follow: "Følg meg:" }, nb: { aria: "Jørgen på nett", follow: "Følg meg:" }, nn: { aria: "Jørgen på nettet", follow: "Følg meg:" }, en: { aria: "Jørgen online", follow: "Follow me:" } };
 function links({ lang = "en", only } = {}) {
   const L = LABELS[lang] || LABELS.en;
   const list = only ? PROFILES.filter((p) => only.includes(p.key)) : PROFILES;

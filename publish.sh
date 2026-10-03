@@ -8,7 +8,9 @@ cd "$(dirname "$0")"
 DRY=${1:-}
 REPO=https://github.com/jQrgen/kryptonytt.git
 URL=https://jqrgen.github.io/kryptonytt/
+.venv/bin/python tools/check_i18n.py || true   # åtvarar om nynorsk/engelsk manglar (bokmål blir då vist)
 .venv/bin/python build.py
+.venv/bin/python tools/i18n_check.py || { echo "språktest feila – publiserer ikkje"; exit 1; }
 .venv/bin/python tools/privacy_gate.py site
 [ "$DRY" = "--yes" ] || { echo "Bygget og sjekket lokalt. Ikke publisert (kjør ./publish.sh --yes for å publisere)."; exit 0; }
 git remote get-url origin >/dev/null 2>&1 || git remote add origin "$REPO"

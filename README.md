@@ -47,3 +47,13 @@ Oppsett: `python3 -m venv .venv && .venv/bin/pip install feedparser requests bea
 - Ingenting på nettstedet er investeringsråd.
 
 Rettelser og fjerning: opprett en sak på https://github.com/jQrgen/kryptonytt/issues.
+
+
+## Språk (nynorsk, bokmål, engelsk)
+
+- Nynorsk er hovudspråket og ligg på standardadressene. Bokmål ligg under `/bm/`, engelsk under `/en/`. `build.py` byggjer alle tre (sidetekstar i `tools/site_pages.py` og `tools/site_pages2.py`, skrivne som `L(nynorsk, bokmål, engelsk)`).
+- Språkvalet i toppen set førstepartsinformasjonskapselen `kn_lang` (path=/kryptonytt/, SameSite=Lax, 1 år). Han blir berre brukt når nokon kjem utanfrå til ei nynorsk-side; direkte lenkjer til `/bm/` og `/en/` blir aldri omdirigerte, og eit klikk på eit språk vinn alltid. Test: `.venv/bin/python tools/i18n_check.py` (køyrer òg i `publish.sh`), skjermbilete med `--shots`.
+- **Redaktøren** skriv kvar godkjende sak i tre variantar i `queue/approved.json`: `summary` (bokmål), `summary_nn`, `summary_en`; eigne titlar `title`/`title_nn`/`title_en` berre når vi sjølve har omsett tittelen; lenkjetekstar `label`/`label_nn`/`label_en`; arrangementsmerknader `events.notes`/`notes_nn`/`notes_en`; endringslogg `text`/`text_nn`/`text_en`. Eksterne titlar og sitat står som i kjelda.
+- **Nattrutinen** (`fetch.sh`) og **morgonrutinen** (`publish.sh`) køyrer `tools/check_i18n.py`, som legg det som manglar i `queue/review.json` -> `translations_needed`. Manglar ein variant, viser sida bokmål med `lang="nb"`.
+- **Researcheren** kan levere skildringar på bokmål som før; organisasjonskart- og Akademia-skildringar blir viste på bokmål (merkte `lang="nb"`) på nynorsk- og engelsksidene til vi har omsette felt.
+- Skriv «kunstig intelligens» (engelsk «artificial intelligence»), aldri AI eller KI.

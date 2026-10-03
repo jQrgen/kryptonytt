@@ -1,26 +1,54 @@
 {
- "_doc": "Endringslogg for nettstedet (ikke daglige nyheter). Nyeste først. Felt: date (YYYY-MM-DD), text. «feature» gjør at oppføringen bare vises når funksjonen er slått på; dato settes da til dagen den gikk live (queue/approved.json -> <feature>.live_date).",
+ "_doc": "Endringslogg for nettstaden (ikkje daglege nyheiter). Nyaste først. Felt: date (YYYY-MM-DD), text (bokmål), text_nn (nynorsk), text_en (engelsk). «feature» gjer at oppføringa berre blir vist når funksjonen er slått på; datoen blir då dagen han gjekk live (queue/approved.json -> <feature>.live_date).",
  "entries": [
+  {
+   "feature": "reglar",
+   "text": "Ny side: «Slik blir reglene til», en animert flytskisse over hvordan kryptoregler for Norge blir laget og håndhevet, med kilde til hvert ledd.",
+   "text_nn": "Ny side: «Slik blir reglane til», ei animert flytskisse over korleis kryptoreglar for Noreg blir laga og handheva, med kjelde til kvart ledd.",
+   "text_en": "New page: “How the rules are made”, an animated flowchart of how crypto rules for Norway are made and enforced, with a source for every step."
+  },
+  {
+   "date": "2026-10-03",
+   "text": "Nytt industrikart under «Hvem er hvem»: aktørene sortert etter kategori, med logo og lenke til oppføringen i organisasjonskartet.",
+   "text_nn": "Nytt industrikart under «Kven er kven»: aktørane sorterte etter kategori, med logo og lenkje til oppføringa i organisasjonskartet.",
+   "text_en": "New industry map under “Who’s who”: organisations grouped by category, with logos and links to their org chart entries."
+  },
   {
    "feature": "akademia",
    "date": null,
-   "text": "Ny side: Akademia, med emner, studentinitiativer, publikasjoner og forskningsmiljøer om blokkjede og krypto ved norske universiteter og høyskoler."
+   "text": "Ny side: Akademia, med emner, studentinitiativer, publikasjoner og forskningsmiljøer om blokkjede og krypto ved norske universiteter og høyskoler.",
+   "text_nn": "Ny side: Akademia, med emne, studentinitiativ, publikasjonar og forskingsmiljø om blokkjede og krypto ved norske universitet og høgskular.",
+   "text_en": "New page: Academia, with courses, student initiatives, publications and research groups on blockchain and crypto at Norwegian universities and university colleges."
   },
   {
    "date": "2026-10-03",
-   "text": "Kalenderen har fått «Tidligere arrangementer»: avsluttede arrangementer flyttes dit automatisk og blir aldri slettet."
+   "text": "Nettstedet er nå på nynorsk som hovedspråk, med bokmål og engelsk som valg øverst på hver side. Språkvalget lagres i en informasjonskapsel.",
+   "text_nn": "Nettstaden er no på nynorsk som hovudspråk, med bokmål og engelsk som val øvst på kvar side. Språkvalet blir lagra i ein informasjonskapsel.",
+   "text_en": "The site is now in Nynorsk as its main language, with Bokmål and English as options at the top of every page. Your language choice is stored in a cookie."
   },
   {
    "date": "2026-10-03",
-   "text": "Ny side: endringslogg over endringer på nettstedet."
+   "text": "Kalenderen har fått «Tidligere arrangementer»: avsluttede arrangementer flyttes dit automatisk og blir aldri slettet.",
+   "text_nn": "Kalenderen har fått «Tidlegare arrangement»: avslutta arrangement blir flytte dit automatisk og blir aldri sletta.",
+   "text_en": "The calendar now has a “Past events” section: finished events move there automatically and are never deleted."
   },
   {
    "date": "2026-10-03",
-   "text": "Merknad om at nyheter oppdateres daglig av kunstig intelligens, over nyhetslisten og nederst på alle sider."
+   "text": "Ny side: endringslogg over endringer på nettstedet.",
+   "text_nn": "Ny side: endringslogg over endringar på nettstaden.",
+   "text_en": "New page: a changelog of changes to the site."
   },
   {
    "date": "2026-10-03",
-   "text": "Lansering: forside med nyheter, kalender, organisasjonskart («Hvem er hvem»), kilder, om-side og skjermmodus for kontorskjerm."
+   "text": "Merknad om at nyheter oppdateres daglig av kunstig intelligens, over nyhetslisten og nederst på alle sider.",
+   "text_nn": "Merknad om at nyheitene blir oppdaterte dagleg av kunstig intelligens, over nyheitslista og nedst på alle sider.",
+   "text_en": "A notice that the news is updated daily by artificial intelligence, above the news list and at the bottom of every page."
+  },
+  {
+   "date": "2026-10-03",
+   "text": "Lansering: forside med nyheter, kalender, organisasjonskart («Hvem er hvem»), kilder, om-side og skjermmodus for kontorskjerm.",
+   "text_nn": "Lansering: framside med nyheiter, kalender, organisasjonskart («Kven er kven»), kjelder, om-side og skjermmodus for kontorskjerm.",
+   "text_en": "Launch: front page with news, calendar, org chart (“Who’s who”), sources, about page and a screen mode for office displays."
   }
  ]
 }
