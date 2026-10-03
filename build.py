@@ -250,6 +250,17 @@ def events_for_site():
         end = dt.datetime.fromisoformat(e.get("end") or e["start"])
         e["past"] = end < now
         out.append({k: e.get(k) for k in ("id", "title", "start", "end", "place", "city", "online", "organiser", "url", "source", "paid", "sponsored", "note", "past")})
+    # Arkiv (sporet i git): alle arrangementer som noen gang er godkjent. Regel fra jQrgen: avsluttede arrangementer slettes ALDRI,
+    # de flyttes til «Tidligere arrangementer». Henting og bygging kan bare legge til eller oppdatere, aldri fjerne.
+    arkf = P("arkiv", "arrangementer.json"); ark = load(arkf, {"events": []}); by = {e["id"]: e for e in ark["events"]}
+    for e in out: by[e["id"]] = {k: v for k, v in e.items() if k != "past"}
+    ark["events"] = sorted(by.values(), key=lambda e: e["start"])
+    os.makedirs(os.path.dirname(arkf), exist_ok=True)
+    json.dump(ark, open(arkf, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    out = []
+    for e in ark["events"]:
+        if e["id"] in ap.get("reject", []): continue  # skjules hvis redaktøren trekker den tilbake, men ligger fortsatt i arkivet
+        e = dict(e); e["past"] = dt.datetime.fromisoformat(e.get("end") or e["start"]) < now; out.append(e)
     return sorted(out, key=lambda e: e["start"]), now
 
 def build_changelog():
@@ -315,7 +326,7 @@ def build_calendar(cfg, status):
     import calendar, datetime as dt
     evs, now = events_for_site()
     json.dump({"events": [e for e in evs if not e["past"]]}, open(os.path.join(SITE, "data", "events.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
-    up = [e for e in evs if not e["past"]]; past = [e for e in evs if e["past"]][-10:][::-1]
+    up = [e for e in evs if not e["past"]]; past = [e for e in evs if e["past"]][::-1]  # alle tidligere, nyeste først
     def when(e):
         a = dt.datetime.fromisoformat(e["start"]); b = dt.datetime.fromisoformat(e["end"]) if e.get("end") else None
         t = f'{UKEDAG[a.weekday()]} {a.day}. {MND[a.month-1]} {a.year} kl. {a:%H.%M}'
@@ -350,7 +361,7 @@ def build_calendar(cfg, status):
 <p class="lead">Kommende arrangementer, møter og foredrag. Vi tar bare med arrangementer der arrangørens egen side eller en offentlig oppføring viser dato, sted og arrangør, og som faktisk handler om krypto, bitcoin eller blokkjede. Betalte og sponsede arrangementer er merket. Sjekk alltid detaljene hos arrangøren.</p>
 <div class="calgrid">{''.join(grids)}</div>
 <h2>Kommende</h2><ol class="news">{''.join(li(e) for e in up) or '<li class="empty">Ingen kommende arrangementer registrert.</li>'}</ol>
-{('<h2>Tidligere</h2><ol class="news past">' + ''.join(li(e) for e in past) + '</ol>') if past else ''}
+<h2 id="tidligere">Tidligere arrangementer</h2><p class="meta">Arrangementer flyttes hit automatisk når de er over (norsk tid). Vi sletter dem ikke.</p><ol class="news past">{''.join(li(e) for e in past) or '<li class="empty">Ingen tidligere arrangementer ennå.</li>'}</ol>
 <h2>Hvor vi finner arrangementer</h2><ul class="prose">{esrc}</ul>
 <p class="meta">Arrangerer du noe om krypto i Norge? Send lenke til arrangørsiden som en sak på <a href="https://github.com/jQrgen/kryptonytt/issues" rel="noopener">GitHub</a>.</p>"""
     page("kalender", "Kalender – krypto, bitcoin og blokkjede i Norge", "kalender", body, "Kommende arrangementer om krypto, bitcoin og blokkjede i Norge, med dato, sted og arrangør.")

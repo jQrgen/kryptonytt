@@ -1,9 +1,26 @@
 {
  "_doc": "Endringslogg for nettstedet (ikke daglige nyheter). Nyeste først. Felt: date (YYYY-MM-DD), text. «feature» gjør at oppføringen bare vises når funksjonen er slått på; dato settes da til dagen den gikk live (queue/approved.json -> <feature>.live_date).",
  "entries": [
-  {"feature": "akademia", "date": null, "text": "Ny side: Akademia, med emner, studentinitiativer, publikasjoner og forskningsmiljøer om blokkjede og krypto ved norske universiteter og høyskoler."},
-  {"date": "2026-10-03", "text": "Ny side: endringslogg over endringer på nettstedet."},
-  {"date": "2026-10-03", "text": "Merknad om at nyheter oppdateres daglig av kunstig intelligens, over nyhetslisten og nederst på alle sider."},
-  {"date": "2026-10-03", "text": "Lansering: forside med nyheter, kalender, organisasjonskart («Hvem er hvem»), kilder, om-side og skjermmodus for kontorskjerm."}
+  {
+   "feature": "akademia",
+   "date": null,
+   "text": "Ny side: Akademia, med emner, studentinitiativer, publikasjoner og forskningsmiljøer om blokkjede og krypto ved norske universiteter og høyskoler."
+  },
+  {
+   "date": "2026-10-03",
+   "text": "Kalenderen har fått «Tidligere arrangementer»: avsluttede arrangementer flyttes dit automatisk og blir aldri slettet."
+  },
+  {
+   "date": "2026-10-03",
+   "text": "Ny side: endringslogg over endringer på nettstedet."
+  },
+  {
+   "date": "2026-10-03",
+   "text": "Merknad om at nyheter oppdateres daglig av kunstig intelligens, over nyhetslisten og nederst på alle sider."
+  },
+  {
+   "date": "2026-10-03",
+   "text": "Lansering: forside med nyheter, kalender, organisasjonskart («Hvem er hvem»), kilder, om-side og skjermmodus for kontorskjerm."
+  }
  ]
 }
