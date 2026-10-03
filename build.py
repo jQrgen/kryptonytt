@@ -8,7 +8,7 @@ import json, os, re, shutil, subprocess, html, datetime as dt
 from zoneinfo import ZoneInfo
 ROOT = os.path.dirname(os.path.abspath(__file__)); P = lambda *a: os.path.join(ROOT, *a)
 BASE = "https://jqrgen.github.io/kryptonytt/"
-SITE = P("site")
+SITE = os.environ.get("KN_SITE_DIR") or P("site")   # KN_SITE_DIR: scratch builds (tests), never published
 OSLO = ZoneInfo("Europe/Oslo")
 LANGS = {"nn": "", "nb": "bm/", "en": "en/"}          # språk -> mappe
 LOCALE = {"nn": "nn_NO", "nb": "nb_NO", "en": "en_GB"}
@@ -80,6 +80,7 @@ def page(slug, title, nav, body, desc, extra_script=""):
             + [("kilder", L("Kjelder", "Kilder", "Sources")), ("om", L("Om", "Om", "About"))])
     nav_html = "".join(f'<a href="{home}{n + "/" if n else ""}"{" aria-current=page" if n == nav else ""}>{E(t)}</a>' for n, t in navs)
     alts, ljs = lang_head(slug, root)
+    import newsletter_site as NL
     footer = L(
         f'Kryptonytt Norge blir driven av Jørgen S. Notland (jQrgen), Oslo, med hjelp av kunstig intelligens. Ansvarleg redaktør: «Kryptonytt redaktør» (ein bot basert på kunstig intelligens), med jQrgen som ansvarleg person. Ingen investeringsråd. Inga sporing; éin informasjonskapsel hugsar berre språkvalet ditt. <a href="{home}om/">Om, rettingar og fjerning</a> · <a href="{home}endringer/">Endringslogg</a>.',
         f'Kryptonytt Norge drives av Jørgen S. Notland (jQrgen), Oslo, med hjelp av kunstig intelligens. Ansvarlig redaktør: «Kryptonytt redaktør» (en bot basert på kunstig intelligens), med jQrgen som ansvarlig person. Ingen investeringsråd. Ingen sporing; én informasjonskapsel husker bare språkvalget ditt. <a href="{home}om/">Om, rettelser og fjerning</a> · <a href="{home}endringer/">Endringslogg</a>.',
@@ -97,8 +98,8 @@ def page(slug, title, nav, body, desc, extra_script=""):
 {body}
 {s['top']}
 </main>
-<footer><div class="wrap">{footer}<p class="morgen">{E(MORGEN())}</p></div></footer>
-{s['script']}{extra_script}
+<footer><div class="wrap">{NL.footer(home, slug)}{footer}<p class="morgen">{E(MORGEN())}</p></div></footer>
+{s['script']}{extra_script}{NL.script()}
 </body></html>"""
     d = out_dir(slug); os.makedirs(d, exist_ok=True)
     open(os.path.join(d, "index.html"), "w", encoding="utf-8").write(doc)
@@ -113,6 +114,7 @@ def build():
         if REGEL_ON:
             import rules_page; rules_page.build()
         SP.build_changelog(); SP.build_calendar(ctx); SP.build_about(); SP.build_screen()
+        import newsletter_site; newsletter_site.build_newsletter()
     S.lang = "nn"
     missing = [i["id"] for i in ctx["items"] if not (i.get("summary_nn") and i.get("summary_en"))]
     print(f"build: {len(ctx['items'])} saker, {len(ctx['ents'])} entitetar ({sum(e['type']=='person' for e in ctx['ents'])} personar), {len(ctx['rels'])} relasjonar, språk: {', '.join(LANGS)} -> {SITE}")

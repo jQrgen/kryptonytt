@@ -64,3 +64,12 @@ Rettelser og fjerning: opprett en sak på https://github.com/jQrgen/kryptonytt/i
 `queue/approved.json` → `entities.approve` / `profiles.approve` (avvis med `.reject`), og lister alt som venter i `queue/review.json` → `org_pending` / `profiles_pending`.
 Kategorien «Internasjonale aktørar i Noreg» (`industry: "internasjonal"`) er for globale aktører med verifiserbar norsk aktivitet.
 Kildesjekken for Kaupr-aktørene står i `research/kaupr-kildesjekk.md`. Kaupr er sponsor og kilde; industrikartet viser en opplysningsmerknad når en publisert aktør har Kaupr som kilde.
+
+## Nyheitsbrev (Substack + e-post) – førebudd, AV
+`newsletter/substack-setup.md` (namn, underdomene, tekstar på nynorsk og bokmål, profilbilete i `newsletter/assets/`,
+velkomst-e-post, mal for vekesamandrag, Kaupr-opplysning, sjekkliste for jQrgen). `newsletter/digest.py` lagar
+vekesamandraget berre frå publiserte saker. Påmeldingsskjemaet (botnen av kvar side + `/nyhetsbrev/`, nn/nb/en, med
+personvernmerknad) ligg i `tools/newsletter_site.py` og er av til `newsletter/config.json` har `enabled: true`; det sender til
+tipworker i Nordic Crypto-repoet (`/api/subscribe`, `site=kryptonytt`, dobbel stadfesting). Ingenting blir sendt, og det finst
+ingen Substack-konto før jQrgen opprettar han.
+

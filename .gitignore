@@ -22,3 +22,6 @@ tools/seed_orgchart.py
 research/
 archive/*.db
 archive/*.db-*
+
+# generated newsletter digests (regenerate with newsletter/digest.py)
+newsletter/out/

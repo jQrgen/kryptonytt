@@ -1,0 +1,6 @@
+{
+ "_note": "Påmelding til nyheitsbrevet på nettstaden. AV til tipworker (Nordic Crypto-repoet, med /api/subscribe) er deployert OG jQrgen har godkjent. Slå på: enabled = true og endpoint = Worker-adressa (https://….workers.dev). Testbygg: KRYPTONYTT_NEWSLETTER=1 NEWSLETTER_ENDPOINT=http://127.0.0.1:8789. substack_url: blir vist som alternativ når Substack-publikasjonen finst.",
+ "enabled": false,
+ "endpoint": null,
+ "substack_url": null
+}
