@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="nb"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kryptonytt Norge – norske nyheter om bitcoin, blokkjede og krypto</title>
+<meta name="description" content="Norske nyheter om bitcoin, blokkjede og kryptovaluta samlet på ett sted, med kilder og et organisasjonskart over hvem er hvem i norsk krypto."><link rel="canonical" href="https://jqrgen.github.io/kryptonytt/bm/"><link rel="alternate" hreflang="nn" href="https://jqrgen.github.io/kryptonytt/"><link rel="alternate" hreflang="nb" href="https://jqrgen.github.io/kryptonytt/bm/"><link rel="alternate" hreflang="en" href="https://jqrgen.github.io/kryptonytt/en/"><link rel="alternate" hreflang="x-default" href="https://jqrgen.github.io/kryptonytt/">
+<meta property="og:title" content="Kryptonytt Norge – norske nyheter om bitcoin, blokkjede og krypto"><meta property="og:description" content="Norske nyheter om bitcoin, blokkjede og kryptovaluta samlet på ett sted, med kilder og et organisasjonskart over hvem er hvem i norsk krypto."><meta property="og:url" content="https://jqrgen.github.io/kryptonytt/bm/"><meta property="og:type" content="website"><meta property="og:locale" content="nb_NO">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%23b45309'/%3E%3Ctext x='8' y='12.5' font-size='12' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='bold'%3EK%3C/text%3E%3C/svg%3E"><script>(function(){var P="nb",A={"nn": "../", "nb": "../bm/", "en": "../en/"},R;try{R=new URL("../",location.href).pathname}catch(x){R='/'}function set(l){document.cookie='kn_lang='+l+'; path='+R+'; max-age=31536000; SameSite=Lax'+(location.protocol==='https:'?'; Secure':'')}document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[data-setlang]');if(a)set(a.getAttribute('data-setlang'))},true);if(P!=='nn'||/[?&]lang=nn/.test(location.search))return;var m=document.cookie.match(/(?:^|; )kn_lang=(nb|en)(?:;|$)/);if(!m)return;var r=document.referrer;try{if(r&&new URL(r).origin===location.origin)return}catch(x){}location.replace(A[m[1]]+location.hash)})();</script>
+<style>
+:root{--ink:#111;--muted:#4B5563;--line:#d1d5db;--paper:#fff;--band:#111;--band-ink:#fff;--accent:#b45309;--soft:#f6f6f4;--pub:#1d4ed8;--priv:#047857}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--paper)}
+a{color:inherit}a:hover{text-decoration-thickness:2px}
+.wrap{max-width:1100px;margin:0 auto;padding:0 16px}
+header.top{border-bottom:3px solid var(--ink)}
+header.top .wrap{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 22px;padding-top:14px;padding-bottom:10px}
+.brand{font-weight:800;font-size:22px;letter-spacing:-.01em;text-decoration:none}.brand span{color:var(--accent)}
+nav.main{display:flex;flex-wrap:wrap;gap:4px 16px;font-size:15px}
+nav.main a{text-decoration:none;padding:2px 0;border-bottom:2px solid transparent}nav.main a[aria-current]{border-color:var(--accent);font-weight:600}
+h1{font-size:28px;line-height:1.2;margin:22px 0 4px}h2{font-size:20px;margin:28px 0 8px}
+.lead{color:var(--muted);margin:4px 0 10px;max-width:70ch}
+.filters{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;margin:14px 0;padding:10px 12px;background:var(--soft);border:1px solid var(--line)}
+.filters label{font-size:14px;color:var(--muted)}
+select,input[type=search]{font:inherit;font-size:15px;padding:5px 8px;border:1px solid var(--ink);background:#fff;border-radius:0;max-width:100%}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{font:inherit;font-size:13.5px;padding:3px 10px;border:1px solid var(--ink);background:#fff;cursor:pointer}
+.chip[aria-pressed=true]{background:var(--ink);color:#fff}
+ol.news{list-style:none;margin:0;padding:0}
+ol.news li{padding:14px 0;border-bottom:1px solid var(--line)}
+ol.news h3{font-size:18px;line-height:1.3;margin:0 0 4px}ol.news h3 a{text-decoration:none}ol.news h3 a:hover{text-decoration:underline}
+.meta{font-size:13.5px;color:var(--muted)}.meta b{color:var(--ink);font-weight:600}
+.tag{display:inline-block;font-size:12px;padding:0 6px;border:1px solid var(--line);margin-left:4px;color:var(--muted)}
+.sum{margin:6px 0 0;max-width:75ch}
+.pw{font-size:12px;color:var(--accent)}
+.morgen{font-size:13px;color:var(--muted);margin:6px 0}
+.calgrid{display:none}@media(min-width:760px){.calgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:16px;margin:16px 0}}
+table.cal{border-collapse:collapse;width:100%;table-layout:fixed;font-size:13px}table.cal caption{text-align:left;font-weight:600;padding:4px 0}
+table.cal th{font-weight:500;color:var(--muted);padding:2px}table.cal td{border:1px solid var(--line);vertical-align:top;height:58px;padding:2px 4px;overflow:hidden}
+table.cal td.out{opacity:.35}table.cal td.today .d{background:var(--accent);color:#fff;padding:0 4px}table.cal td.has{background:color-mix(in srgb,var(--accent) 8%,transparent)}
+table.cal td a{display:block;font-size:12px;line-height:1.2;margin-top:2px}ol.past{opacity:.7}
+.empty{padding:20px;color:var(--muted)}
+footer{margin-top:40px;border-top:1px solid var(--line);padding:18px 0 30px;font-size:13.5px;color:var(--muted)}
+.notice{border-left:4px solid var(--accent);background:var(--soft);padding:8px 12px;font-size:14px;margin:12px 0}
+/* org chart */
+.seg{display:inline-flex;border:1px solid var(--ink)}.seg button{font:inherit;font-size:14px;padding:5px 12px;border:0;background:#fff;cursor:pointer}
+.seg button[aria-pressed=true]{background:var(--ink);color:#fff}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:12px}
+.cols.only-privat{grid-template-columns:1fr}.cols.only-offentlig{grid-template-columns:1fr}
+.cols.only-privat .col-offentlig,.cols.only-offentlig .col-privat{display:none}
+@media (max-width:760px){.cols{grid-template-columns:1fr}}
+.col h2{margin:0 0 8px;padding:6px 10px;color:#fff;font-size:17px}
+.col-privat h2{background:var(--priv)}.col-offentlig h2{background:var(--pub)}
+.grp{margin:0 0 14px}.grp h3{font-size:13px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin:10px 0 6px}
+.card{border:1px solid var(--line);background:#fff;padding:8px 10px;margin:0 0 8px;cursor:pointer;text-align:left;width:100%;font:inherit;display:block}
+.card:hover,.card:focus-visible{border-color:var(--ink);outline:none}
+.card.hl{border-color:var(--accent);box-shadow:0 0 0 2px var(--accent)}.card.dim{opacity:.35}
+.card .nm{font-weight:700}.card .ds{font-size:13.5px;color:var(--muted)}
+.people{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
+.person{display:flex;align-items:center;gap:6px;font-size:13px;border:1px solid var(--line);padding:3px 8px 3px 3px;background:var(--soft);cursor:pointer;font-family:inherit}
+.person.hl{border-color:var(--accent);box-shadow:0 0 0 2px var(--accent)}
+.av{width:34px;height:34px;border-radius:50%;object-fit:cover;flex:none;display:inline-flex;align-items:center;justify-content:center;background:#e5e7eb;color:#374151;font-weight:700;font-size:13px}
+.av.big{width:96px;height:96px;font-size:28px}
+.xl{font-size:11.5px;padding:0 5px;margin-left:4px;border:1px solid}.xl.pub{color:var(--pub)}.xl.priv{color:var(--priv)}
+#detail{position:sticky;bottom:0;background:#fff;border:2px solid var(--ink);padding:12px 14px;margin-top:14px;max-height:60vh;overflow:auto}
+#detail[hidden]{display:none}#detail h3{margin:0 0 4px;font-size:19px}#detail .close{float:right;font:inherit;border:1px solid var(--ink);background:#fff;cursor:pointer}
+#detail ul{padding-left:18px;margin:6px 0}#detail .row{display:flex;gap:14px;align-items:flex-start}
+.credit{font-size:12px;color:var(--muted)}
+table.list{width:100%;border-collapse:collapse;font-size:14.5px}table.list th,table.list td{border-bottom:1px solid var(--line);padding:6px 6px;text-align:left;vertical-align:top}
+table.list th{font-size:13px;color:var(--muted)}
+.ok{color:#047857;font-weight:600}.bad{color:#b91c1c;font-weight:600}
+.prose{max-width:72ch}
+/* språkval */
+nav.lang{display:flex;gap:2px;font-size:14px;margin-left:auto;align-self:center}nav.lang a{text-decoration:none;padding:1px 7px;border:1px solid var(--line);color:var(--muted)}
+nav.lang a[aria-current]{background:var(--ink);color:#fff;border-color:var(--ink);font-weight:600}
+@media(max-width:560px){nav.lang{margin-left:0;order:-1;width:100%;justify-content:flex-end}}
+/* industrikart */
+.imap{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px;margin:12px 0}
+.icat{border:1px solid var(--line);background:var(--soft);padding:10px}.icat h3{margin:0 0 8px;font-size:14px;text-transform:uppercase;letter-spacing:.05em}
+.icat.pub h3{color:var(--pub)}.icat.priv h3{color:var(--priv)}.icat.aka h3{color:var(--accent)}
+.icat.wide{grid-column:1/-1}.icat .sub{font-size:12px;color:var(--muted);margin:8px 0 4px}
+.tiles{display:flex;flex-wrap:wrap;gap:6px}
+.tile{display:flex;flex-direction:column;align-items:center;justify-content:flex-start;gap:4px;width:92px;min-height:86px;padding:6px 4px;background:#fff;border:1px solid var(--line);text-decoration:none;font-size:11.5px;line-height:1.2;text-align:center;overflow-wrap:anywhere}
+.tile:hover,.tile:focus-visible{border-color:var(--ink);outline:none}
+.tile img,.tile .mono{width:40px;height:40px;object-fit:contain;flex:none}
+.tile .mono{display:flex;align-items:center;justify-content:center;background:#e5e7eb;color:#374151;font-weight:800;font-size:14px;border-radius:6px}
+.icat.empty p{font-size:13px;color:var(--muted);margin:0}
+.profiles{display:flex;flex-wrap:wrap;gap:4px 10px;font-size:13px;margin:4px 0}.profiles a{white-space:nowrap}
+/* regelflyt */
+.flow{max-width:980px}.flow svg{width:100%;height:auto;display:block}
+.flow .node rect{fill:#fff;stroke:var(--ink);stroke-width:1.5}.flow .node.pub rect{stroke:var(--pub)}.flow .node.eu rect{stroke:#7c3aed}.flow .node.law rect{fill:var(--soft)}
+.flow .node text{font:600 13px system-ui,sans-serif;fill:var(--ink)}.flow .node text.s{font-weight:400;font-size:11px;fill:var(--muted)}
+.flow .node:hover rect,.flow a:focus .node rect{stroke-width:3}
+.flow .edge{fill:none;stroke:var(--muted);stroke-width:1.6;marker-end:url(#arr)}
+.flow .edge.anim{stroke-dasharray:6 6;animation:flowdash 1.2s linear infinite}
+.flow .edge.consult{stroke:var(--accent);stroke-dasharray:3 5}
+.flow .node{opacity:0;animation:nodein .5s ease forwards}
+@keyframes flowdash{to{stroke-dashoffset:-24}}@keyframes nodein{to{opacity:1}}
+@media (prefers-reduced-motion: reduce){.flow .edge.anim{animation:none}.flow .node{animation:none;opacity:1}}
+ol.steps{max-width:80ch}ol.steps li{margin:0 0 12px}ol.steps .src{font-size:13px;color:var(--muted)}
+@media(max-width:700px){.flow{display:none}}
+.flow .node.cons rect{stroke:var(--accent);stroke-dasharray:4 3}
+ol.steps li{position:relative;animation:nodein .5s ease both}
+@media(max-width:700px){ol.steps li::after{content:"";position:absolute;left:-18px;top:1.4em;bottom:-12px;border-left:2px dashed var(--muted)}ol.steps li:last-child::after{display:none}}
+@media (prefers-reduced-motion: reduce){ol.steps li{animation:none}}
+.imap .kaupr-note{grid-column:1/-1}
+
+.social{display:flex;flex-wrap:wrap;align-items:center;gap:4px 12px;margin:6px 0 0;font-size:13.5px}
+.social-label{color:var(--muted,#4B5563)}
+.social a{color:var(--ink,#000);text-decoration:underline;text-underline-offset:2px}
+.social a:hover{text-decoration-thickness:2px}
+.social a:focus-visible{outline:2px solid var(--ink,#000);outline-offset:2px}
+
+.share{display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;margin:14px 0}
+.share-label{font-size:13px;color:var(--muted,#4B5563);margin-right:2px}
+.share a,.share button{font:inherit;font-size:13.5px;line-height:1.2;color:var(--ink,#000);background:var(--paper,#fff);border:1px solid var(--line,#000);padding:5px 10px;text-decoration:none;cursor:pointer}
+.share a:hover,.share button:hover{background:var(--band,#000);color:var(--band-ink,#fff)}
+.share a:focus-visible,.share button:focus-visible{outline:2px solid var(--ink,#000);outline-offset:2px}
+.share-status{font-size:13px;color:var(--muted,#4B5563)}
+</style></head>
+<body><header class="top"><div class="wrap"><a class="brand" href="./">Krypto<span>nytt</span> Norge</a><nav class="main" aria-label="Hovedmeny"><a href="./" aria-current=page>Nyheter</a><a href="./organisasjonskart/">Hvem er hvem</a><a href="./kalender/">Kalender</a><a href="./akademia/">Akademia</a><a href="./reglar/">Slik blir reglene til</a><a href="./kilder/">Kilder</a><a href="./om/">Om</a></nav><nav class="lang" aria-label="Språk"><a href="../" hreflang="nn" lang="nn" data-setlang="nn">Nynorsk</a><a href="../bm/" hreflang="nb" lang="nb" data-setlang="nb" aria-current=true>Bokmål</a><a href="../en/" hreflang="en" lang="en" data-setlang="en">English</a></nav></div></header>
+<main class="wrap">
+<h1>Norske nyheter om bitcoin, blokkjede og krypto</h1>
+<p class="meta"><a href="skjerm/">Skjermmodus for kontorskjerm (fullskjerm, høykant eller liggende) →</a></p>
+<p class="lead">Lenker til norske saker fra aviser, myndigheter, blogger og podkaster, med en kort oppsummering skrevet av redaksjonen. Les hele saken hos kilden. Sist oppdatert 3. okt. 2026. 10 saker.</p>
+<div class="filters" role="group" aria-label="Filter"><label for="fsrc">Kilde</label><select id="fsrc"><option value="">Alle kilder</option><option value="aftenposten">Aftenposten</option><option value="euronews.com">Euronews</option><option value="kaupr">Kaupr</option><option value="nbx-ir">NBX (børsmelding)</option><option value="shifter">Shifter</option><option value="stortinget">Stortinget</option></select>
+<label>Tema</label><div class="chips"><button type="button" class="chip" data-t="bitcoin" aria-pressed="false">Bitcoin</button><button type="button" class="chip" data-t="blokkjede" aria-pressed="false">Blokkjede</button><button type="button" class="chip" data-t="krypto" aria-pressed="false">Krypto</button><button type="button" class="chip" data-t="regulering" aria-pressed="false">Regulering</button><button type="button" class="chip" data-t="selskaper" aria-pressed="false">Selskaper</button></div><span id="count" class="meta" aria-live="polite"></span></div>
+<p class="morgen">Nyheter oppdateres daglig av kunstig intelligens</p>
+<ol class="news" id="news"><li data-src="aftenposten" data-topics="krypto regulering"><h3><a href="https://www.aftenposten.no/norge/i/vlQARB/tiltalt-for-dopsalg-mot-kryptovaluta-paa-det-moerke-nettet" rel="noopener" target="_blank">Tiltalt for dopsalg mot kryptovaluta på det mørke nettet</a></h3><div class="meta"><b>Aftenposten</b> · <time datetime="2026-10-02T11:07:26+00:00">2. okt. 2026</time> · <span class="pw">kan kreve abonnement</span> <span class="tag">Krypto</span><span class="tag">Regulering</span></div><p class="sum">Fire personer, tre nordmenn og en svenske, er tiltalt i en stor narkotikasak der stoffene skal ha blitt solgt mot kryptovaluta på det mørke nettet. Ingen er dømt i saken.</p></li><li data-src="euronews.com" data-topics="krypto regulering selskaper"><h3><a href="https://www.euronews.com/2026/10/01/eu-watchdogs-question-binance-over-unlicensed-european-operations" rel="noopener" target="_blank">EU-tilsyn stiller spørsmål ved Binances virksomhet uten lisens (engelsk)</a></h3><div class="meta"><b>Euronews</b> · <time datetime="2026-10-01T12:00:00+00:00">1. okt. 2026</time> <span class="tag">Krypto</span><span class="tag">Regulering</span><span class="tag">Selskaper</span></div><p class="sum">EUs verdipapirmyndighet ESMA og flere nasjonale tilsyn stiller spørsmål ved at Binance fortsatt betjener kunder i EU uten MiCA-tillatelse. Det er en gjennomgang, ikke en sanksjon; MiCA gjelder også i Norge gjennom kryptoeiendelsloven.</p></li><li data-src="kaupr" data-topics="krypto selskaper"><h3><a href="https://www.kaupr.io/nyheter/coinmotion-og-k33-inngar-nordisk-kryptosamarbeid-om-institusjonell-handel" rel="noopener" target="_blank">Coinmotion og K33 inngår nordisk kryptosamarbeid om institusjonell handel</a></h3><div class="meta"><b>Kaupr</b> · <time datetime="2026-09-24T12:00:00+00:00">24. sep. 2026</time> <span class="tag">Krypto</span><span class="tag">Selskaper</span></div><p class="sum">Den finske kryptomegleren Coinmotion har valgt K33 til å utføre større, institusjonelle handler, mens Coinmotion beholder kundeforholdet. Begge selskapene har MiCA-tillatelse.</p><div class="meta">↳ <a href="https://mfn.se/all/a/k33/coinmotion-selects-k33-as-institutional-execution-partner" rel="noopener" target="_blank">K33s børsmelding (primærkilde)</a></div></li><li data-src="kaupr" data-topics="krypto selskaper"><h3><a href="https://www.kaupr.io/nyheter/nbx-mer-enn-doblet-tapet-i-halvaret-da-mica-lisensen-kom" rel="noopener" target="_blank">NBX mer enn doblet tapet i halvåret da MiCA-lisensen kom</a></h3><div class="meta"><b>Kaupr</b> · <time datetime="2026-09-18T12:00:00+00:00">18. sep. 2026</time> <span class="tag">Krypto</span><span class="tag">Selskaper</span></div><p class="sum">NBX fikk MiCA-tillatelse i første halvår, men driftsinntektene falt 45 prosent til 6,05 millioner kroner, og tapet etter skatt økte til 16,6 millioner, ifølge selskapets halvårsrapport.</p><div class="meta">↳ <a href="https://newsweb.oslobors.no/message/682725" rel="noopener" target="_blank">NBX&#x27; halvårsrapport på Oslo Børs NewsWeb (18.09.2026)</a></div></li><li data-src="stortinget" data-topics="bitcoin regulering"><h3><a href="https://www.stortinget.no/no/Saker-og-publikasjoner/Sporsmal/Skriftlige-sporsmal-og-svar/Skriftlig-sporsmal/?qnid=127181" rel="noopener" target="_blank">Regjeringen utreder midlertidig forbud mot nye kryptodatasentre (skriftlig spørsmål 15:3707)</a></h3><div class="meta"><b>Stortinget</b> · <time datetime="2026-09-18T12:00:00+00:00">18. sep. 2026</time> <span class="tag">Bitcoin</span><span class="tag">Regulering</span></div><p class="sum">Sofie Marhaug (R) spurte når regjeringen kommer med tiltak mot kryptoutvinning. Digitaliserings- og forvaltningsminister Torgeir Micaelsen svarte 18.09.2026 at regjeringen utreder et midlertidig forbud mot nye kraftkrevende kryptodatasentre i en statlig planbestemmelse; ingenting er vedtatt, oppfølgingen kommer i budsjettet for 2027, og ni slike datasentre er registrert i dag.</p></li><li data-src="nbx-ir" data-topics="krypto selskaper"><h3><a href="https://www.inderes.se/en/releases/nbx-nbx-registered-as-moneygram-agent" rel="noopener" target="_blank">NBX registrert som MoneyGram-agent (børsmelding, engelsk)</a></h3><div class="meta"><b>NBX (børsmelding)</b> · <time datetime="2026-09-17T12:00:00+00:00">17. sep. 2026</time> <span class="tag">Krypto</span><span class="tag">Selskaper</span></div><p class="sum">NBX er registrert som agent for MoneyGram fra 4. oktober, noe som skal gi kundene mulighet til å ta ut kontanter gjennom MoneyGrams nettverk. Når tjenesten lanseres teknisk, er ikke fastsatt, ifølge selskapets børsmelding 17.09.</p></li><li data-src="kaupr" data-topics="blokkjede selskaper"><h3><a href="https://www.kaupr.io/nyheter/dnb-tester-tokeniserte-innskudd-i-kroner-med-europeiske-banker" rel="noopener" target="_blank">DNB tester tokeniserte innskudd i kroner med europeiske banker</a></h3><div class="meta"><b>Kaupr</b> · <time datetime="2026-09-16T12:00:00+00:00">16. sep. 2026</time> <span class="tag">Blokkjede</span><span class="tag">Selskaper</span></div><p class="sum">DNB er med i CBMT, en sandkasse der europeiske banker tester tokeniserte bankinnskudd, og tar med norske kroner inn i testene, ifølge Kaupr.</p></li><li data-src="shifter" data-topics="krypto selskaper"><h3><a href="https://www.shifter.no/nyheter/firi-lanserer-i-sverige-etter-permitteringer-og-milliontap/475990" rel="noopener" target="_blank">Firi lanserer i Sverige – etter permitteringer og milliontap</a></h3><div class="meta"><b>Shifter</b> · <time datetime="2026-09-15T12:00:00+00:00">15. sep. 2026</time> · <span class="pw">kan kreve abonnement</span> <span class="tag">Krypto</span><span class="tag">Selskaper</span></div><p class="sum">Firi åpnet for svenske kunder samme dag som det ble kjent at kryptobørsen hadde 42 millioner kroner i inntekter og 43,6 millioner i underskudd i første halvår, ifølge Shifter.</p></li><li data-src="kaupr" data-topics="bitcoin selskaper"><h3><a href="https://www.kaupr.io/nyheter/h100-styrelederen-vil-ha-flere-oppkjop-i-bitcoinbransjen" rel="noopener" target="_blank">H100-styrelederen vil ha flere oppkjøp i bitcoinbransjen</a></h3><div class="meta"><b>Kaupr</b> · <time datetime="2026-09-13T12:00:00+00:00">13. sep. 2026</time> <span class="tag">Bitcoin</span><span class="tag">Selskaper</span></div><p class="sum">Sander Andersen, styreleder i H100 Group, mener bitcoinselskaper under én milliard dollar bør kjøpe hverandre, og at det å stå stille er den største risikoen, ifølge Kaupr.</p></li><li data-src="kaupr" data-topics="blokkjede regulering"><h3><a href="https://www.kaupr.io/nyheter/norges-bank-utforsker-tokenisering-med-tolv-aktorer" rel="noopener" target="_blank">Norges Bank utforsker tokenisering med tolv aktører</a></h3><div class="meta"><b>Kaupr</b> · <time datetime="2026-09-08T12:00:00+00:00">8. sep. 2026</time> <span class="tag">Blokkjede</span><span class="tag">Regulering</span></div><p class="sum">Norges Bank navnga i et LinkedIn-innlegg 07.09.2026 tolv finansinstitusjoner i arbeidet med å utforske tokenisering, blant dem DNB, Nordea og SpareBank 1. Innlegget er ikke publisert på norges-bank.no.</p><div class="meta">↳ <a href="https://no.linkedin.com/posts/norges-bank_utforskning-av-tokenisering-activity-7502636337737486337-3vbG" rel="noopener" target="_blank">Primærkilde: Norges Banks LinkedIn-innlegg (07.09.2026)</a></div></li></ol>
+<p class="notice">Oppsummeringene er våre egne, skrevet ut fra tittel og ingress. Vi gjengir ikke artikkeltekst. Saker merket «kan kreve abonnement» ligger hos en avis med betalingsmur. Ingenting her er investeringsråd.</p>
+<nav class="social" aria-label="Jørgen på nett"><span class="social-label">Følg meg:</span><a class="social-x" href="https://x.com/jqrgensn" rel="me noopener noreferrer" target="_blank">X</a><a class="social-github" href="https://github.com/jQrgen" rel="me noopener noreferrer" target="_blank">GitHub</a><a class="social-gitlab" href="https://gitlab.com/jQrgen" rel="me noopener noreferrer" target="_blank">GitLab</a><a class="social-medium" href="https://jqrgen.medium.com/" rel="me noopener noreferrer" target="_blank">Medium</a></nav>
+  <nav class="share" aria-label="Del artikkelen"><span class="share-label">Del:</span><a class="share-linkedin" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fjqrgen.github.io%2Fkryptonytt%2Fbm%2F" target="_blank" rel="noopener noreferrer">LinkedIn</a><a class="share-x" href="https://x.com/intent/post?text=Kryptonytt%20Norge%20%E2%80%93%20norske%20kryptonyheter&amp;url=https%3A%2F%2Fjqrgen.github.io%2Fkryptonytt%2Fbm%2F" target="_blank" rel="noopener noreferrer">X</a><a class="share-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fjqrgen.github.io%2Fkryptonytt%2Fbm%2F" target="_blank" rel="noopener noreferrer">Facebook</a><a class="share-email" href="mailto:?subject=Kryptonytt%20Norge%20%E2%80%93%20norske%20kryptonyheter&amp;body=Kanskje%20interessant%20for%20deg%3A%0Ahttps%3A%2F%2Fjqrgen.github.io%2Fkryptonytt%2Fbm%2F">E-post</a><button type="button" class="share-copy" data-url="https://jqrgen.github.io/kryptonytt/bm/" data-done="Lenken er kopiert">Kopier lenke</button><span class="share-status" role="status" aria-live="polite"></span></nav>
+</main>
+<footer><div class="wrap">Kryptonytt Norge drives av Jørgen S. Notland (jQrgen), Oslo, med hjelp av kunstig intelligens. Ansvarlig redaktør: «Kryptonytt redaktør» (en bot basert på kunstig intelligens), med jQrgen som ansvarlig person. Ingen investeringsråd. Ingen sporing; én informasjonskapsel husker bare språkvalget ditt. <a href="./om/">Om, rettelser og fjerning</a> · <a href="./endringer/">Endringslogg</a>.<p class="morgen">Nyheter oppdateres daglig av kunstig intelligens</p></div></footer>
+<script>
+document.addEventListener("click", function (e) {
+  var b = e.target.closest && e.target.closest(".share-copy"); if (!b) return;
+  var url = b.getAttribute("data-url"), st = b.parentNode.querySelector(".share-status");
+  var done = function () { if (st) { st.textContent = b.getAttribute("data-done"); setTimeout(function () { st.textContent = ""; }, 2500); } };
+  var fallback = function () { var i = document.createElement("input"); i.value = url; document.body.appendChild(i); i.select(); try { document.execCommand("copy"); done(); } catch (x) { window.prompt("", url); } i.remove(); };
+  if (navigator.clipboard && window.isSecureContext) navigator.clipboard.writeText(url).then(done, fallback); else fallback();
+});
+</script><script>
+(function(){var sel=document.getElementById('fsrc'),chips=[].slice.call(document.querySelectorAll('.chip')),lis=[].slice.call(document.querySelectorAll('#news li[data-src]')),cnt=document.getElementById('count');
+function apply(push){var s=sel.value,t=chips.filter(function(c){return c.getAttribute('aria-pressed')==='true'}).map(function(c){return c.dataset.t}),n=0;
+lis.forEach(function(li){var ok=(!s||li.dataset.src===s)&&(!t.length||t.some(function(x){return (' '+li.dataset.topics+' ').indexOf(' '+x+' ')>=0}));li.hidden=!ok;if(ok)n++});
+cnt.textContent=n+' saker';if(push){var p=new URLSearchParams();if(s)p.set('kilde',s);if(t.length)p.set('tema',t.join(','));history.replaceState(null,'',p.toString()?'#'+p:location.pathname)}}
+var p=new URLSearchParams(location.hash.slice(1));if(p.get('kilde'))sel.value=p.get('kilde');(p.get('tema')||'').split(',').forEach(function(x){chips.forEach(function(c){if(c.dataset.t===x)c.setAttribute('aria-pressed','true')})});
+sel.addEventListener('change',function(){apply(1)});chips.forEach(function(c){c.addEventListener('click',function(){c.setAttribute('aria-pressed',c.getAttribute('aria-pressed')==='true'?'false':'true');apply(1)})});apply(0)})();
+</script>
+</body></html>

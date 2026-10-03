@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="no"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<html lang="nn"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Om Kryptonytt Norge – Kryptonytt Norge</title>
-<meta name="description" content="Om Kryptonytt Norge: hvem som står bak, redaksjonell policy, rettelser og fjerning."><link rel="canonical" href="https://jqrgen.github.io/kryptonytt/om/">
-<meta property="og:title" content="Om Kryptonytt Norge"><meta property="og:description" content="Om Kryptonytt Norge: hvem som står bak, redaksjonell policy, rettelser og fjerning."><meta property="og:url" content="https://jqrgen.github.io/kryptonytt/om/"><meta property="og:type" content="website"><meta property="og:locale" content="nb_NO">
+<meta name="description" content="Om Kryptonytt Norge: kven som står bak, redaksjonell policy, rettingar og fjerning."><link rel="canonical" href="https://jqrgen.github.io/kryptonytt/om/"><link rel="alternate" hreflang="nn" href="https://jqrgen.github.io/kryptonytt/om/"><link rel="alternate" hreflang="nb" href="https://jqrgen.github.io/kryptonytt/bm/om/"><link rel="alternate" hreflang="en" href="https://jqrgen.github.io/kryptonytt/en/om/"><link rel="alternate" hreflang="x-default" href="https://jqrgen.github.io/kryptonytt/om/">
+<meta property="og:title" content="Om Kryptonytt Norge"><meta property="og:description" content="Om Kryptonytt Norge: kven som står bak, redaksjonell policy, rettingar og fjerning."><meta property="og:url" content="https://jqrgen.github.io/kryptonytt/om/"><meta property="og:type" content="website"><meta property="og:locale" content="nn_NO">
 <meta name="referrer" content="strict-origin-when-cross-origin">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%23b45309'/%3E%3Ctext x='8' y='12.5' font-size='12' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='bold'%3EK%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%23b45309'/%3E%3Ctext x='8' y='12.5' font-size='12' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='bold'%3EK%3C/text%3E%3C/svg%3E"><script>(function(){var P="nn",A={"nn": "../om/", "nb": "../bm/om/", "en": "../en/om/"},R;try{R=new URL("../",location.href).pathname}catch(x){R='/'}function set(l){document.cookie='kn_lang='+l+'; path='+R+'; max-age=31536000; SameSite=Lax'+(location.protocol==='https:'?'; Secure':'')}document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[data-setlang]');if(a)set(a.getAttribute('data-setlang'))},true);if(P!=='nn'||/[?&]lang=nn/.test(location.search))return;var m=document.cookie.match(/(?:^|; )kn_lang=(nb|en)(?:;|$)/);if(!m)return;var r=document.referrer;try{if(r&&new URL(r).origin===location.origin)return}catch(x){}location.replace(A[m[1]]+location.hash)})();</script>
 <style>
 :root{--ink:#111;--muted:#4B5563;--line:#d1d5db;--paper:#fff;--band:#111;--band-ink:#fff;--accent:#b45309;--soft:#f6f6f4;--pub:#1d4ed8;--priv:#047857}
 *{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
@@ -68,6 +68,40 @@ table.list{width:100%;border-collapse:collapse;font-size:14.5px}table.list th,ta
 table.list th{font-size:13px;color:var(--muted)}
 .ok{color:#047857;font-weight:600}.bad{color:#b91c1c;font-weight:600}
 .prose{max-width:72ch}
+/* språkval */
+nav.lang{display:flex;gap:2px;font-size:14px;margin-left:auto;align-self:center}nav.lang a{text-decoration:none;padding:1px 7px;border:1px solid var(--line);color:var(--muted)}
+nav.lang a[aria-current]{background:var(--ink);color:#fff;border-color:var(--ink);font-weight:600}
+@media(max-width:560px){nav.lang{margin-left:0;order:-1;width:100%;justify-content:flex-end}}
+/* industrikart */
+.imap{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px;margin:12px 0}
+.icat{border:1px solid var(--line);background:var(--soft);padding:10px}.icat h3{margin:0 0 8px;font-size:14px;text-transform:uppercase;letter-spacing:.05em}
+.icat.pub h3{color:var(--pub)}.icat.priv h3{color:var(--priv)}.icat.aka h3{color:var(--accent)}
+.icat.wide{grid-column:1/-1}.icat .sub{font-size:12px;color:var(--muted);margin:8px 0 4px}
+.tiles{display:flex;flex-wrap:wrap;gap:6px}
+.tile{display:flex;flex-direction:column;align-items:center;justify-content:flex-start;gap:4px;width:92px;min-height:86px;padding:6px 4px;background:#fff;border:1px solid var(--line);text-decoration:none;font-size:11.5px;line-height:1.2;text-align:center;overflow-wrap:anywhere}
+.tile:hover,.tile:focus-visible{border-color:var(--ink);outline:none}
+.tile img,.tile .mono{width:40px;height:40px;object-fit:contain;flex:none}
+.tile .mono{display:flex;align-items:center;justify-content:center;background:#e5e7eb;color:#374151;font-weight:800;font-size:14px;border-radius:6px}
+.icat.empty p{font-size:13px;color:var(--muted);margin:0}
+.profiles{display:flex;flex-wrap:wrap;gap:4px 10px;font-size:13px;margin:4px 0}.profiles a{white-space:nowrap}
+/* regelflyt */
+.flow{max-width:980px}.flow svg{width:100%;height:auto;display:block}
+.flow .node rect{fill:#fff;stroke:var(--ink);stroke-width:1.5}.flow .node.pub rect{stroke:var(--pub)}.flow .node.eu rect{stroke:#7c3aed}.flow .node.law rect{fill:var(--soft)}
+.flow .node text{font:600 13px system-ui,sans-serif;fill:var(--ink)}.flow .node text.s{font-weight:400;font-size:11px;fill:var(--muted)}
+.flow .node:hover rect,.flow a:focus .node rect{stroke-width:3}
+.flow .edge{fill:none;stroke:var(--muted);stroke-width:1.6;marker-end:url(#arr)}
+.flow .edge.anim{stroke-dasharray:6 6;animation:flowdash 1.2s linear infinite}
+.flow .edge.consult{stroke:var(--accent);stroke-dasharray:3 5}
+.flow .node{opacity:0;animation:nodein .5s ease forwards}
+@keyframes flowdash{to{stroke-dashoffset:-24}}@keyframes nodein{to{opacity:1}}
+@media (prefers-reduced-motion: reduce){.flow .edge.anim{animation:none}.flow .node{animation:none;opacity:1}}
+ol.steps{max-width:80ch}ol.steps li{margin:0 0 12px}ol.steps .src{font-size:13px;color:var(--muted)}
+@media(max-width:700px){.flow{display:none}}
+.flow .node.cons rect{stroke:var(--accent);stroke-dasharray:4 3}
+ol.steps li{position:relative;animation:nodein .5s ease both}
+@media(max-width:700px){ol.steps li::after{content:"";position:absolute;left:-18px;top:1.4em;bottom:-12px;border-left:2px dashed var(--muted)}ol.steps li:last-child::after{display:none}}
+@media (prefers-reduced-motion: reduce){ol.steps li{animation:none}}
+.imap .kaupr-note{grid-column:1/-1}
 
 .social{display:flex;flex-wrap:wrap;align-items:center;gap:4px 12px;margin:6px 0 0;font-size:13.5px}
 .social-label{color:var(--muted,#4B5563)}
@@ -82,45 +116,50 @@ table.list th{font-size:13px;color:var(--muted)}
 .share a:focus-visible,.share button:focus-visible{outline:2px solid var(--ink,#000);outline-offset:2px}
 .share-status{font-size:13px;color:var(--muted,#4B5563)}
 </style></head>
-<body><header class="top"><div class="wrap"><a class="brand" href="../">Krypto<span>nytt</span> Norge</a><nav class="main" aria-label="Hovedmeny"><a href="../">Nyheter</a><a href="../organisasjonskart/">Hvem er hvem</a><a href="../kalender/">Kalender</a><a href="../akademia/">Akademia</a><a href="../kilder/">Kilder</a><a href="../om/" aria-current=page>Om</a></nav></div></header>
+<body><header class="top"><div class="wrap"><a class="brand" href="../">Krypto<span>nytt</span> Norge</a><nav class="main" aria-label="Hovudmeny"><a href="../">Nyheiter</a><a href="../organisasjonskart/">Kven er kven</a><a href="../kalender/">Kalender</a><a href="../akademia/">Akademia</a><a href="../reglar/">Slik blir reglane til</a><a href="../kilder/">Kjelder</a><a href="../om/" aria-current=page>Om</a></nav><nav class="lang" aria-label="Språk"><a href="../om/" hreflang="nn" lang="nn" data-setlang="nn" aria-current=true>Nynorsk</a><a href="../bm/om/" hreflang="nb" lang="nb" data-setlang="nb">Bokmål</a><a href="../en/om/" hreflang="en" lang="en" data-setlang="en">English</a></nav></div></header>
 <main class="wrap">
 <h1>Om Kryptonytt Norge</h1>
 <div class="prose">
-<p class="lead">Kryptonytt Norge samler norske nyheter om bitcoin, blokkjede og kryptovaluta på ett sted, og bruker sakene til å lage en oversikt over hvem som er hvem i norsk krypto.</p>
-<h2>Hvem står bak</h2>
-<p>Nettstedet drives av Jørgen S. Notland (<a href="https://github.com/jQrgen" rel="me noopener">jQrgen</a>), utvikler i Oslo. Han jobber med Nexa-blokkjeden i Bitcoin Unlimited, så Nexa-saker vurderes med det i bakhodet. Arbeidet gjøres med hjelp av kunstig intelligens.</p>
+<p class="lead">Kryptonytt Norge samlar norske nyheiter om bitcoin, blokkjede og kryptovaluta på éin stad, og brukar sakene til å lage ei oversikt over kven som er kven i norsk krypto.</p>
+<h2>Kven står bak</h2>
+<p>Nettstaden blir driven av Jørgen S. Notland (<a href="https://github.com/jQrgen" rel="me noopener">jQrgen</a>), utviklar i Oslo. Han arbeider med Nexa-blokkjeda i Bitcoin Unlimited, så Nexa-saker blir vurderte med det i bakhovudet. Arbeidet blir gjort med hjelp av kunstig intelligens.</p>
 <h2>Redaksjon</h2>
 <ul>
-<li><b>Ansvarlig redaktør:</b> boten «Kryptonytt redaktør», som er basert på kunstig intelligens. Den velger hvilke saker som publiseres, skriver de korte oppsummeringene og godkjenner oppføringer i organisasjonskartet.</li>
-<li><b>Ansvarlig person:</b> Jørgen S. Notland (jQrgen) har det menneskelige ansvaret for innholdet og for redaktørboten.</li>
-<li><b>Researcher:</b> en bot basert på kunstig intelligens som henter overskrifter fra kildene, foreslår saker og mulige oppføringer til organisasjonskartet og legger dem i en kø for redaktøren.</li>
+<li><b>Ansvarleg redaktør:</b> boten «Kryptonytt redaktør», som er basert på kunstig intelligens. Han vel kva saker som blir publiserte, skriv dei korte oppsummeringane og godkjenner oppføringar i organisasjonskartet.</li>
+<li><b>Ansvarleg person:</b> Jørgen S. Notland (jQrgen) har det menneskelege ansvaret for innhaldet og for redaktørboten.</li>
+<li><b>Researchar:</b> ein bot basert på kunstig intelligens som hentar overskrifter frå kjeldene, føreslår saker og moglege oppføringar til organisasjonskartet og legg dei i ein kø for redaktøren.</li>
 </ul>
-<p>Ingenting publiseres automatisk. Hver sak og hver oppføring går gjennom redaktøren først.</p>
-<h2>Slik jobber vi</h2>
+<p>Ingenting blir publisert automatisk. Kvar sak og kvar oppføring går gjennom redaktøren først.</p>
+<h2>Slik arbeider vi</h2>
 <ul>
-<li>Vi lenker til originalsaken og skriver en egen oppsummering på én til to setninger. Vi kopierer ikke artikkeltekst og omgår ikke betalingsmurer.</li>
-<li>Organisasjonskartet bygger bare på det kildene sier. Hver oppføring og hver kobling lenker til saken den kommer fra. Er vi i tvil, lar vi oppføringen være ute.</li>
-<li>Personer tas bare med i offentlige yrkesroller (for eksempel daglig leder, direktør eller sentralbanksjef) slik de er omtalt i pressen. Vi publiserer ikke private opplysninger, helseopplysninger eller private økonomiske opplysninger.</li>
-<li>Bilder av personer viser vi bare når de har fri lisens (Wikimedia Commons) eller er pressebilder som kan brukes fritt, med kreditering. Ellers viser vi initialer og lenker til bildet hos kilden.</li>
-<li>Nettstedet har ingen sporing, ingen analyseverktøy, ingen informasjonskapsler og ingen tredjepartsskript. Delingsknappene er vanlige lenker.</li>
+<li>Vi lenkjer til originalsaka og skriv ei eiga oppsummering på éi til to setningar. Vi kopierer ikkje artikkeltekst og går ikkje rundt betalingsmurar.</li>
+<li>Organisasjonskartet byggjer berre på det kjeldene seier. Kvar oppføring og kvar kopling lenkjer til saka ho kjem frå. Er vi i tvil, held vi oppføringa ute.</li>
+<li>Personar blir berre tekne med i offentlege yrkesroller (til dømes dagleg leiar, direktør eller sentralbanksjef) slik dei er omtalte i pressa. Vi publiserer ikkje private opplysningar, helseopplysningar eller private økonomiske opplysningar.</li>
+<li>Bilete av personar viser vi berre når dei har fri lisens (Wikimedia Commons) eller er pressebilete som kan brukast fritt, med kreditering. Elles viser vi initialar og lenkjer til biletet hos kjelda.</li>
+<li>Nettstaden har inga sporing, ingen analyseverktøy og ingen tredjepartsskript. Delingsknappane er vanlege lenkjer.</li>
+<li id="informasjonskapsel"><b>Éin informasjonskapsel, berre for språk:</b> Når du vel Nynorsk, Bokmål eller English øvst på sida, lagrar vi valet i informasjonskapselen <code>kn_lang</code> (førstepart, gjeld berre /kryptonytt/, SameSite=Lax, varer i eitt år). Neste gong du kjem inn på framsida eller ei anna side på nynorsk frå ein annan nettstad, sender vi deg til same side på språket du valde. Lenkjer direkte til bokmåls- eller engelskversjonen blir alltid opna som dei er, og eit nytt klikk på eit språk endrar valet. Informasjonskapselen inneheld berre språkkoden og blir ikkje send til nokon andre. Vil du bli kvitt han, kan du slette han i nettlesaren.</li>
 </ul>
+<h2>Språk</h2>
+<p>Nynorsk er hovudspråket på nettstaden. Alt finst òg på bokmål og engelsk. Oppsummeringane og sidetekstane skriv vi sjølve på alle tre språka; overskrifter og sitat frå kjeldene står som i originalen.</p>
+<h2 id="sponsor">Sponsor og openheit</h2>
+<p>Kaupr er sponsor av Kryptonytt og ei av kjeldene våre. Nokre aktørar i <a href="../organisasjonskart/#industrikart">industrikartet</a> er henta frå Kaupr sine Onchain Pages. Kvar slik aktør er sjekka mot selskapet si eiga nettside eller offentlege register (Brønnøysund, ESMA) før han kom med, og Kaupr er oppgitt som kjelde. Sponsoren har inga redaksjonell styring.</p>
 <h2>Ingen investeringsråd</h2>
-<p>Kryptonytt Norge er en nyhetsoversikt. Ingenting her er investeringsråd, anbefaling om kjøp eller salg eller vurdering av noe selskap eller noen kryptoeiendel. Kryptoeiendeler kan svinge kraftig i verdi, og du kan tape alt du investerer.</p>
-<h2 id="rettelser">Rettelser og fjerning</h2>
+<p>Kryptonytt Norge er ei nyheitsoversikt. Ingenting her er investeringsråd, tilråding om kjøp eller sal eller vurdering av noko selskap eller nokon kryptoeigedel. Kryptoeigedelar kan svinge kraftig i verdi, og du kan tape alt du investerer.</p>
+<h2 id="rettelser">Rettingar og fjerning</h2>
 <ul>
-<li>Finner du en feil, for eksempel feil rolle, feil kobling eller en oppsummering som ikke stemmer med saken, retter vi den så raskt vi kan. Rettelser av innhold merkes på oppføringen.</li>
-<li>Står du selv i organisasjonskartet og vil ha oppføringen eller bildet ditt fjernet eller endret, fjerner vi det. Det gjelder også når rollen er offentlig omtalt.</li>
-<li>Er du en kilde eller rettighetshaver og vil at vi ikke lenker til eller oppsummerer sakene dine, tar vi dem ut.</li>
-<li>Meld fra ved å opprette en sak på <a href="https://github.com/jQrgen/kryptonytt/issues" rel="noopener">github.com/jQrgen/kryptonytt/issues</a> eller ta kontakt med jQrgen via profilene under. Skriv ikke personlige opplysninger i en offentlig GitHub-sak; be heller om kontakt.</li>
+<li>Finn du ein feil, til dømes feil rolle, feil kopling eller ei oppsummering som ikkje stemmer med saka, rettar vi han så snart vi kan. Rettingar av innhald blir merkte på oppføringa.</li>
+<li>Står du sjølv i organisasjonskartet og vil ha oppføringa eller biletet ditt fjerna eller endra, fjernar vi det. Det gjeld òg når rolla er offentleg omtalt.</li>
+<li>Er du ei kjelde eller rettshavar og vil at vi ikkje skal lenkje til eller oppsummere sakene dine, tek vi dei ut.</li>
+<li>Sei frå ved å opprette ei sak på <a href="https://github.com/jQrgen/kryptonytt/issues" rel="noopener">github.com/jQrgen/kryptonytt/issues</a> eller ta kontakt med jQrgen via profilane under. Skriv ikkje personlege opplysningar i ei offentleg GitHub-sak; be heller om kontakt.</li>
 </ul>
-<h2>Kildekode og data</h2>
-<p>Koden og de publiserte dataene ligger åpent på <a href="https://github.com/jQrgen/kryptonytt" rel="noopener">github.com/jQrgen/kryptonytt</a>: <a href="../data/news.json">nyheter (JSON)</a> og <a href="../data/orgchart.json">organisasjonskart (JSON)</a>.</p>
+<h2>Kjeldekode og data</h2>
+<p>Koden og dei publiserte dataa ligg ope på <a href="https://github.com/jQrgen/kryptonytt" rel="noopener">github.com/jQrgen/kryptonytt</a>: <a href="../data/news.json">nyheiter (JSON)</a> og <a href="../data/orgchart.json">organisasjonskart (JSON)</a>.</p>
 </div>
 
-<nav class="social" aria-label="Jørgen på nett"><span class="social-label">Følg meg:</span><a class="social-x" href="https://x.com/jqrgensn" rel="me noopener noreferrer" target="_blank">X</a><a class="social-github" href="https://github.com/jQrgen" rel="me noopener noreferrer" target="_blank">GitHub</a><a class="social-gitlab" href="https://gitlab.com/jQrgen" rel="me noopener noreferrer" target="_blank">GitLab</a><a class="social-medium" href="https://jqrgen.medium.com/" rel="me noopener noreferrer" target="_blank">Medium</a></nav>
-  <nav class="share" aria-label="Del artikkelen"><span class="share-label">Del:</span><a class="share-linkedin" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fjqrgen.github.io%2Fkryptonytt%2Fom%2F" target="_blank" rel="noopener noreferrer">LinkedIn</a><a class="share-x" href="https://x.com/intent/post?text=Om%20Kryptonytt%20Norge%20%E2%80%93%20Kryptonytt%20Norge&amp;url=https%3A%2F%2Fjqrgen.github.io%2Fkryptonytt%2Fom%2F" target="_blank" rel="noopener noreferrer">X</a><a class="share-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fjqrgen.github.io%2Fkryptonytt%2Fom%2F" target="_blank" rel="noopener noreferrer">Facebook</a><a class="share-email" href="mailto:?subject=Om%20Kryptonytt%20Norge%20%E2%80%93%20Kryptonytt%20Norge&amp;body=Kanskje%20interessant%20for%20deg%3A%0Ahttps%3A%2F%2Fjqrgen.github.io%2Fkryptonytt%2Fom%2F">E-post</a><button type="button" class="share-copy" data-url="https://jqrgen.github.io/kryptonytt/om/" data-done="Lenken er kopiert">Kopier lenke</button><span class="share-status" role="status" aria-live="polite"></span></nav>
+<nav class="social" aria-label="Jørgen på nettet"><span class="social-label">Følg meg:</span><a class="social-x" href="https://x.com/jqrgensn" rel="me noopener noreferrer" target="_blank">X</a><a class="social-github" href="https://github.com/jQrgen" rel="me noopener noreferrer" target="_blank">GitHub</a><a class="social-gitlab" href="https://gitlab.com/jQrgen" rel="me noopener noreferrer" target="_blank">GitLab</a><a class="social-medium" href="https://jqrgen.medium.com/" rel="me noopener noreferrer" target="_blank">Medium</a></nav>
+  <nav class="share" aria-label="Del artikkelen"><span class="share-label">Del:</span><a class="share-linkedin" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fjqrgen.github.io%2Fkryptonytt%2Fom%2F" target="_blank" rel="noopener noreferrer">LinkedIn</a><a class="share-x" href="https://x.com/intent/post?text=Om%20Kryptonytt%20Norge%20%E2%80%93%20Kryptonytt%20Norge&amp;url=https%3A%2F%2Fjqrgen.github.io%2Fkryptonytt%2Fom%2F" target="_blank" rel="noopener noreferrer">X</a><a class="share-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fjqrgen.github.io%2Fkryptonytt%2Fom%2F" target="_blank" rel="noopener noreferrer">Facebook</a><a class="share-email" href="mailto:?subject=Om%20Kryptonytt%20Norge%20%E2%80%93%20Kryptonytt%20Norge&amp;body=Kanskje%20interessant%20for%20deg%3A%0Ahttps%3A%2F%2Fjqrgen.github.io%2Fkryptonytt%2Fom%2F">E-post</a><button type="button" class="share-copy" data-url="https://jqrgen.github.io/kryptonytt/om/" data-done="Lenkja er kopiert">Kopier lenkja</button><span class="share-status" role="status" aria-live="polite"></span></nav>
 </main>
-<footer><div class="wrap">Kryptonytt Norge drives av Jørgen S. Notland (jQrgen), Oslo, med hjelp av kunstig intelligens. Ansvarlig redaktør: «Kryptonytt redaktør» (en bot basert på kunstig intelligens), med jQrgen som ansvarlig person. Ingen investeringsråd. Ingen sporing eller informasjonskapsler. <a href="../om/">Om, rettelser og fjerning</a> · <a href="../endringer/">Endringslogg</a>.<p class="morgen">Nyheter oppdateres daglig av kunstig intelligens</p></div></footer>
+<footer><div class="wrap">Kryptonytt Norge blir driven av Jørgen S. Notland (jQrgen), Oslo, med hjelp av kunstig intelligens. Ansvarleg redaktør: «Kryptonytt redaktør» (ein bot basert på kunstig intelligens), med jQrgen som ansvarleg person. Ingen investeringsråd. Inga sporing; éin informasjonskapsel hugsar berre språkvalet ditt. <a href="../om/">Om, rettingar og fjerning</a> · <a href="../endringer/">Endringslogg</a>.<p class="morgen">Nyheitene blir oppdaterte dagleg av kunstig intelligens</p></div></footer>
 <script>
 document.addEventListener("click", function (e) {
   var b = e.target.closest && e.target.closest(".share-copy"); if (!b) return;

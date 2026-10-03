@@ -1416,6 +1416,13 @@
    ],
    "image": null,
    "caveat": false,
+   "profiles": [
+    {
+     "kind": "linkedin",
+     "url": "https://www.linkedin.com/in/andersk1",
+     "source": "https://www.akj.com/about/management/anders-kvamme-jensen"
+    }
+   ],
    "status": "published"
   },
   {
@@ -1570,7 +1577,7 @@
    "type": "organisasjon",
    "sector": "privat",
    "group": "Utvinning/datasentre",
-   "description": "Bitdeers norske campus i Tydal omstilles til KI/HPC (121 IT-MW-leie, aug. 2026); oppført uten kryptoutvinning hos Nkom",
+   "description": "Bitdeers norske campus i Tydal omstilles til kunstig intelligens og HPC (121 IT-MW-leie, aug. 2026); oppført uten kryptoutvinning hos Nkom",
    "sources": [
     {
      "url": "https://www.globenewswire.com/news-release/2026/08/04/3338255/0/en/bitdeer-announces-4-7-billion-16-year-ai-hpc-data-center-lease-for-tydal-norway-campus.html",
@@ -1905,6 +1912,13 @@
    ],
    "image": null,
    "caveat": true,
+   "profiles": [
+    {
+     "kind": "linkedin",
+     "url": "https://www.linkedin.com/in/jakobmikkelhansen/",
+     "source": "https://nordicblockchain.com/about-us"
+    }
+   ],
    "status": "published"
   },
   {
@@ -1938,6 +1952,13 @@
    ],
    "image": null,
    "caveat": true,
+   "profiles": [
+    {
+     "kind": "linkedin",
+     "url": "https://www.linkedin.com/in/lennart-kirk/",
+     "source": "https://nordicblockchain.com/about-us"
+    }
+   ],
    "status": "published"
   },
   {
@@ -2236,6 +2257,1338 @@
    ],
    "image": null,
    "status": "published"
+  },
+  {
+   "id": "ace-digital",
+   "name": "Ace Digital",
+   "type": "organisasjon",
+   "sector": "privat",
+   "industry": "bank",
+   "url": "https://www.acedigital.no",
+   "description": "Norsk bitcoinselskap med bitcoin i egen balanse, notert på Euronext Growth Oslo (ticker ACED), med adresse i Oslo, ifølge selskapets nettside.",
+   "sources": [
+    {
+     "url": "https://www.acedigital.no/",
+     "title": "Ace Digital – forside",
+     "source_name": "Ace Digital",
+     "date": "03.10.2026"
+    },
+    {
+     "url": "https://virksomhet.brreg.no/nb/oppslag/enheter/924665297",
+     "title": "Enhetsregisteret: ACE DIGITAL AS (924665297)",
+     "source_name": "Brønnøysundregistrene",
+     "date": "03.10.2026"
+    },
+    {
+     "url": "https://www.kaupr.io/pages/ace-digital",
+     "title": "Kaupr Onchain Pages (Kaupr er sponsor av og kilde for Kryptonytt)",
+     "source_name": "Kaupr",
+     "date": "03.10.2026"
+    }
+   ],
+   "status": "published",
+   "group": "Investorer/fond",
+   "image": null
+  },
+  {
+   "id": "divly",
+   "name": "Divly",
+   "type": "organisasjon",
+   "sector": "privat",
+   "industry": "internasjonal",
+   "url": "https://divly.com/no",
+   "description": "Svensk programvare som beregner kryptoskatt; har egen norsk tjeneste for skatterapporter etter norske regler, ifølge den norske nettsiden.",
+   "sources": [
+    {
+     "url": "https://divly.com/no/",
+     "title": "Divly – Kryptoskatt uten hodepine",
+     "source_name": "Divly",
+     "date": "03.10.2026"
+    },
+    {
+     "url": "https://www.kaupr.io/pages/divly",
+     "title": "Kaupr Onchain Pages (Kaupr er sponsor av og kilde for Kryptonytt)",
+     "source_name": "Kaupr",
+     "date": "03.10.2026"
+    }
+   ],
+   "status": "published",
+   "image": null
+  },
+  {
+   "id": "virtune",
+   "name": "Virtune",
+   "type": "organisasjon",
+   "sector": "privat",
+   "industry": "internasjonal",
+   "url": "https://www.virtune.com/no",
+   "description": "Svensk forvalter og utsteder av krypto-ETP-er. Har egen norsk nettside, og produktene kan handles via Nordnet Norge, ifølge selskapet og Nordnet.",
+   "sources": [
+    {
+     "url": "https://www.virtune.com/no",
+     "title": "Virtune – Regulerte kryptoinvesteringsprodukter (ETP-er)",
+     "source_name": "Virtune",
+     "date": "03.10.2026"
+    },
+    {
+     "url": "https://www.nordnet.no/etp/sertifikat/trackers/liste/virtune-bitcoin-virbtc-xsto",
+     "title": "Nordnet: Virtune Bitcoin (VIRBTC)",
+     "source_name": "Nordnet",
+     "date": "03.10.2026"
+    },
+    {
+     "url": "https://www.kaupr.io/pages/virtune",
+     "title": "Kaupr Onchain Pages (Kaupr er sponsor av og kilde for Kryptonytt)",
+     "source_name": "Kaupr",
+     "date": "03.10.2026"
+    }
+   ],
+   "status": "published",
+   "group": "Investorer/fond",
+   "image": null
+  },
+  {
+   "id": "web3-creatives",
+   "name": "Web3 Creatives",
+   "type": "organisasjon",
+   "sector": "privat",
+   "industry": "radgjeving",
+   "url": "https://www.web3creatives.no",
+   "description": "Markedsføringsbyrå i Oslo med vekt på NFT- og Web3-markedsføring, ifølge selskapets nettside.",
+   "sources": [
+    {
+     "url": "https://www.web3creatives.no/",
+     "title": "Web3 Creatives – forside",
+     "source_name": "Web3 Creatives",
+     "date": "03.10.2026"
+    },
+    {
+     "url": "https://virksomhet.brreg.no/nb/oppslag/enheter/928059103",
+     "title": "Enhetsregisteret: WEB3 CREATIVES AS (928059103)",
+     "source_name": "Brønnøysundregistrene",
+     "date": "03.10.2026"
+    },
+    {
+     "url": "https://www.kaupr.io/pages/web3-creatives",
+     "title": "Kaupr Onchain Pages (Kaupr er sponsor av og kilde for Kryptonytt)",
+     "source_name": "Kaupr",
+     "date": "03.10.2026"
+    }
+   ],
+   "status": "published",
+   "image": null
+  },
+  {
+   "id": "januar",
+   "name": "Januar",
+   "type": "organisasjon",
+   "sector": "privat",
+   "industry": "internasjonal",
+   "url": "https://www.januar.com",
+   "description": "Dansk selskap med bedriftskontoer, betalinger og kryptotjenester for virksomheter. Har MiCA-tillatelse i Danmark (29.06.2026), og ESMAs register oppgir Norge som vertsland.",
+   "sources": [
+    {
+     "url": "https://www.januar.com/",
+     "title": "Januar – forside",
+     "source_name": "Januar",
+     "date": "03.10.2026"
+    },
+    {
+     "url": "https://www.esma.europa.eu/sites/default/files/2024-12/CASPS.csv",
+     "title": "ESMAs interimsregister for MiCA – kryptoeiendelstjenesteytere (CASPS.csv)",
+     "source_name": "ESMA",
+     "date": "03.10.2026"
+    },
+    {
+     "url": "https://www.kaupr.io/pages/januar",
+     "title": "Kaupr Onchain Pages (Kaupr er sponsor av og kilde for Kryptonytt)",
+     "source_name": "Kaupr",
+     "date": "03.10.2026"
+    }
+   ],
+   "status": "published",
+   "group": "Betaling",
+   "image": null
+  },
+  {
+   "id": "northstake",
+   "name": "Northstake",
+   "type": "organisasjon",
+   "sector": "privat",
+   "industry": "internasjonal",
+   "url": "https://www.northstake.dk",
+   "description": "Dansk leverandør av regulert institusjonell staking (Ethereum). Har MiCA-tillatelse i Danmark (07.04.2026), og ESMAs register oppgir Norge som vertsland.",
+   "sources": [
+    {
+     "url": "https://www.northstake.dk/research/northstake-granted-casp-authorisation-under-the-eus-mica-regulation",
+     "title": "Northstake Granted CASP Authorisation Under the EU's MiCA Regulation",
+     "source_name": "Northstake",
+     "date": "03.10.2026"
+    },
+    {
+     "url": "https://www.esma.europa.eu/sites/default/files/2024-12/CASPS.csv",
+     "title": "ESMAs interimsregister for MiCA – kryptoeiendelstjenesteytere (CASPS.csv)",
+     "source_name": "ESMA",
+     "date": "03.10.2026"
+    },
+    {
+     "url": "https://www.kaupr.io/pages/northstake",
+     "title": "Kaupr Onchain Pages (Kaupr er sponsor av og kilde for Kryptonytt)",
+     "source_name": "Kaupr",
+     "date": "03.10.2026"
+    }
+   ],
+   "status": "published",
+   "group": "Utvinning/datasentre",
+   "image": null
+  },
+  {
+   "id": "penning",
+   "name": "Penning",
+   "type": "organisasjon",
+   "sector": "privat",
+   "industry": "internasjonal",
+   "url": "https://www.penning.io",
+   "description": "Dansk kryptoplattform for handel og porteføljeforvaltning. Har MiCA-tillatelse i Danmark (15.01.2026), og ESMAs register oppgir Norge som vertsland.",
+   "sources": [
+    {
+     "url": "https://www.penning.io/",
+     "title": "Penning – forside",
+     "source_name": "Penning",
+     "date": "03.10.2026"
+    },
+    {
+     "url": "https://www.esma.europa.eu/sites/default/files/2024-12/CASPS.csv",
+     "title": "ESMAs interimsregister for MiCA – kryptoeiendelstjenesteytere (CASPS.csv)",
+     "source_name": "ESMA",
+     "date": "03.10.2026"
+    },
+    {
+     "url": "https://www.kaupr.io/pages/penning",
+     "title": "Kaupr Onchain Pages (Kaupr er sponsor av og kilde for Kryptonytt)",
+     "source_name": "Kaupr",
+     "date": "03.10.2026"
+    }
+   ],
+   "status": "published",
+   "group": "Børser/meglere",
+   "image": null
+  },
+  {
+   "id": "kvarn-capital",
+   "name": "Kvarn Capital (Kvarn X)",
+   "type": "organisasjon",
+   "sector": "privat",
+   "industry": "internasjonal",
+   "url": "https://www.kvarnx.com",
+   "description": "Finsk selskap for digitale eiendeler med plattformen Kvarn X, som også finnes på norsk. Har MiCA-tillatelse i Finland (02.12.2025), og ESMAs register oppgir Norge som vertsland.",
+   "sources": [
+    {
+     "url": "https://www.kvarnx.com/",
+     "title": "Kvarn X – forside",
+     "source_name": "Kvarn X",
+     "date": "03.10.2026"
+    },
+    {
+     "url": "https://www.esma.europa.eu/sites/default/files/2024-12/CASPS.csv",
+     "title": "ESMAs interimsregister for MiCA – kryptoeiendelstjenesteytere (CASPS.csv)",
+     "source_name": "ESMA",
+     "date": "03.10.2026"
+    },
+    {
+     "url": "https://www.kaupr.io/pages/kvarn-capital",
+     "title": "Kaupr Onchain Pages (Kaupr er sponsor av og kilde for Kryptonytt)",
+     "source_name": "Kaupr",
+     "date": "03.10.2026"
+    }
+   ],
+   "status": "published",
+   "group": "Børser/meglere",
+   "image": null
+  },
+  {
+   "id": "okx",
+   "name": "OKX",
+   "type": "organisasjon",
+   "sector": "privat",
+   "industry": "internasjonal",
+   "url": "https://www.okx.com",
+   "description": "Global kryptobørs. Tjenestene i EØS leveres av OKX Europe Limited med MiCA-tillatelse fra Malta (27.01.2025); ESMAs register oppgir Norge som vertsland, og OKX har kampanjer rettet mot brukere i Norge.",
+   "sources": [
+    {
+     "url": "https://www.esma.europa.eu/sites/default/files/2024-12/CASPS.csv",
+     "title": "ESMAs interimsregister for MiCA – kryptoeiendelstjenesteytere (CASPS.csv)",
+     "source_name": "ESMA",
+     "date": "03.10.2026"
+    },
+    {
+     "url": "https://www.okx.com/zh-hans-eu/campaigns/okx-goes-live-in-the-nordics",
+     "title": "OKX goes live in the Nordics",
+     "source_name": "OKX",
+     "date": "03.10.2026"
+    },
+    {
+     "url": "https://www.kaupr.io/pages/okx",
+     "title": "Kaupr Onchain Pages (Kaupr er sponsor av og kilde for Kryptonytt)",
+     "source_name": "Kaupr",
+     "date": "03.10.2026"
+    }
+   ],
+   "status": "published",
+   "group": "Børser/meglere",
+   "image": null
+  },
+  {
+   "id": "bybit-eu",
+   "name": "Bybit EU",
+   "type": "organisasjon",
+   "sector": "privat",
+   "industry": "internasjonal",
+   "url": "https://www.bybit.eu",
+   "description": "EU-delen av den globale kryptobørsen Bybit (Bybit EU GmbH). Har MiCA-tillatelse fra Østerrike (28.05.2025), og ESMAs register oppgir Norge som vertsland.",
+   "sources": [
+    {
+     "url": "https://www.esma.europa.eu/sites/default/files/2024-12/CASPS.csv",
+     "title": "ESMAs interimsregister for MiCA – kryptoeiendelstjenesteytere (CASPS.csv)",
+     "source_name": "ESMA",
+     "date": "03.10.2026"
+    },
+    {
+     "url": "https://www.bybit.eu/",
+     "title": "Bybit EU – forside",
+     "source_name": "Bybit EU",
+     "date": "03.10.2026"
+    },
+    {
+     "url": "https://www.kaupr.io/pages/bybit",
+     "title": "Kaupr Onchain Pages (Kaupr er sponsor av og kilde for Kryptonytt)",
+     "source_name": "Kaupr",
+     "date": "03.10.2026"
+    }
+   ],
+   "status": "published",
+   "group": "Børser/meglere",
+   "image": null
+  },
+  {
+   "id": "circle",
+   "name": "Circle",
+   "type": "organisasjon",
+   "sector": "privat",
+   "industry": "internasjonal",
+   "url": "https://www.circle.com",
+   "description": "Utsteder av stablecoinen USDC. Circle Internet Financial Europe SAS er registrert som utsteder av e-pengetokens og har MiCA-tillatelse som tjenesteyter i Frankrike; ESMAs register oppgir Norge som vertsland for tjenestene.",
+   "sources": [
+    {
+     "url": "https://www.esma.europa.eu/sites/default/files/2024-12/EMTWP.csv",
+     "title": "ESMAs interimsregister for MiCA – utstedere av e-pengetokens (EMTWP.csv)",
+     "source_name": "ESMA",
+     "date": "03.10.2026"
+    },
+    {
+     "url": "https://www.esma.europa.eu/sites/default/files/2024-12/CASPS.csv",
+     "title": "ESMAs interimsregister for MiCA – kryptoeiendelstjenesteytere (CASPS.csv)",
+     "source_name": "ESMA",
+     "date": "03.10.2026"
+    },
+    {
+     "url": "https://www.kaupr.io/pages/circle",
+     "title": "Kaupr Onchain Pages (Kaupr er sponsor av og kilde for Kryptonytt)",
+     "source_name": "Kaupr",
+     "date": "03.10.2026"
+    }
+   ],
+   "status": "published",
+   "group": "Betaling",
+   "image": null
+  },
+  {
+   "id": "oyvind-kvanes",
+   "name": "Øyvind Kvanes",
+   "type": "person",
+   "sector": "privat",
+   "org": "firi",
+   "role": "Styreleder",
+   "description": null,
+   "profile_url": "https://virksomhet.brreg.no/nb/oppslag/enheter/919932465",
+   "sources": [
+    {
+     "url": "https://virksomhet.brreg.no/nb/oppslag/enheter/919932465",
+     "title": "Enhetsregisteret: FIRI AS (919932465)",
+     "source_name": "Brønnøysundregistrene",
+     "date": "03.10.2026"
+    },
+    {
+     "url": "https://data.brreg.no/enhetsregisteret/api/enheter/919932465/roller",
+     "title": "Enhetsregisteret – roller (åpent API)",
+     "source_name": "Brønnøysundregistrene",
+     "date": "03.10.2026"
+    }
+   ],
+   "status": "published",
+   "image": null
+  },
+  {
+   "id": "espen-sunde-malmo",
+   "name": "Espen Sunde Malmo",
+   "type": "person",
+   "sector": "privat",
+   "org": "firi",
+   "role": "Styremedlem",
+   "description": null,
+   "profile_url": "https://virksomhet.brreg.no/nb/oppslag/enheter/919932465",
+   "sources": [
+    {
+     "url": "https://virksomhet.brreg.no/nb/oppslag/enheter/919932465",
+     "title": "Enhetsregisteret: FIRI AS (919932465)",
+     "source_name": "Brønnøysundregistrene",
+     "date": "03.10.2026"
+    },
+    {
+     "url": "https://data.brreg.no/enhetsregisteret/api/enheter/919932465/roller",
+     "title": "Enhetsregisteret – roller (åpent API)",
+     "source_name": "Brønnøysundregistrene",
+     "date": "03.10.2026"
+    }
+   ],
+   "status": "published",
+   "image": null
+  },
+  {
+   "id": "aleksandra-stiller",
+   "name": "Aleksandra Stiller",
+   "type": "person",
+   "sector": "privat",
+   "org": "firi",
+   "role": "Styremedlem",
+   "description": null,
+   "profile_url": "https://virksomhet.brreg.no/nb/oppslag/enheter/919932465",
+   "sources": [
+    {
+     "url": "https://virksomhet.brreg.no/nb/oppslag/enheter/919932465",
+     "title": "Enhetsregisteret: FIRI AS (919932465)",
+     "source_name": "Brønnøysundregistrene",
+     "date": "03.10.2026"
+    },
+    {
+     "url": "https://data.brreg.no/enhetsregisteret/api/enheter/919932465/roller",
+     "title": "Enhetsregisteret – roller (åpent API)",
+     "source_name": "Brønnøysundregistrene",
+     "date": "03.10.2026"
+    }
+   ],
+   "status": "published",
+   "image": null
+  },
+  {
+   "id": "karina-rothoff-brix",
+   "name": "Karina Rothoff Brix",
+   "type": "person",
+   "sector": "privat",
+   "org": "firi",
+   "role": "Styremedlem",
+   "description": null,
+   "profile_url": "https://virksomhet.brreg.no/nb/oppslag/enheter/919932465",
+   "sources": [
+    {
+     "url": "https://virksomhet.brreg.no/nb/oppslag/enheter/919932465",
+     "title": "Enhetsregisteret: FIRI AS (919932465)",
+     "source_name": "Brønnøysundregistrene",
+     "date": "03.10.2026"
+    },
+    {
+     "url": "https://data.brreg.no/enhetsregisteret/api/enheter/919932465/roller",
+     "title": "Enhetsregisteret – roller (åpent API)",
+     "source_name": "Brønnøysundregistrene",
+     "date": "03.10.2026"
+    }
+   ],
+   "status": "published",
+   "image": null
+  },
+  {
+   "id": "nils-kristian-sundling",
+   "name": "Nils Kristian Sundling",
+   "type": "person",
+   "sector": "privat",
+   "org": "nbx",
+   "role": "Styreleder",
+   "description": null,
+   "profile_url": "https://virksomhet.brreg.no/nb/oppslag/enheter/920245676",
+   "sources": [
+    {
+     "url": "https://virksomhet.brreg.no/nb/oppslag/enheter/920245676",
+     "title": "Enhetsregisteret: NORWEGIAN BLOCK EXCHANGE AS (920245676)",
+     "source_name": "Brønnøysundregistrene",
+     "date": "03.10.2026"
+    },
+    {
+     "url": "https://data.brreg.no/enhetsregisteret/api/enheter/920245676/roller",
+     "title": "Enhetsregisteret – roller (åpent API)",
+     "source_name": "Brønnøysundregistrene",
+     "date": "03.10.2026"
+    }
+   ],
+   "status": "published",
+   "image": null
+  },
+  {
+   "id": "bjorn-kjos",
+   "name": "Bjørn Kjos",
+   "type": "person",
+   "sector": "privat",
+   "org": "nbx",
+   "role": "Styremedlem",
+   "description": null,
+   "profile_url": "https://virksomhet.brreg.no/nb/oppslag/enheter/920245676",
+   "sources": [
+    {
+     "url": "https://virksomhet.brreg.no/nb/oppslag/enheter/920245676",
+     "title": "Enhetsregisteret: NORWEGIAN BLOCK EXCHANGE AS (920245676)",
+     "source_name": "Brønnøysundregistrene",
+     "date": "03.10.2026"
+    },
+    {
+     "url": "https://data.brreg.no/enhetsregisteret/api/enheter/920245676/roller",
+     "title": "Enhetsregisteret – roller (åpent API)",
+     "source_name": "Brønnøysundregistrene",
+     "date": "03.10.2026"
+    }
+   ],
+   "status": "published",
+   "image": null
+  },
+  {
+   "id": "anna-helene-kjos-mathisen",
+   "name": "Anna Helene Kjos-Mathisen",
+   "type": "person",
+   "sector": "privat",
+   "org": "nbx",
+   "role": "Styremedlem",
+   "description": null,
+   "profile_url": "https://virksomhet.brreg.no/nb/oppslag/enheter/920245676",
+   "sources": [
+    {
+     "url": "https://virksomhet.brreg.no/nb/oppslag/enheter/920245676",
+     "title": "Enhetsregisteret: NORWEGIAN BLOCK EXCHANGE AS (920245676)",
+     "source_name": "Brønnøysundregistrene",
+     "date": "03.10.2026"
+    },
+    {
+     "url": "https://data.brreg.no/enhetsregisteret/api/enheter/920245676/roller",
+     "title": "Enhetsregisteret – roller (åpent API)",
+     "source_name": "Brønnøysundregistrene",
+     "date": "03.10.2026"
+    }
+   ],
+   "status": "published",
+   "image": null
+  },
+  {
+   "id": "vegard-kristiansen",
+   "name": "Vegard Kristiansen",
+   "type": "person",
+   "sector": "privat",
+   "org": "nbx",
+   "role": "Styremedlem",
+   "description": null,
+   "profile_url": "https://virksomhet.brreg.no/nb/oppslag/enheter/920245676",
+   "sources": [
+    {
+     "url": "https://virksomhet.brreg.no/nb/oppslag/enheter/920245676",
+     "title": "Enhetsregisteret: NORWEGIAN BLOCK EXCHANGE AS (920245676)",
+     "source_name": "Brønnøysundregistrene",
+     "date": "03.10.2026"
+    },
+    {
+     "url": "https://data.brreg.no/enhetsregisteret/api/enheter/920245676/roller",
+     "title": "Enhetsregisteret – roller (åpent API)",
+     "source_name": "Brønnøysundregistrene",
+     "date": "03.10.2026"
+    }
+   ],
+   "status": "published",
+   "image": null
+  },
+  {
+   "id": "ingvild-kjerkol",
+   "name": "Ingvild Kjerkol",
+   "type": "person",
+   "sector": "privat",
+   "org": "nbx",
+   "role": "Styremedlem",
+   "description": null,
+   "profile_url": "https://virksomhet.brreg.no/nb/oppslag/enheter/920245676",
+   "sources": [
+    {
+     "url": "https://virksomhet.brreg.no/nb/oppslag/enheter/920245676",
+     "title": "Enhetsregisteret: NORWEGIAN BLOCK EXCHANGE AS (920245676)",
+     "source_name": "Brønnøysundregistrene",
+     "date": "03.10.2026"
+    },
+    {
+     "url": "https://data.brreg.no/enhetsregisteret/api/enheter/920245676/roller",
+     "title": "Enhetsregisteret – roller (åpent API)",
+     "source_name": "Brønnøysundregistrene",
+     "date": "03.10.2026"
+    }
+   ],
+   "status": "published",
+   "image": null
+  },
+  {
+   "id": "peter-chester-warren",
+   "name": "Peter Chester Warren",
+   "type": "person",
+   "sector": "privat",
+   "org": "nbx",
+   "role": "Styremedlem",
+   "description": null,
+   "profile_url": "https://virksomhet.brreg.no/nb/oppslag/enheter/920245676",
+   "sources": [
+    {
+     "url": "https://virksomhet.brreg.no/nb/oppslag/enheter/920245676",
+     "title": "Enhetsregisteret: NORWEGIAN BLOCK EXCHANGE AS (920245676)",
+     "source_name": "Brønnøysundregistrene",
+     "date": "03.10.2026"
+    },
+    {
+     "url": "https://data.brreg.no/enhetsregisteret/api/enheter/920245676/roller",
+     "title": "Enhetsregisteret – roller (åpent API)",
+     "source_name": "Brønnøysundregistrene",
+     "date": "03.10.2026"
+    }
+   ],
+   "status": "published",
+   "image": null
+  },
+  {
+   "id": "yngve-aslaksen-gram",
+   "name": "Yngve Aslaksen Gram",
+   "type": "person",
+   "sector": "privat",
+   "org": "k33",
+   "role": "Styreleder (K33 Markets AS)",
+   "description": null,
+   "profile_url": "https://virksomhet.brreg.no/nb/oppslag/enheter/919578998",
+   "sources": [
+    {
+     "url": "https://virksomhet.brreg.no/nb/oppslag/enheter/919578998",
+     "title": "Enhetsregisteret: K33 MARKETS AS (919578998)",
+     "source_name": "Brønnøysundregistrene",
+     "date": "03.10.2026"
+    },
+    {
+     "url": "https://data.brreg.no/enhetsregisteret/api/enheter/919578998/roller",
+     "title": "Enhetsregisteret – roller (åpent API)",
+     "source_name": "Brønnøysundregistrene",
+     "date": "03.10.2026"
+    }
+   ],
+   "status": "published",
+   "image": null
+  },
+  {
+   "id": "bjorn-olav-jalborg",
+   "name": "Bjørn Olav Jalborg",
+   "type": "person",
+   "sector": "privat",
+   "org": "bare-bitcoin",
+   "role": "Styreleder",
+   "description": null,
+   "profile_url": "https://virksomhet.brreg.no/nb/oppslag/enheter/927393204",
+   "sources": [
+    {
+     "url": "https://virksomhet.brreg.no/nb/oppslag/enheter/927393204",
+     "title": "Enhetsregisteret: BARE BITCOIN AS (927393204)",
+     "source_name": "Brønnøysundregistrene",
+     "date": "03.10.2026"
+    },
+    {
+     "url": "https://data.brreg.no/enhetsregisteret/api/enheter/927393204/roller",
+     "title": "Enhetsregisteret – roller (åpent API)",
+     "source_name": "Brønnøysundregistrene",
+     "date": "03.10.2026"
+    }
+   ],
+   "status": "published",
+   "image": null
+  },
+  {
+   "id": "klaus-henrik-wiese-hansen",
+   "name": "Klaus Henrik Wiese-Hansen",
+   "type": "person",
+   "sector": "privat",
+   "org": "tyr-markets",
+   "role": "Styreleder",
+   "description": null,
+   "profile_url": "https://virksomhet.brreg.no/nb/oppslag/enheter/933052826",
+   "sources": [
+    {
+     "url": "https://virksomhet.brreg.no/nb/oppslag/enheter/933052826",
+     "title": "Enhetsregisteret: TÝR MARKETS AS (933052826)",
+     "source_name": "Brønnøysundregistrene",
+     "date": "03.10.2026"
+    },
+    {
+     "url": "https://data.brreg.no/enhetsregisteret/api/enheter/933052826/roller",
+     "title": "Enhetsregisteret – roller (åpent API)",
+     "source_name": "Brønnøysundregistrene",
+     "date": "03.10.2026"
+    }
+   ],
+   "status": "published",
+   "image": null
+  },
+  {
+   "id": "andreas-waldrup-bang",
+   "name": "Andreas Waldrup Bang",
+   "type": "person",
+   "sector": "privat",
+   "org": "tyr-markets",
+   "role": "Styremedlem",
+   "description": null,
+   "profile_url": "https://virksomhet.brreg.no/nb/oppslag/enheter/933052826",
+   "sources": [
+    {
+     "url": "https://virksomhet.brreg.no/nb/oppslag/enheter/933052826",
+     "title": "Enhetsregisteret: TÝR MARKETS AS (933052826)",
+     "source_name": "Brønnøysundregistrene",
+     "date": "03.10.2026"
+    },
+    {
+     "url": "https://data.brreg.no/enhetsregisteret/api/enheter/933052826/roller",
+     "title": "Enhetsregisteret – roller (åpent API)",
+     "source_name": "Brønnøysundregistrene",
+     "date": "03.10.2026"
+    }
+   ],
+   "status": "published",
+   "image": null
+  },
+  {
+   "id": "torstein-wibye-thinn",
+   "name": "Torstein Wibye Thinn",
+   "type": "person",
+   "sector": "privat",
+   "org": "ak-jensen-norway",
+   "role": "Styremedlem",
+   "description": null,
+   "profile_url": "https://virksomhet.brreg.no/nb/oppslag/enheter/925510246",
+   "sources": [
+    {
+     "url": "https://virksomhet.brreg.no/nb/oppslag/enheter/925510246",
+     "title": "Enhetsregisteret: AK JENSEN NORWAY AS (925510246)",
+     "source_name": "Brønnøysundregistrene",
+     "date": "03.10.2026"
+    },
+    {
+     "url": "https://data.brreg.no/enhetsregisteret/api/enheter/925510246/roller",
+     "title": "Enhetsregisteret – roller (åpent API)",
+     "source_name": "Brønnøysundregistrene",
+     "date": "03.10.2026"
+    }
+   ],
+   "status": "published",
+   "image": null
+  },
+  {
+   "id": "marta-wiktoria-syrstad",
+   "name": "Marta Wiktoria Syrstad",
+   "type": "person",
+   "sector": "privat",
+   "org": "ak-jensen-norway",
+   "role": "Styremedlem",
+   "description": null,
+   "profile_url": "https://virksomhet.brreg.no/nb/oppslag/enheter/925510246",
+   "sources": [
+    {
+     "url": "https://virksomhet.brreg.no/nb/oppslag/enheter/925510246",
+     "title": "Enhetsregisteret: AK JENSEN NORWAY AS (925510246)",
+     "source_name": "Brønnøysundregistrene",
+     "date": "03.10.2026"
+    },
+    {
+     "url": "https://data.brreg.no/enhetsregisteret/api/enheter/925510246/roller",
+     "title": "Enhetsregisteret – roller (åpent API)",
+     "source_name": "Brønnøysundregistrene",
+     "date": "03.10.2026"
+    }
+   ],
+   "status": "published",
+   "image": null
+  },
+  {
+   "id": "ola-snove",
+   "name": "Ola Snøve",
+   "type": "person",
+   "sector": "privat",
+   "org": "seetee",
+   "role": "Styreleder",
+   "description": null,
+   "profile_url": "https://virksomhet.brreg.no/nb/oppslag/enheter/926325299",
+   "sources": [
+    {
+     "url": "https://virksomhet.brreg.no/nb/oppslag/enheter/926325299",
+     "title": "Enhetsregisteret: SEETEE AS (926325299)",
+     "source_name": "Brønnøysundregistrene",
+     "date": "03.10.2026"
+    },
+    {
+     "url": "https://data.brreg.no/enhetsregisteret/api/enheter/926325299/roller",
+     "title": "Enhetsregisteret – roller (åpent API)",
+     "source_name": "Brønnøysundregistrene",
+     "date": "03.10.2026"
+    }
+   ],
+   "status": "published",
+   "image": null
+  },
+  {
+   "id": "charlotte-cecilie-solberg-hakonsen",
+   "name": "Charlotte Cecilie Solberg Håkonsen",
+   "type": "person",
+   "sector": "privat",
+   "org": "seetee",
+   "role": "Styremedlem",
+   "description": null,
+   "profile_url": "https://virksomhet.brreg.no/nb/oppslag/enheter/926325299",
+   "sources": [
+    {
+     "url": "https://virksomhet.brreg.no/nb/oppslag/enheter/926325299",
+     "title": "Enhetsregisteret: SEETEE AS (926325299)",
+     "source_name": "Brønnøysundregistrene",
+     "date": "03.10.2026"
+    },
+    {
+     "url": "https://data.brreg.no/enhetsregisteret/api/enheter/926325299/roller",
+     "title": "Enhetsregisteret – roller (åpent API)",
+     "source_name": "Brønnøysundregistrene",
+     "date": "03.10.2026"
+    }
+   ],
+   "status": "published",
+   "image": null
+  },
+  {
+   "id": "hilde-kristin-ramsdal",
+   "name": "Hilde Kristin Ramsdal",
+   "type": "person",
+   "sector": "privat",
+   "org": "seetee",
+   "role": "Styremedlem",
+   "description": null,
+   "profile_url": "https://virksomhet.brreg.no/nb/oppslag/enheter/926325299",
+   "sources": [
+    {
+     "url": "https://virksomhet.brreg.no/nb/oppslag/enheter/926325299",
+     "title": "Enhetsregisteret: SEETEE AS (926325299)",
+     "source_name": "Brønnøysundregistrene",
+     "date": "03.10.2026"
+    },
+    {
+     "url": "https://data.brreg.no/enhetsregisteret/api/enheter/926325299/roller",
+     "title": "Enhetsregisteret – roller (åpent API)",
+     "source_name": "Brønnøysundregistrene",
+     "date": "03.10.2026"
+    }
+   ],
+   "status": "published",
+   "image": null
+  },
+  {
+   "id": "svein-olnes",
+   "name": "Svein Ølnes",
+   "type": "person",
+   "sector": "privat",
+   "org": "bpi",
+   "role": "Styremedlem",
+   "description": null,
+   "profile_url": "https://virksomhet.brreg.no/nb/oppslag/enheter/934954939",
+   "sources": [
+    {
+     "url": "https://virksomhet.brreg.no/nb/oppslag/enheter/934954939",
+     "title": "Enhetsregisteret: BITCOINPOLITISK INSTITUTT NORGE (934954939)",
+     "source_name": "Brønnøysundregistrene",
+     "date": "03.10.2026"
+    },
+    {
+     "url": "https://data.brreg.no/enhetsregisteret/api/enheter/934954939/roller",
+     "title": "Enhetsregisteret – roller (åpent API)",
+     "source_name": "Brønnøysundregistrene",
+     "date": "03.10.2026"
+    }
+   ],
+   "status": "published",
+   "image": null
+  },
+  {
+   "id": "lotte-maria-beate-skolem",
+   "name": "Lotte Maria Beate Skolem",
+   "type": "person",
+   "sector": "privat",
+   "org": "bpi",
+   "role": "Styremedlem",
+   "description": null,
+   "profile_url": "https://virksomhet.brreg.no/nb/oppslag/enheter/934954939",
+   "sources": [
+    {
+     "url": "https://virksomhet.brreg.no/nb/oppslag/enheter/934954939",
+     "title": "Enhetsregisteret: BITCOINPOLITISK INSTITUTT NORGE (934954939)",
+     "source_name": "Brønnøysundregistrene",
+     "date": "03.10.2026"
+    },
+    {
+     "url": "https://data.brreg.no/enhetsregisteret/api/enheter/934954939/roller",
+     "title": "Enhetsregisteret – roller (åpent API)",
+     "source_name": "Brønnøysundregistrene",
+     "date": "03.10.2026"
+    }
+   ],
+   "status": "published",
+   "image": null
+  },
+  {
+   "id": "haakon-vik-nilsen",
+   "name": "Haakon Vik Nilsen",
+   "type": "person",
+   "sector": "privat",
+   "org": "bpi",
+   "role": "Styremedlem",
+   "description": null,
+   "profile_url": "https://virksomhet.brreg.no/nb/oppslag/enheter/934954939",
+   "sources": [
+    {
+     "url": "https://virksomhet.brreg.no/nb/oppslag/enheter/934954939",
+     "title": "Enhetsregisteret: BITCOINPOLITISK INSTITUTT NORGE (934954939)",
+     "source_name": "Brønnøysundregistrene",
+     "date": "03.10.2026"
+    },
+    {
+     "url": "https://data.brreg.no/enhetsregisteret/api/enheter/934954939/roller",
+     "title": "Enhetsregisteret – roller (åpent API)",
+     "source_name": "Brønnøysundregistrene",
+     "date": "03.10.2026"
+    }
+   ],
+   "status": "published",
+   "image": null
+  },
+  {
+   "id": "raymond-overlie",
+   "name": "Raymond Øverlie",
+   "type": "person",
+   "sector": "privat",
+   "org": "bpi",
+   "role": "Styremedlem",
+   "description": null,
+   "profile_url": "https://virksomhet.brreg.no/nb/oppslag/enheter/934954939",
+   "sources": [
+    {
+     "url": "https://virksomhet.brreg.no/nb/oppslag/enheter/934954939",
+     "title": "Enhetsregisteret: BITCOINPOLITISK INSTITUTT NORGE (934954939)",
+     "source_name": "Brønnøysundregistrene",
+     "date": "03.10.2026"
+    },
+    {
+     "url": "https://data.brreg.no/enhetsregisteret/api/enheter/934954939/roller",
+     "title": "Enhetsregisteret – roller (åpent API)",
+     "source_name": "Brønnøysundregistrene",
+     "date": "03.10.2026"
+    }
+   ],
+   "status": "published",
+   "image": null
+  },
+  {
+   "id": "andreas-eilert-harding",
+   "name": "Andreas Eilert Harding",
+   "type": "person",
+   "sector": "privat",
+   "org": "bpi",
+   "role": "Styremedlem",
+   "description": null,
+   "profile_url": "https://virksomhet.brreg.no/nb/oppslag/enheter/934954939",
+   "sources": [
+    {
+     "url": "https://virksomhet.brreg.no/nb/oppslag/enheter/934954939",
+     "title": "Enhetsregisteret: BITCOINPOLITISK INSTITUTT NORGE (934954939)",
+     "source_name": "Brønnøysundregistrene",
+     "date": "03.10.2026"
+    },
+    {
+     "url": "https://data.brreg.no/enhetsregisteret/api/enheter/934954939/roller",
+     "title": "Enhetsregisteret – roller (åpent API)",
+     "source_name": "Brønnøysundregistrene",
+     "date": "03.10.2026"
+    }
+   ],
+   "status": "published",
+   "image": null
+  },
+  {
+   "id": "runar-tonheim",
+   "name": "Runar Tonheim",
+   "type": "person",
+   "sector": "privat",
+   "org": "bpi",
+   "role": "Styremedlem",
+   "description": null,
+   "profile_url": "https://virksomhet.brreg.no/nb/oppslag/enheter/934954939",
+   "sources": [
+    {
+     "url": "https://virksomhet.brreg.no/nb/oppslag/enheter/934954939",
+     "title": "Enhetsregisteret: BITCOINPOLITISK INSTITUTT NORGE (934954939)",
+     "source_name": "Brønnøysundregistrene",
+     "date": "03.10.2026"
+    },
+    {
+     "url": "https://data.brreg.no/enhetsregisteret/api/enheter/934954939/roller",
+     "title": "Enhetsregisteret – roller (åpent API)",
+     "source_name": "Brønnøysundregistrene",
+     "date": "03.10.2026"
+    }
+   ],
+   "status": "published",
+   "image": null
+  },
+  {
+   "id": "ole-emil-augland",
+   "name": "Ole Emil Augland",
+   "type": "person",
+   "sector": "privat",
+   "org": "bpi",
+   "role": "Styremedlem",
+   "description": null,
+   "profile_url": "https://virksomhet.brreg.no/nb/oppslag/enheter/934954939",
+   "sources": [
+    {
+     "url": "https://virksomhet.brreg.no/nb/oppslag/enheter/934954939",
+     "title": "Enhetsregisteret: BITCOINPOLITISK INSTITUTT NORGE (934954939)",
+     "source_name": "Brønnøysundregistrene",
+     "date": "03.10.2026"
+    },
+    {
+     "url": "https://data.brreg.no/enhetsregisteret/api/enheter/934954939/roller",
+     "title": "Enhetsregisteret – roller (åpent API)",
+     "source_name": "Brønnøysundregistrene",
+     "date": "03.10.2026"
+    }
+   ],
+   "status": "published",
+   "image": null
+  },
+  {
+   "id": "silvija-seres",
+   "name": "Silvija Seres",
+   "type": "person",
+   "sector": "privat",
+   "org": "bpi",
+   "role": "Styremedlem",
+   "description": null,
+   "profile_url": "https://virksomhet.brreg.no/nb/oppslag/enheter/934954939",
+   "sources": [
+    {
+     "url": "https://virksomhet.brreg.no/nb/oppslag/enheter/934954939",
+     "title": "Enhetsregisteret: BITCOINPOLITISK INSTITUTT NORGE (934954939)",
+     "source_name": "Brønnøysundregistrene",
+     "date": "03.10.2026"
+    },
+    {
+     "url": "https://data.brreg.no/enhetsregisteret/api/enheter/934954939/roller",
+     "title": "Enhetsregisteret – roller (åpent API)",
+     "source_name": "Brønnøysundregistrene",
+     "date": "03.10.2026"
+    }
+   ],
+   "status": "published",
+   "image": null
+  },
+  {
+   "id": "preben-alexander-lugg",
+   "name": "Preben Alexander Lugg",
+   "type": "person",
+   "sector": "privat",
+   "org": "bpi",
+   "role": "Styremedlem",
+   "description": null,
+   "profile_url": "https://virksomhet.brreg.no/nb/oppslag/enheter/934954939",
+   "sources": [
+    {
+     "url": "https://virksomhet.brreg.no/nb/oppslag/enheter/934954939",
+     "title": "Enhetsregisteret: BITCOINPOLITISK INSTITUTT NORGE (934954939)",
+     "source_name": "Brønnøysundregistrene",
+     "date": "03.10.2026"
+    },
+    {
+     "url": "https://data.brreg.no/enhetsregisteret/api/enheter/934954939/roller",
+     "title": "Enhetsregisteret – roller (åpent API)",
+     "source_name": "Brønnøysundregistrene",
+     "date": "03.10.2026"
+    }
+   ],
+   "status": "published",
+   "image": null
+  },
+  {
+   "id": "emil-nygaard-nilsen",
+   "name": "Emil Nygaard Nilsen",
+   "type": "person",
+   "sector": "privat",
+   "org": "bpi",
+   "role": "Styremedlem",
+   "description": null,
+   "profile_url": "https://virksomhet.brreg.no/nb/oppslag/enheter/934954939",
+   "sources": [
+    {
+     "url": "https://virksomhet.brreg.no/nb/oppslag/enheter/934954939",
+     "title": "Enhetsregisteret: BITCOINPOLITISK INSTITUTT NORGE (934954939)",
+     "source_name": "Brønnøysundregistrene",
+     "date": "03.10.2026"
+    },
+    {
+     "url": "https://data.brreg.no/enhetsregisteret/api/enheter/934954939/roller",
+     "title": "Enhetsregisteret – roller (åpent API)",
+     "source_name": "Brønnøysundregistrene",
+     "date": "03.10.2026"
+    }
+   ],
+   "status": "published",
+   "image": null
+  },
+  {
+   "id": "inge-reinertsen",
+   "name": "Inge Reinertsen",
+   "type": "person",
+   "sector": "privat",
+   "org": "finans-norge",
+   "role": "Styreleder",
+   "description": null,
+   "profile_url": "https://virksomhet.brreg.no/nb/oppslag/enheter/996549488",
+   "sources": [
+    {
+     "url": "https://virksomhet.brreg.no/nb/oppslag/enheter/996549488",
+     "title": "Enhetsregisteret: FINANS NORGE (996549488)",
+     "source_name": "Brønnøysundregistrene",
+     "date": "03.10.2026"
+    },
+    {
+     "url": "https://data.brreg.no/enhetsregisteret/api/enheter/996549488/roller",
+     "title": "Enhetsregisteret – roller (åpent API)",
+     "source_name": "Brønnøysundregistrene",
+     "date": "03.10.2026"
+    }
+   ],
+   "status": "published",
+   "image": null
+  },
+  {
+   "id": "morten-myrstad",
+   "name": "Morten Myrstad",
+   "type": "person",
+   "sector": "privat",
+   "org": "kaupr",
+   "role": "Styreleder, Daglig leder",
+   "description": null,
+   "profile_url": "https://virksomhet.brreg.no/nb/oppslag/enheter/928117316",
+   "sources": [
+    {
+     "url": "https://virksomhet.brreg.no/nb/oppslag/enheter/928117316",
+     "title": "Enhetsregisteret: KAUPR AS (928117316)",
+     "source_name": "Brønnøysundregistrene",
+     "date": "03.10.2026"
+    },
+    {
+     "url": "https://data.brreg.no/enhetsregisteret/api/enheter/928117316/roller",
+     "title": "Enhetsregisteret – roller (åpent API)",
+     "source_name": "Brønnøysundregistrene",
+     "date": "03.10.2026"
+    }
+   ],
+   "status": "published",
+   "image": null
+  },
+  {
+   "id": "mette-hundebol-nielsen",
+   "name": "Mette Hundebøl Nielsen",
+   "type": "person",
+   "sector": "privat",
+   "org": "shifter",
+   "role": "Styreleder, Daglig leder",
+   "description": null,
+   "profile_url": "https://virksomhet.brreg.no/nb/oppslag/enheter/917528934",
+   "sources": [
+    {
+     "url": "https://virksomhet.brreg.no/nb/oppslag/enheter/917528934",
+     "title": "Enhetsregisteret: SHIFTER MEDIA AS (917528934)",
+     "source_name": "Brønnøysundregistrene",
+     "date": "03.10.2026"
+    },
+    {
+     "url": "https://data.brreg.no/enhetsregisteret/api/enheter/917528934/roller",
+     "title": "Enhetsregisteret – roller (åpent API)",
+     "source_name": "Brønnøysundregistrene",
+     "date": "03.10.2026"
+    }
+   ],
+   "status": "published",
+   "image": null
+  },
+  {
+   "id": "kate-wichmann",
+   "name": "Kate Wichmann",
+   "type": "person",
+   "sector": "privat",
+   "org": "shifter",
+   "role": "Styremedlem",
+   "description": null,
+   "profile_url": "https://virksomhet.brreg.no/nb/oppslag/enheter/917528934",
+   "sources": [
+    {
+     "url": "https://virksomhet.brreg.no/nb/oppslag/enheter/917528934",
+     "title": "Enhetsregisteret: SHIFTER MEDIA AS (917528934)",
+     "source_name": "Brønnøysundregistrene",
+     "date": "03.10.2026"
+    },
+    {
+     "url": "https://data.brreg.no/enhetsregisteret/api/enheter/917528934/roller",
+     "title": "Enhetsregisteret – roller (åpent API)",
+     "source_name": "Brønnøysundregistrene",
+     "date": "03.10.2026"
+    }
+   ],
+   "status": "published",
+   "image": null
+  },
+  {
+   "id": "oyulf-knapstad-hjertenes",
+   "name": "Øyulf Knapstad Hjertenes",
+   "type": "person",
+   "sector": "privat",
+   "org": "shifter",
+   "role": "Styremedlem",
+   "description": null,
+   "profile_url": "https://virksomhet.brreg.no/nb/oppslag/enheter/917528934",
+   "sources": [
+    {
+     "url": "https://virksomhet.brreg.no/nb/oppslag/enheter/917528934",
+     "title": "Enhetsregisteret: SHIFTER MEDIA AS (917528934)",
+     "source_name": "Brønnøysundregistrene",
+     "date": "03.10.2026"
+    },
+    {
+     "url": "https://data.brreg.no/enhetsregisteret/api/enheter/917528934/roller",
+     "title": "Enhetsregisteret – roller (åpent API)",
+     "source_name": "Brønnøysundregistrene",
+     "date": "03.10.2026"
+    }
+   ],
+   "status": "published",
+   "image": null
+  },
+  {
+   "id": "markus-andersen",
+   "name": "Markus Andersen",
+   "type": "person",
+   "sector": "privat",
+   "org": "tydal-data-center",
+   "role": "Daglig leder, Styremedlem",
+   "description": null,
+   "profile_url": "https://virksomhet.brreg.no/nb/oppslag/enheter/927050188",
+   "sources": [
+    {
+     "url": "https://virksomhet.brreg.no/nb/oppslag/enheter/927050188",
+     "title": "Enhetsregisteret: TYDAL DATA CENTER AS (927050188)",
+     "source_name": "Brønnøysundregistrene",
+     "date": "03.10.2026"
+    },
+    {
+     "url": "https://data.brreg.no/enhetsregisteret/api/enheter/927050188/roller",
+     "title": "Enhetsregisteret – roller (åpent API)",
+     "source_name": "Brønnøysundregistrene",
+     "date": "03.10.2026"
+    }
+   ],
+   "status": "published",
+   "image": null
+  },
+  {
+   "id": "wenguang-wang",
+   "name": "Wenguang Wang",
+   "type": "person",
+   "sector": "privat",
+   "org": "tydal-data-center",
+   "role": "Styremedlem",
+   "description": null,
+   "profile_url": "https://virksomhet.brreg.no/nb/oppslag/enheter/927050188",
+   "sources": [
+    {
+     "url": "https://virksomhet.brreg.no/nb/oppslag/enheter/927050188",
+     "title": "Enhetsregisteret: TYDAL DATA CENTER AS (927050188)",
+     "source_name": "Brønnøysundregistrene",
+     "date": "03.10.2026"
+    },
+    {
+     "url": "https://data.brreg.no/enhetsregisteret/api/enheter/927050188/roller",
+     "title": "Enhetsregisteret – roller (åpent API)",
+     "source_name": "Brønnøysundregistrene",
+     "date": "03.10.2026"
+    }
+   ],
+   "status": "published",
+   "image": null
+  },
+  {
+   "id": "chao-suo",
+   "name": "Chao Suo",
+   "type": "person",
+   "sector": "privat",
+   "org": "tydal-data-center",
+   "role": "Styremedlem",
+   "description": null,
+   "profile_url": "https://virksomhet.brreg.no/nb/oppslag/enheter/927050188",
+   "sources": [
+    {
+     "url": "https://virksomhet.brreg.no/nb/oppslag/enheter/927050188",
+     "title": "Enhetsregisteret: TYDAL DATA CENTER AS (927050188)",
+     "source_name": "Brønnøysundregistrene",
+     "date": "03.10.2026"
+    },
+    {
+     "url": "https://data.brreg.no/enhetsregisteret/api/enheter/927050188/roller",
+     "title": "Enhetsregisteret – roller (åpent API)",
+     "source_name": "Brønnøysundregistrene",
+     "date": "03.10.2026"
+    }
+   ],
+   "status": "published",
+   "image": null
+  },
+  {
+   "id": "mona-hustad",
+   "name": "Mona Hustad",
+   "type": "person",
+   "sector": "privat",
+   "org": "tydal-data-center",
+   "role": "Styremedlem",
+   "description": null,
+   "profile_url": "https://virksomhet.brreg.no/nb/oppslag/enheter/927050188",
+   "sources": [
+    {
+     "url": "https://virksomhet.brreg.no/nb/oppslag/enheter/927050188",
+     "title": "Enhetsregisteret: TYDAL DATA CENTER AS (927050188)",
+     "source_name": "Brønnøysundregistrene",
+     "date": "03.10.2026"
+    },
+    {
+     "url": "https://data.brreg.no/enhetsregisteret/api/enheter/927050188/roller",
+     "title": "Enhetsregisteret – roller (åpent API)",
+     "source_name": "Brønnøysundregistrene",
+     "date": "03.10.2026"
+    }
+   ],
+   "status": "published",
+   "image": null
   }
  ],
  "relations": [

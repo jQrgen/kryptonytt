@@ -1,7 +1,7 @@
 <!doctype html>
-<html lang="no"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Skjermmodus – Kryptonytt Norge</title><meta name="robots" content="noindex"><link rel="canonical" href="https://jqrgen.github.io/kryptonytt/skjerm/">
-<meta name="description" content="Fullskjerm-visning av Kryptonytt Norge for kontorskjerm.">
+<html lang="nn"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Skjermmodus – Kryptonytt Norge</title><meta name="robots" content="noindex"><link rel="canonical" href="https://jqrgen.github.io/kryptonytt/skjerm/"><link rel="alternate" hreflang="nn" href="https://jqrgen.github.io/kryptonytt/skjerm/"><link rel="alternate" hreflang="nb" href="https://jqrgen.github.io/kryptonytt/bm/skjerm/"><link rel="alternate" hreflang="en" href="https://jqrgen.github.io/kryptonytt/en/skjerm/"><link rel="alternate" hreflang="x-default" href="https://jqrgen.github.io/kryptonytt/skjerm/">
+<meta name="description" content="Fullskjermvising av Kryptonytt Norge for kontorskjerm.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%23b45309'/%3E%3Ctext x='8' y='12.5' font-size='12' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='bold'%3EK%3C/text%3E%3C/svg%3E">
 <style>
 :root{--bg:#0b0d10;--fg:#f5f5f4;--mut:#a8a29e;--line:#2c3036;--card:#14181d;--acc:#f59e0b;--pub:#60a5fa;--priv:#34d399}
@@ -54,40 +54,40 @@ footer{color:var(--mut);font-size:.8em;display:flex;gap:1.5em;flex-wrap:wrap}
 </style></head>
 <body>
 <div class="app">
-<header><div class="brand">Krypto<span>nytt</span> Norge</div><div class="ctl"><button id="fs" type="button">⛶ Fullskjerm</button><button id="theme" type="button">Lyst tema</button><a href="../" style="align-self:center;font-size:.8em;text-decoration:underline">Til nettstedet</a></div>
+<header><div class="brand">Krypto<span>nytt</span> Norge</div><div class="ctl"><button id="fs" type="button">⛶ Fullskjerm</button><button id="theme" type="button">Lyst tema</button><a href="../" style="align-self:center;font-size:.8em;text-decoration:underline">Til nettstaden</a></div>
 <div><div class="clock" id="clock">--:--</div><div class="date" id="date"></div></div></header>
-<section class="panel" id="pNews" aria-live="polite"><h2>Siste nyheter</h2><ol class="news" id="news"></ol><div class="pager" id="pager"></div></section>
-<section class="panel" id="pOrg"><h2>Hvem er hvem</h2><div class="spot" id="spot"></div><div class="stats" id="stats"></div></section>
-<section class="panel" id="pSrc"><div id="evbox" hidden><h2>Kommende arrangementer</h2><ul class="evs" id="evs"></ul></div><h2>Kilder vi følger</h2><ul class="srcs" id="srcs"></ul></section>
-<footer><span id="upd">Laster …</span><span>Oppsummeringer: redaksjonen, laget med hjelp av kunstig intelligens. Ingen investeringsråd. Ingen sporing.</span><span>jqrgen.github.io/kryptonytt</span></footer>
+<section class="panel" id="pNews" aria-live="polite"><h2>Siste nyheiter</h2><ol class="news" id="news"></ol><div class="pager" id="pager"></div></section>
+<section class="panel" id="pOrg"><h2>Kven er kven</h2><div class="spot" id="spot"></div><div class="stats" id="stats"></div></section>
+<section class="panel" id="pSrc"><div id="evbox" hidden><h2>Komande arrangement</h2><ul class="evs" id="evs"></ul></div><h2>Kjelder vi følgjer</h2><ul class="srcs" id="srcs"></ul></section>
+<footer><span id="upd">Lastar …</span><span>Oppsummeringar: redaksjonen, laga med hjelp av kunstig intelligens. Ingen investeringsråd. Inga sporing.</span><span>jqrgen.github.io/kryptonytt</span></footer>
 </div>
 <script>
 (function(){
-var DATA={news:[],org:{entities:[],relations:[]},src:[]},page=0,spotI=0,PER=5,REFRESH=5*60*1000,ROT=12000,SPOT=9000;
+var TOPIC={"bitcoin": "Bitcoin", "blokkjede": "Blokkjede", "krypto": "Krypto", "regulering": "Regulering", "selskaper": "Selskap"},DATA={news:[],org:{entities:[],relations:[]},src:[]},page=0,spotI=0,PER=5,REFRESH=5*60*1000,ROT=12000,SPOT=9000;
 var $=function(i){return document.getElementById(i)},esc=function(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})};
-var M=['januar','februar','mars','april','mai','juni','juli','august','september','oktober','november','desember'],D=['søndag','mandag','tirsdag','onsdag','torsdag','fredag','lørdag'];
+var M=['januar','februar','mars','april','mai','juni','juli','august','september','oktober','november','desember'],D=['sundag','måndag','tysdag','onsdag','torsdag','fredag','laurdag'];
 function fmt(iso){var d=new Date(iso);return d.getDate()+'. '+M[d.getMonth()]}
-function tick(){var d=new Date();$('clock').textContent=d.toLocaleTimeString('no-NO',{hour:'2-digit',minute:'2-digit',timeZone:'Europe/Oslo'});$('date').textContent=D[d.getDay()]+' '+d.getDate()+'. '+M[d.getMonth()]+' '+d.getFullYear()}
+function tick(){var d=new Date();$('clock').textContent=d.toLocaleTimeString('nn-NO',{hour:'2-digit',minute:'2-digit',timeZone:'Europe/Oslo'});$('date').textContent=D[d.getDay()]+' '+d.getDate()+'. '+M[d.getMonth()]+' '+d.getFullYear()}
 function perPage(){return window.matchMedia('(orientation: portrait)').matches?7:5}
 function renderNews(){var n=DATA.news,per=perPage(),pages=Math.max(1,Math.ceil(n.length/per));page=page%pages;var ol=$('news');ol.style.opacity=0;
- setTimeout(function(){ol.innerHTML=n.slice(page*per,page*per+per).map(function(i){return '<li><div class="t">'+esc(i.title)+'</div><div class="m"><b>'+esc(i.source_name)+'</b> · '+fmt(i.published)+(i.topics||[]).map(function(t){return '<span class="tag">'+esc(t)+'</span>'}).join('')+'</div><div class="s">'+esc(i.summary)+'</div></li>'}).join('')||'<li>Ingen saker ennå.</li>';
+ setTimeout(function(){ol.innerHTML=n.slice(page*per,page*per+per).map(function(i){return '<li><div class="t">'+esc(i.title_nn||i.title)+'</div><div class="m"><b>'+esc(i.source_name)+'</b> · '+fmt(i.published)+(i.topics||[]).map(function(t){return '<span class="tag">'+esc(TOPIC[t]||t)+'</span>'}).join('')+'</div><div class="s">'+esc(i.summary_nn||i.summary)+'</div></li>'}).join('')||'<li>Ingen saker enno.</li>';
  // fjern saker som ikke får plass (ingen scrolling)
  var lis=[].slice.call(ol.children);for(var k=lis.length-1;k>0&&ol.scrollHeight>ol.clientHeight+2;k--){lis[k].remove()}
  ol.style.opacity=1;$('pager').textContent=n.length?('Side '+(page+1)+' av '+pages+' · '+n.length+' saker'):''},300)}
 function initials(n){return n.split(/[\s-]+/).filter(Boolean).slice(0,2).map(function(w){return w[0]}).join('').toUpperCase()}
 function renderSpot(){var E=DATA.org.entities,by={};E.forEach(function(e){by[e.id]=e});var P=E.filter(function(e){return e.type==='person'});if(!P.length){$('spot').innerHTML='';return}
  var p=P[spotI%P.length],o=p.org&&by[p.org]?by[p.org].name:'',s=$('spot');s.style.opacity=0;
- setTimeout(function(){s.innerHTML=(p.image&&p.image.file?'<img class="av" src="../'+esc(p.image.file)+'" alt="">':'<div class="av">'+esc(initials(p.name))+'</div>')+'<div><div class="n">'+esc(p.name)+'</div><div class="r">'+esc(p.role||'')+'</div><div class="o">'+esc(o)+'</div><span class="sec '+(p.sector==='offentlig'?'pub':'priv')+'">'+(p.sector==='offentlig'?'Offentlig sektor':'Privat sektor')+'</span>'+(p.image&&p.image.file?'<div class="credit">Foto: '+esc(p.image.author)+', '+esc(p.image.license)+'</div>':'')+'<div class="credit">Kilde: '+esc((p.sources[0]||{}).source_name||'')+'</div></div>';s.style.opacity=1},300);
+ setTimeout(function(){s.innerHTML=(p.image&&p.image.file?'<img class="av" src="../'+esc(p.image.file)+'" alt="">':'<div class="av">'+esc(initials(p.name))+'</div>')+'<div><div class="n">'+esc(p.name)+'</div><div class="r">'+esc(p.role||'')+'</div><div class="o">'+esc(o)+'</div><span class="sec '+(p.sector==='offentlig'?'pub':'priv')+'">'+(p.sector==='offentlig'?'Offentleg sektor':'Privat sektor')+'</span>'+(p.image&&p.image.file?'<div class="credit">Foto: '+esc(p.image.author)+', '+esc(p.image.license)+'</div>':'')+'<div class="credit">Kjelde: '+esc((p.sources[0]||{}).source_name||'')+'</div></div>';s.style.opacity=1},300);
  var orgs=E.filter(function(e){return e.type!=='person'});
- $('stats').innerHTML='<div class="stat"><b>'+orgs.filter(function(e){return e.sector==='privat'}).length+'</b><span>aktører i privat sektor</span></div><div class="stat"><b>'+orgs.filter(function(e){return e.sector==='offentlig'}).length+'</b><span>i offentlig sektor</span></div><div class="stat"><b>'+P.length+'</b><span>personer i offentlige roller</span></div><div class="stat"><b>'+DATA.org.relations.length+'</b><span>kildebelagte koblinger</span></div>'}
+ $('stats').innerHTML='<div class="stat"><b>'+orgs.filter(function(e){return e.sector==='privat'}).length+'</b><span>aktørar i privat sektor</span></div><div class="stat"><b>'+orgs.filter(function(e){return e.sector==='offentlig'}).length+'</b><span>i offentleg sektor</span></div><div class="stat"><b>'+P.length+'</b><span>personar i offentlege roller</span></div><div class="stat"><b>'+DATA.org.relations.length+'</b><span>kjeldebelagde koplingar</span></div>'}
 function renderEv(){var e=(DATA.ev||[]).slice(0,3),M=['jan','feb','mar','apr','mai','jun','jul','aug','sep','okt','nov','des'];$('evbox').hidden=!e.length;
- $('evs').innerHTML=e.map(function(x){var d=new Date(x.start),t=d.toLocaleString('nb-NO',{timeZone:'Europe/Oslo',day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'});
- return '<li><b>'+esc(x.title)+'</b><span>'+esc(t)+' · '+esc(x.city||x.place||'Digitalt')+' · '+esc(x.organiser)+(x.paid?' · <span class="paid">Betalt</span>':'')+(x.sponsored?' · <span class="paid">Sponset</span>':'')+'</span></li>'}).join('')}
+ $('evs').innerHTML=e.map(function(x){var d=new Date(x.start),t=d.toLocaleString('nn-NO',{timeZone:'Europe/Oslo',day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'});
+ return '<li><b>'+esc(x.title)+'</b><span>'+esc(t)+' · '+esc(x.city||x.place||'Digitalt')+' · '+esc(x.organiser)+(x.paid?' · <span class="paid">Betalt</span>':'')+(x.sponsored?' · <span class="paid">Sponsa</span>':'')+'</span></li>'}).join('')}
 function renderSrc(){renderEv();$('srcs').innerHTML=DATA.src.map(function(s){return '<li>'+esc(s)+'</li>'}).join('')}
 function load(){var t='?t='+Date.now();Promise.all([fetch('../data/news.json'+t).then(function(r){return r.json()}),fetch('../data/orgchart.json'+t).then(function(r){return r.json()}),fetch('../data/sources.json'+t).then(function(r){return r.json()}),fetch('../data/events.json'+t).then(function(r){return r.json()}).catch(function(){return {events:[]}})]).then(function(a){DATA.ev=a[3].events||[];
  DATA.news=a[0].items||[];DATA.org=a[1];DATA.src=a[2].active||[];var u=a[0].updated?new Date(a[0].updated):null;
- $('upd').textContent='Sist oppdatert: '+(u?u.toLocaleString('no-NO',{timeZone:'Europe/Oslo',day:'numeric',month:'long',hour:'2-digit',minute:'2-digit'}):'ukjent')+' · data hentet '+new Date().toLocaleTimeString('no-NO',{hour:'2-digit',minute:'2-digit',timeZone:'Europe/Oslo'});
- renderNews();renderSpot();renderSrc()}).catch(function(){$('upd').textContent='Kunne ikke hente data – prøver igjen om 5 minutter'})}
+ $('upd').textContent='Sist oppdatert: '+(u?u.toLocaleString('nn-NO',{timeZone:'Europe/Oslo',day:'numeric',month:'long',hour:'2-digit',minute:'2-digit'}):'ukjend')+' · data henta '+new Date().toLocaleTimeString('nn-NO',{hour:'2-digit',minute:'2-digit',timeZone:'Europe/Oslo'});
+ renderNews();renderSpot();renderSrc()}).catch(function(){$('upd').textContent='Kunne ikkje hente data – prøver igjen om 5 minutt'})}
 // fullskjerm og wake lock
 var lock=null;function wake(){if('wakeLock' in navigator&&document.visibilityState==='visible'){navigator.wakeLock.request('screen').then(function(l){lock=l}).catch(function(){})}}
 $('fs').addEventListener('click',function(){var d=document.documentElement;if(!document.fullscreenElement){(d.requestFullscreen||d.webkitRequestFullscreen||function(){}).call(d)}else{(document.exitFullscreen||document.webkitExitFullscreen).call(document)}wake()});

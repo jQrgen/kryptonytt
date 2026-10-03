@@ -14,6 +14,8 @@
    "paid": true,
    "sponsored": null,
    "note": "Betalt: kr 239 for ikke-medlemmer som deltar fysisk (pris for medlemmer vises etter innlogging). I samarbeid med Bitcoinpolitisk Institutt Norge.",
+   "note_nn": "Betalt: kr 239 for ikkje-medlemmer som deltek fysisk (prisen for medlemmer blir vist etter innlogging). I samarbeid med Bitcoinpolitisk Institutt Norge.",
+   "note_en": "Paid: NOK 239 for non-members attending in person (the member price is shown after logging in). Organised together with Bitcoinpolitisk Institutt Norge.",
    "past": false
   },
   {
@@ -30,6 +32,8 @@
    "paid": null,
    "sponsored": null,
    "note": "Kryptonytt Norge drives av jQrgen, som presenterer Nexa på dette møtet.",
+   "note_nn": "Kryptonytt Norge blir driven av jQrgen, som presenterer Nexa på dette møtet.",
+   "note_en": "Kryptonytt Norge is run by jQrgen, who is presenting Nexa at this meetup.",
    "past": false
   },
   {
