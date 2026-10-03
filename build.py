@@ -13,6 +13,8 @@ E = lambda s: html.escape(str(s if s is not None else ""), quote=True)
 def snippets(url, title):
     return json.loads(subprocess.check_output(["node", P("tools", "snippets.js"), url, title]))
 MONTHS = ["jan.", "feb.", "mars", "april", "mai", "juni", "juli", "aug.", "sep.", "okt.", "nov.", "des."]
+MORGEN = "Nyheter oppdateres daglig av AI"
+
 def nodate(iso):
     d = dt.datetime.fromisoformat(iso).astimezone(dt.timezone(dt.timedelta(hours=2)))
     return f"{d.day}. {MONTHS[d.month-1]} {d.year}"
@@ -43,6 +45,7 @@ ol.news h3{font-size:18px;line-height:1.3;margin:0 0 4px}ol.news h3 a{text-decor
 .tag{display:inline-block;font-size:12px;padding:0 6px;border:1px solid var(--line);margin-left:4px;color:var(--muted)}
 .sum{margin:6px 0 0;max-width:75ch}
 .pw{font-size:12px;color:var(--accent)}
+.morgen{font-size:13px;color:var(--muted);margin:6px 0}
 .calgrid{display:none}@media(min-width:760px){.calgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:16px;margin:16px 0}}
 table.cal{border-collapse:collapse;width:100%;table-layout:fixed;font-size:13px}table.cal caption{text-align:left;font-weight:600;padding:4px 0}
 table.cal th{font-weight:500;color:var(--muted);padding:2px}table.cal td{border:1px solid var(--line);vertical-align:top;height:58px;padding:2px 4px;overflow:hidden}
@@ -100,7 +103,7 @@ def page(slug, title, nav, body, desc, extra_script=""):
 {body}
 {s['top']}
 </main>
-<footer><div class="wrap">Kryptonytt Norge drives av Jørgen S. Notland (jQrgen), Oslo, med hjelp fra KI. Ansvarlig redaktør: «Kryptonytt redaktør» (KI), med jQrgen som ansvarlig person. Ingen investeringsråd. Ingen sporing eller informasjonskapsler. <a href="{rel}om/">Om, rettelser og fjerning</a>.</div></footer>
+<footer><div class="wrap">Kryptonytt Norge drives av Jørgen S. Notland (jQrgen), Oslo, med hjelp fra KI. Ansvarlig redaktør: «Kryptonytt redaktør» (KI), med jQrgen som ansvarlig person. Ingen investeringsråd. Ingen sporing eller informasjonskapsler. <a href="{rel}om/">Om, rettelser og fjerning</a>.<p class="morgen">{E(MORGEN)}</p></div></footer>
 {s['script']}{extra_script}
 </body></html>"""
     d = os.path.join(SITE, slug); os.makedirs(d, exist_ok=True)
@@ -148,6 +151,7 @@ def build():
 <p class="lead">Lenker til norske saker fra aviser, myndigheter, blogger og podkaster, med en kort oppsummering skrevet av redaksjonen. Les hele saken hos kilden. Sist oppdatert {upd}. {len(items)} saker.</p>
 <div class="filters" role="group" aria-label="Filter"><label for="fsrc">Kilde</label><select id="fsrc"><option value="">Alle kilder</option>{opts}</select>
 <label>Tema</label><div class="chips">{chips}</div><span id="count" class="meta" aria-live="polite"></span></div>
+<p class="morgen">{E(MORGEN)}</p>
 <ol class="news" id="news">{''.join(lis) or '<li class="empty">Ingen publiserte saker ennå.</li>'}</ol>
 <p class="notice">Oppsummeringene er våre egne, skrevet ut fra tittel og ingress. Vi gjengir ikke artikkeltekst. Saker merket «kan kreve abonnement» ligger hos en avis med betalingsmur. Ingenting her er investeringsråd.</p>"""
     js = """<script>
