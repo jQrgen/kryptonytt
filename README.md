@@ -28,7 +28,7 @@ build.sh  ──►  site/  (bare godkjent innhold)  ──►  personverngrind 
 | Hva | Kommando |
 |---|---|
 | Hent nyheter og arrangementer | `./fetch.sh` (valg: `--days N`, `--only id1,id2`, `--no-events`) |
-| Legg til en sak manuelt | `./fetch.sh --add URL --source-name "Navn" --date YYYY-MM-DD --title "Tittel"` |
+| Legg til en sak manuelt | `./fetch.sh --add URL --source-name "Navn" --date YYYY-MM-DD --title "Tittel"` (valgfritt `--origin "tips fra Nordic Crypto"`: intern merknad i køen, vises aldri offentlig) |
 | Legg til et arrangement | `.venv/bin/python events.py --add-event URL` (evt. `--title --start --place --organiser --paid ja`) |
 | Bygg og sjekk | `./build.sh` |
 | Publiser | `./publish.sh --yes` |

@@ -85,12 +85,26 @@ def topics_of(text):
 
 def clean(html):
     return re.sub(r"\s+", " ", BeautifulSoup(html or "", "lxml").get_text(" ")).strip()
-def canon(url):
+TRACKING = re.compile(r"^(utm_.*|fbclid|gclid|gclsrc|dclid|msclkid|yclid|twclid|igshid|mc_cid|mc_eid|_hsenc|_hsmi|mkt_tok|ref|ref_src|ref_url|cmpid|ocid|ncid|xtor|s_cid|wt_mc|at_.*|spm|share|guccounter|guce_.*|__twitter_impression|cmp|campaign)$", re.I)
+def norm_url(url):
+    """Normalisert URL for duplikatsjekk: https, små bokstaver i vert, uten www./standardport, uten avsluttende /,
+    uten sporingsparametre (utm_*, fbclid, gclid …), sortert spørring, uten fragment."""
+    p = urllib.parse.urlparse(url.strip())
+    host = (p.hostname or "").lower().removeprefix("www.")
+    if p.port and p.port not in (80, 443): host += f":{p.port}"
+    q = sorted((k, v) for k, v in urllib.parse.parse_qsl(p.query, keep_blank_values=True) if not TRACKING.match(k))
+    return urllib.parse.urlunparse(("https", host, p.path.rstrip("/") or "/", "", urllib.parse.urlencode(q), ""))
+def strip_tracking(url):
+    p = urllib.parse.urlparse(url.strip())
+    q = [(k, v) for k, v in urllib.parse.parse_qsl(p.query, keep_blank_values=True) if not TRACKING.match(k)]
+    return urllib.parse.urlunparse(p._replace(query=urllib.parse.urlencode(q), fragment=""))
+canon = norm_url
+def _canon_v1(url):  # bare for stabile id-er (iid) på eksisterende saker; ikke for sammenligning
     p = urllib.parse.urlparse(url.strip())
     q = [(k, v) for k, v in urllib.parse.parse_qsl(p.query) if not k.lower().startswith(("utm_", "fbclid", "gclid", "ref"))]
     return urllib.parse.urlunparse((p.scheme.lower() or "https", p.netloc.lower().removeprefix("www."), p.path.rstrip("/") or "/", "", urllib.parse.urlencode(q), ""))
 def norm_title(t): return re.sub(r"[^\wæøå]+", " ", t.lower()).strip()
-def iid(url): return hashlib.sha1(canon(url).encode()).hexdigest()[:12]
+def iid(url): return hashlib.sha1(_canon_v1(strip_tracking(url)).encode()).hexdigest()[:12]
 def when(e):
     for k in ("published_parsed", "updated_parsed"):
         if e.get(k): return dt.datetime(*e[k][:6], tzinfo=dt.timezone.utc)
@@ -160,6 +174,7 @@ def main():
     ap.add_argument("--source-name", help="kildenavn for --add (ellers fra sources.json eller domenet)")
     ap.add_argument("--date", help="publiseringsdato for --add (YYYY-MM-DD) hvis siden ikke oppgir den")
     ap.add_argument("--title", help="tittel for --add hvis siden ikke oppgir den")
+    ap.add_argument("--origin", help="intern merknad om hvor tipset kom fra for --add, f.eks. \"tips fra Nordic Crypto\" (vises aldri offentlig)")
     ap.add_argument("--no-events", action="store_true", help="hopp over arrangementsøket"); a = ap.parse_args()
     cutoff = NOW - dt.timedelta(days=a.days)
     news = load(P("data", "news.json"), {"items": []})
@@ -173,9 +188,8 @@ def main():
     status = load(P("state", "source_status.json"), {})
     new = []
 
-    def add(url, title, teaser, published, src, outlet, outlet_name, extra=(), all_rel=False):
-        pu = urllib.parse.urlparse(url)
-        url = urllib.parse.urlunparse(pu._replace(query=urllib.parse.urlencode([(k, v) for k, v in urllib.parse.parse_qsl(pu.query) if not k.lower().startswith(("utm_", "fbclid", "gclid"))])))
+    def add(url, title, teaser, published, src, outlet, outlet_name, extra=(), all_rel=False, origin=None):
+        url = strip_tracking(url)
         text = f"{title}. {teaser}"
         hits = matches(text, extra)
         if not hits and not all_rel: return
@@ -183,15 +197,21 @@ def main():
         cu = canon(url)
         if cu in by_url or norm_title(title) in by_title:
             ex = by_url.get(cu) or by_title.get(norm_title(title))
+            if origin and not ex.get("origin"): ex["origin"] = origin
             if src not in ex.setdefault("seen_via", []): ex["seen_via"].append(src)
             return
         it = {"id": iid(url), "url": url, "title": title, "source": outlet, "source_name": outlet_name, "via": src,
               "seen_via": [src], "published": published.isoformat(), "fetched": NOW.isoformat(timespec="seconds"),
               "topics": topics_of(text), "matched": hits, "paywall": bool(SRC.get(outlet, {}).get("paywall", False)),
               "status": "pending", "summary": None}
+        if origin: it["origin"] = origin  # intern merknad (f.eks. «tips fra Nordic Crypto»), vises aldri på nettstedet
         news["items"].append(it); by_url[cu] = it; by_title[norm_title(title)] = it
         teasers[it["id"]] = teaser[:600]; new.append(it)
 
+    if a.add and norm_url(a.add) in by_url:  # duplikat (normalisert URL): ikke hent siden på nytt
+        ex = by_url[norm_url(a.add)]
+        if a.origin and not ex.get("origin"): ex["origin"] = a.origin
+        log(f"FINNES ALLEREDE: {ex['title']} ({ex.get('status')})"); a.add = None; a.only = "__none__"
     if a.add:
         title, desc, date = page_meta(a.add)
         if a.title: title = a.title
@@ -200,7 +220,7 @@ def main():
         out, oname = outlet_for(a.add, a.source_name or urllib.parse.urlparse(a.add).netloc.removeprefix("www."))
         if a.source_name: oname = a.source_name
         before = len(new)
-        add(a.add, title, desc, date, "manuell", out, oname, all_rel=True)
+        add(a.add, title, desc, date, "manuell", out, oname, all_rel=True, origin=a.origin)
         log(("LAGT TIL: " if len(new) > before else "FINNES ALLEREDE/UTENFOR PERIODEN (--days): ") + f"{title} ({date.date()}, {oname})")
         a.only = "__none__"
     seen_html = load(P("state", "html_seen.json"), {})
@@ -264,7 +284,11 @@ def main():
     for it in news["items"]:
         if it["status"] == "pending" and it["id"] not in pend:
             queue["items_needing_summary"].append({"id": it["id"], "title": it["title"], "source": it["source_name"],
-                "url": it["url"], "published": it["published"], "teaser_local_only": teasers.get(it["id"], "")})
+                "url": it["url"], "published": it["published"], "teaser_local_only": teasers.get(it["id"], ""),
+                **({"origin": it["origin"]} if it.get("origin") else {})})
+    for q_ in queue["items_needing_summary"]:  # behold/oppdater origin ved hver ny bygging av køen
+        src_it = next((i for i in news["items"] if i["id"] == q_["id"]), None)
+        if src_it and src_it.get("origin"): q_["origin"] = src_it["origin"]
     queue["items_needing_summary"] = [q for q in queue["items_needing_summary"]
         if any(i["id"] == q["id"] and i["status"] == "pending" for i in news["items"])]
     seen_c = {(c["name"].lower(), c.get("item_id")) for c in queue["candidate_entities"]}
