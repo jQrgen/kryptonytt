@@ -13,7 +13,7 @@ E = lambda s: html.escape(str(s if s is not None else ""), quote=True)
 def snippets(url, title):
     return json.loads(subprocess.check_output(["node", P("tools", "snippets.js"), url, title]))
 MONTHS = ["jan.", "feb.", "mars", "april", "mai", "juni", "juli", "aug.", "sep.", "okt.", "nov.", "des."]
-MORGEN = "Nyheter oppdateres daglig av AI"
+MORGEN = "Nyheter oppdateres daglig av kunstig intelligens"
 
 def nodate(iso):
     d = dt.datetime.fromisoformat(iso).astimezone(dt.timezone(dt.timedelta(hours=2)))
@@ -103,7 +103,7 @@ def page(slug, title, nav, body, desc, extra_script=""):
 {body}
 {s['top']}
 </main>
-<footer><div class="wrap">Kryptonytt Norge drives av Jørgen S. Notland (jQrgen), Oslo, med hjelp fra KI. Ansvarlig redaktør: «Kryptonytt redaktør» (KI), med jQrgen som ansvarlig person. Ingen investeringsråd. Ingen sporing eller informasjonskapsler. <a href="{rel}om/">Om, rettelser og fjerning</a>.<p class="morgen">{E(MORGEN)}</p></div></footer>
+<footer><div class="wrap">Kryptonytt Norge drives av Jørgen S. Notland (jQrgen), Oslo, med hjelp av kunstig intelligens. Ansvarlig redaktør: «Kryptonytt redaktør» (en bot basert på kunstig intelligens), med jQrgen som ansvarlig person. Ingen investeringsråd. Ingen sporing eller informasjonskapsler. <a href="{rel}om/">Om, rettelser og fjerning</a>.<p class="morgen">{E(MORGEN)}</p></div></footer>
 {s['script']}{extra_script}
 </body></html>"""
     d = os.path.join(SITE, slug); os.makedirs(d, exist_ok=True)
