@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "site": "kryptonytt",
- "exported_at": "2026-10-03T23:38:39+02:00",
+ "exported_at": "2026-10-04T07:33:24+02:00",
  "articles": [
   {
    "site": "kryptonytt",
@@ -13,7 +13,7 @@
    "source_name": "Kaupr",
    "published_at": "2026-09-24T12:00:00+00:00",
    "first_published_on_site": "2026-10-03T16:57:45+02:00",
-   "last_seen_on_site": "2026-10-03T23:38:39+02:00",
+   "last_seen_on_site": "2026-10-04T07:33:24+02:00",
    "languages": [
     "nn",
     "nb",
@@ -32,7 +32,7 @@
    "removed": 0,
    "removed_at": null,
    "removal_reason": null,
-   "updated_at": "2026-10-03T23:38:39+02:00"
+   "updated_at": "2026-10-04T07:33:24+02:00"
   },
   {
    "site": "kryptonytt",
@@ -44,7 +44,7 @@
    "source_name": "Aftenposten",
    "published_at": "2026-10-02T11:07:26+00:00",
    "first_published_on_site": "2026-10-03T16:57:45+02:00",
-   "last_seen_on_site": "2026-10-03T23:38:39+02:00",
+   "last_seen_on_site": "2026-10-04T07:33:24+02:00",
    "languages": [
     "nn",
     "nb",
@@ -63,7 +63,7 @@
    "removed": 0,
    "removed_at": null,
    "removal_reason": null,
-   "updated_at": "2026-10-03T23:38:39+02:00"
+   "updated_at": "2026-10-04T07:33:24+02:00"
   },
   {
    "site": "kryptonytt",
@@ -75,7 +75,7 @@
    "source_name": "Kaupr",
    "published_at": "2026-09-08T12:00:00+00:00",
    "first_published_on_site": "2026-10-03T16:57:45+02:00",
-   "last_seen_on_site": "2026-10-03T23:38:39+02:00",
+   "last_seen_on_site": "2026-10-04T07:33:24+02:00",
    "languages": [
     "nn",
     "nb",
@@ -94,7 +94,7 @@
    "removed": 0,
    "removed_at": null,
    "removal_reason": null,
-   "updated_at": "2026-10-03T23:38:39+02:00"
+   "updated_at": "2026-10-04T07:33:24+02:00"
   },
   {
    "site": "kryptonytt",
@@ -106,7 +106,7 @@
    "source_name": "Stortinget",
    "published_at": "2026-09-18T12:00:00+00:00",
    "first_published_on_site": "2026-10-03T16:57:45+02:00",
-   "last_seen_on_site": "2026-10-03T23:38:39+02:00",
+   "last_seen_on_site": "2026-10-04T07:33:24+02:00",
    "languages": [
     "nn",
     "nb",
@@ -128,7 +128,7 @@
    "removed": 0,
    "removed_at": null,
    "removal_reason": null,
-   "updated_at": "2026-10-03T23:38:39+02:00"
+   "updated_at": "2026-10-04T07:33:24+02:00"
   },
   {
    "site": "kryptonytt",
@@ -140,7 +140,7 @@
    "source_name": "Kaupr",
    "published_at": "2026-09-16T12:00:00+00:00",
    "first_published_on_site": "2026-10-03T16:57:45+02:00",
-   "last_seen_on_site": "2026-10-03T23:38:39+02:00",
+   "last_seen_on_site": "2026-10-04T07:33:24+02:00",
    "languages": [
     "nn",
     "nb",
@@ -159,7 +159,7 @@
    "removed": 0,
    "removed_at": null,
    "removal_reason": null,
-   "updated_at": "2026-10-03T23:38:39+02:00"
+   "updated_at": "2026-10-04T07:33:24+02:00"
   },
   {
    "site": "kryptonytt",
@@ -171,7 +171,7 @@
    "source_name": "Shifter",
    "published_at": "2026-09-15T12:00:00+00:00",
    "first_published_on_site": "2026-10-03T16:57:45+02:00",
-   "last_seen_on_site": "2026-10-03T23:38:39+02:00",
+   "last_seen_on_site": "2026-10-04T07:33:24+02:00",
    "languages": [
     "nn",
     "nb",
@@ -190,7 +190,7 @@
    "removed": 0,
    "removed_at": null,
    "removal_reason": null,
-   "updated_at": "2026-10-03T23:38:39+02:00"
+   "updated_at": "2026-10-04T07:33:24+02:00"
   },
   {
    "site": "kryptonytt",
@@ -202,7 +202,7 @@
    "source_name": "Kaupr",
    "published_at": "2026-09-18T12:00:00+00:00",
    "first_published_on_site": "2026-10-03T16:57:45+02:00",
-   "last_seen_on_site": "2026-10-03T23:38:39+02:00",
+   "last_seen_on_site": "2026-10-04T07:33:24+02:00",
    "languages": [
     "nn",
     "nb",
@@ -221,7 +221,7 @@
    "removed": 0,
    "removed_at": null,
    "removal_reason": null,
-   "updated_at": "2026-10-03T23:38:39+02:00"
+   "updated_at": "2026-10-04T07:33:24+02:00"
   },
   {
    "site": "kryptonytt",
@@ -233,7 +233,7 @@
    "source_name": "NBX (børsmelding)",
    "published_at": "2026-09-17T12:00:00+00:00",
    "first_published_on_site": "2026-10-03T16:57:45+02:00",
-   "last_seen_on_site": "2026-10-03T23:38:39+02:00",
+   "last_seen_on_site": "2026-10-04T07:33:24+02:00",
    "languages": [
     "nn",
     "nb",
@@ -255,7 +255,7 @@
    "removed": 0,
    "removed_at": null,
    "removal_reason": null,
-   "updated_at": "2026-10-03T23:38:39+02:00"
+   "updated_at": "2026-10-04T07:33:24+02:00"
   },
   {
    "site": "kryptonytt",
@@ -267,7 +267,7 @@
    "source_name": "Kaupr",
    "published_at": "2026-09-13T12:00:00+00:00",
    "first_published_on_site": "2026-10-03T16:57:45+02:00",
-   "last_seen_on_site": "2026-10-03T23:38:39+02:00",
+   "last_seen_on_site": "2026-10-04T07:33:24+02:00",
    "languages": [
     "nn",
     "nb",
@@ -286,7 +286,7 @@
    "removed": 0,
    "removed_at": null,
    "removal_reason": null,
-   "updated_at": "2026-10-03T23:38:39+02:00"
+   "updated_at": "2026-10-04T07:33:24+02:00"
   },
   {
    "site": "kryptonytt",
@@ -298,7 +298,7 @@
    "source_name": "Euronews",
    "published_at": "2026-10-01T12:00:00+00:00",
    "first_published_on_site": "2026-10-03T16:57:45+02:00",
-   "last_seen_on_site": "2026-10-03T23:38:39+02:00",
+   "last_seen_on_site": "2026-10-04T07:33:24+02:00",
    "languages": [
     "nn",
     "nb",
@@ -321,7 +321,465 @@
    "removed": 0,
    "removed_at": null,
    "removal_reason": null,
-   "updated_at": "2026-10-03T23:38:39+02:00"
+   "updated_at": "2026-10-04T07:33:24+02:00"
+  },
+  {
+   "site": "kryptonytt",
+   "id": "014762c21014",
+   "url": "https://www.digi.no/kryptovaluta/bitcoin-sikkerheten-trues-snart-av-kvantedatamaskiner-viser-studie/5706122",
+   "canonical_url": "https://digi.no/kryptovaluta/bitcoin-sikkerheten-trues-snart-av-kvantedatamaskiner-viser-studie/5706122",
+   "title": "Snart kan kvantedatamaskiner true bitcoin-sikkerheten",
+   "source": "digi",
+   "source_name": "Digi.no",
+   "published_at": "2026-09-20T14:24:55+00:00",
+   "first_published_on_site": "2026-10-04T07:33:24+02:00",
+   "last_seen_on_site": "2026-10-04T07:33:24+02:00",
+   "languages": [
+    "nn",
+    "nb",
+    "en"
+   ],
+   "summaries": {
+    "nb": "Ifølge Digi.no har kvantedatamaskinselskapet IonQ publisert en teknisk analyse av hva som skal til for å bryte sikkerheten i bitcoin og andre kryptovalutaer. Digi skriver at tidshorisonten for en slik trussel har krympet, og at det haster mer enn før å styrke sikkerheten.",
+    "nn": "Ifølgje Digi.no har kvantedatamaskinselskapet IonQ publisert ei teknisk analyse av kva som skal til for å bryte tryggleiken i bitcoin og andre kryptovalutaer. Digi skriv at tidshorisonten for ein slik trussel har krympa, og at det hastar meir enn før å styrkje tryggleiken.",
+    "en": "According to Digi.no, quantum computing company IonQ has published a technical analysis of what it would take to break the security of bitcoin and other cryptocurrencies. Digi writes that the time horizon for such a threat has shrunk and that strengthening security is now more urgent."
+   },
+   "titles": {},
+   "topics": [
+    "bitcoin"
+   ],
+   "removed": 0,
+   "removed_at": null,
+   "removal_reason": null,
+   "updated_at": "2026-10-04T07:33:24+02:00"
+  },
+  {
+   "site": "kryptonytt",
+   "id": "1abbecf31dff",
+   "url": "https://e24.no/bors/nyheter/a/305563",
+   "canonical_url": "https://e24.no/bors/nyheter/a/305563",
+   "title": "Verdiendringer i bitcoin tynger NBX",
+   "source": "e24",
+   "source_name": "E24",
+   "published_at": "2026-09-18T11:36:00+00:00",
+   "first_published_on_site": "2026-10-04T07:33:24+02:00",
+   "last_seen_on_site": "2026-10-04T07:33:24+02:00",
+   "languages": [
+    "nn",
+    "nb",
+    "en"
+   ],
+   "summaries": {
+    "nb": "NBX fikk et resultat før skatt på minus 21,33 millioner kroner i første halvår 2026, mot minus 9,85 millioner i samme periode i 2025, skriver E24. Ifølge toppsjef Stig Aleksander Kjos-Mathisen skyldes mye av tapet lavere bokført verdi på selskapets bitcoin. NBX gjorde samtidig om 19,8 millioner kroner i lån og renter til nye aksjer, og bitcoinbeholdningen økte fra rundt 24 til 28.",
+    "nn": "NBX fekk eit resultat før skatt på minus 21,33 millionar kroner i første halvår 2026, mot minus 9,85 millionar same periode i 2025, skriv E24. Ifølgje toppsjef Stig Aleksander Kjos-Mathisen skuldast mykje av tapet lågare bokført verdi på selskapet sine bitcoin. NBX gjorde samtidig om 19,8 millionar kroner i lån og renter til nye aksjar, og bitcoinbehaldninga auka frå om lag 24 til 28.",
+    "en": "NBX posted a pre-tax loss of NOK 21.33 million in the first half of 2026, compared with a loss of NOK 9.85 million a year earlier, E24 reports. According to CEO Stig Aleksander Kjos-Mathisen, much of the loss was due to a lower book value of the company's bitcoin. NBX also converted NOK 19.8 million in loans and interest into new shares, and its bitcoin holding rose from about 24 to 28."
+   },
+   "titles": {},
+   "topics": [
+    "selskaper",
+    "bitcoin"
+   ],
+   "removed": 0,
+   "removed_at": null,
+   "removal_reason": null,
+   "updated_at": "2026-10-04T07:33:24+02:00"
+  },
+  {
+   "site": "kryptonytt",
+   "id": "379b6008263b",
+   "url": "https://www.finansavisen.no/jus/2026/09/23/8380047/et-nettverk-av-proffe-svindlere",
+   "canonical_url": "https://finansavisen.no/jus/2026/09/23/8380047/et-nettverk-av-proffe-svindlere",
+   "title": "Et nettverk av proffe svindlere",
+   "source": "finansavisen",
+   "source_name": "Finansavisen",
+   "published_at": "2026-09-23T05:24:00+00:00",
+   "first_published_on_site": "2026-10-04T07:33:24+02:00",
+   "last_seen_on_site": "2026-10-04T07:33:24+02:00",
+   "languages": [
+    "nn",
+    "nb",
+    "en"
+   ],
+   "summaries": {
+    "nb": "Finansmyndigheter i flere land advarer mot kryptoselskapet Quantiumax og flere lignende selskaper, skriver Kapital i Finansavisen. Ifølge artikkelen fikk en norsk kunde først vist en stor gevinst, før det kom krav om 100 000 kroner for å få pengene ut.",
+    "nn": "Finansmyndigheiter i fleire land åtvarar mot kryptoselskapet Quantiumax og fleire liknande selskap, skriv Kapital i Finansavisen. Ifølgje artikkelen fekk ein norsk kunde først vist ein stor gevinst, før det kom krav om 100 000 kroner for å få pengane ut.",
+    "en": "Financial authorities in several countries are warning against the crypto company Quantiumax and a number of similar firms, Kapital writes in Finansavisen. According to the article, a Norwegian customer was first shown a large gain and then asked to pay NOK 100,000 to withdraw the money."
+   },
+   "titles": {},
+   "topics": [
+    "krypto"
+   ],
+   "removed": 0,
+   "removed_at": null,
+   "removal_reason": null,
+   "updated_at": "2026-10-04T07:33:24+02:00"
+  },
+  {
+   "site": "kryptonytt",
+   "id": "4d918e6a3378",
+   "url": "https://www.kaupr.io/nyheter/firi-tar-opp-kampen-om-1-1-millioner-svenske-kryptoeiere",
+   "canonical_url": "https://kaupr.io/nyheter/firi-tar-opp-kampen-om-1-1-millioner-svenske-kryptoeiere",
+   "title": "Firi tar opp kampen om 1,1 millioner svenske kryptoeiere",
+   "source": "kaupr",
+   "source_name": "Kaupr",
+   "published_at": "2026-09-15T12:00:00+00:00",
+   "first_published_on_site": "2026-10-04T07:33:24+02:00",
+   "last_seen_on_site": "2026-10-04T07:33:24+02:00",
+   "languages": [
+    "nn",
+    "nb",
+    "en"
+   ],
+   "summaries": {
+    "nb": "Firi lanserer appen sin i Sverige med svensk BankID, Swish og innskudd i svenske kroner, skriver Kaupr. Firi har til nå vært i Norge og Danmark og fikk MiCA-tillatelse i mai; ifølge landssjef Ted Scheiman går selskapet inn i et marked der rundt 1,1 millioner svensker eier krypto og konkurransen er hard. Opplysning: Kaupr er sponsor av Kryptonytt.",
+    "nn": "Firi lanserer appen sin i Sverige med svensk BankID, Swish og innskot i svenske kroner, skriv Kaupr. Firi har til no vore i Noreg og Danmark og fekk MiCA-løyve i mai; ifølgje landssjef Ted Scheiman går selskapet inn i ein marknad der om lag 1,1 millionar svenskar eig krypto og konkurransen er hard. Opplysning: Kaupr er sponsor av Kryptonytt.",
+    "en": "Firi is launching its app in Sweden with Swedish BankID, Swish and deposits in Swedish kronor, Kaupr reports. Firi has so far operated in Norway and Denmark and received its MiCA licence in May; according to country manager Ted Scheiman, it is entering a market where around 1.1 million Swedes own crypto and competition is tough. Disclosure: Kaupr sponsors Kryptonytt."
+   },
+   "titles": {},
+   "topics": [
+    "selskaper"
+   ],
+   "removed": 0,
+   "removed_at": null,
+   "removal_reason": null,
+   "updated_at": "2026-10-04T07:33:24+02:00"
+  },
+  {
+   "site": "kryptonytt",
+   "id": "5682c6aa22dd",
+   "url": "https://www.finansavisen.no/valuta/2026/09/20/8380762/kollaps-for-kryptoborsen-firi",
+   "canonical_url": "https://finansavisen.no/valuta/2026/09/20/8380762/kollaps-for-kryptoborsen-firi",
+   "title": "Firi gikk 44 millioner kroner i minus i første halvår",
+   "source": "finansavisen",
+   "source_name": "Finansavisen",
+   "published_at": "2026-09-20T07:41:00+00:00",
+   "first_published_on_site": "2026-10-04T07:33:24+02:00",
+   "last_seen_on_site": "2026-10-04T07:33:24+02:00",
+   "languages": [
+    "nn",
+    "nb",
+    "en"
+   ],
+   "summaries": {
+    "nb": "Ifølge Finansavisen tjente kryptobørsen Firi 135 millioner kroner i 2024, mens selskapet gikk 44 millioner kroner i minus i første halvår 2026. Avisen knytter de svake tallene til lavere handelsaktivitet; i tittelen omtaler Finansavisen utviklingen som «kollaps».",
+    "nn": "Ifølgje Finansavisen tente kryptobørsen Firi 135 millionar kroner i 2024, medan selskapet gjekk 44 millionar kroner i minus i første halvår 2026. Avisa knyter dei svake tala til lågare handelsaktivitet; i tittelen omtaler Finansavisen utviklinga som «kollaps».",
+    "en": "According to Finansavisen, crypto exchange Firi earned NOK 135 million in 2024, while it posted a loss of NOK 44 million in the first half of 2026. The paper links the weak figures to lower trading activity; its headline describes the development as a \"kollaps\" (collapse)."
+   },
+   "titles": {
+    "nn": "Firi gjekk 44 millionar kroner i minus i første halvår",
+    "en": "Firi posts NOK 44 million loss in first half"
+   },
+   "topics": [
+    "selskaper"
+   ],
+   "removed": 0,
+   "removed_at": null,
+   "removal_reason": null,
+   "updated_at": "2026-10-04T07:33:24+02:00"
+  },
+  {
+   "site": "kryptonytt",
+   "id": "77a45d553c8b",
+   "url": "https://www.finansavisen.no/finans/2026/09/27/8382998/tokens-fra-bors-til-betaling",
+   "canonical_url": "https://finansavisen.no/finans/2026/09/27/8382998/tokens-fra-bors-til-betaling",
+   "title": "Tokens fra børs til betaling",
+   "source": "finansavisen",
+   "source_name": "Finansavisen",
+   "published_at": "2026-09-27T09:53:00+00:00",
+   "first_published_on_site": "2026-10-04T07:33:24+02:00",
+   "last_seen_on_site": "2026-10-04T07:33:24+02:00",
+   "languages": [
+    "nn",
+    "nb",
+    "en"
+   ],
+   "summaries": {
+    "nb": "I et meningsinnlegg i Finansavisen skriver Henrik Sommerfelt, Skandinavia-sjef i CMC Markets, om tokenisering i aksjehandel og betalinger. Han viser til at det amerikanske finanstilsynet SEC åpner for en femårig prøveordning med tokenisert aksjehandel og at Mastercard og Visa satser på tokeniserte betalinger, men mener teknologien neppe vil fjerne de etablerte aktørene.",
+    "nn": "I eit meiningsinnlegg i Finansavisen skriv Henrik Sommerfelt, Skandinavia-sjef i CMC Markets, om tokenisering i aksjehandel og betalingar. Han viser til at det amerikanske finanstilsynet SEC opnar for ei femårig prøveordning med tokenisert aksjehandel og at Mastercard og Visa satsar på tokeniserte betalingar, men meiner teknologien neppe vil fjerne dei etablerte aktørane.",
+    "en": "In an opinion piece in Finansavisen, Henrik Sommerfelt, head of Scandinavia at CMC Markets, writes about tokenisation in share trading and payments. He notes that the US Securities and Exchange Commission is opening a five-year trial for tokenised share trading and that Mastercard and Visa are investing in tokenised payments, but argues the technology is unlikely to push out established players."
+   },
+   "titles": {},
+   "topics": [
+    "blokkjede"
+   ],
+   "removed": 0,
+   "removed_at": null,
+   "removal_reason": null,
+   "updated_at": "2026-10-04T07:33:24+02:00"
+  },
+  {
+   "site": "kryptonytt",
+   "id": "8168421e6cf9",
+   "url": "https://www.finansavisen.no/finans/2026/09/17/8381339/usa-letter-pa-reglene-for-aksjehandel",
+   "canonical_url": "https://finansavisen.no/finans/2026/09/17/8381339/usa-letter-pa-reglene-for-aksjehandel",
+   "title": "USA letter på reglene for aksjehandel",
+   "source": "finansavisen",
+   "source_name": "Finansavisen",
+   "published_at": "2026-09-17T10:59:00+00:00",
+   "first_published_on_site": "2026-10-04T07:33:24+02:00",
+   "last_seen_on_site": "2026-10-04T07:33:24+02:00",
+   "languages": [
+    "nn",
+    "nb",
+    "en"
+   ],
+   "summaries": {
+    "nb": "Det amerikanske finanstilsynet SEC har vedtatt en midlertidig ordning på fem år som gir handelsplattformer for tokeniserte aksjer fritak fra å bli klassifisert som børser, skriver Finansavisen med Reuters som kilde. Tokenene må gi samme rettigheter som vanlige aksjer, selskapet bak aksjen skal varsles og kan si nei, og syntetiske produkter er ikke tillatt.",
+    "nn": "Det amerikanske finanstilsynet SEC har vedteke ei mellombels ordning på fem år som gir handelsplattformer for tokeniserte aksjar fritak frå å bli klassifiserte som børsar, skriv Finansavisen med Reuters som kjelde. Tokena må gi same rettar som vanlege aksjar, selskapet bak aksjen skal varslast og kan seie nei, og syntetiske produkt er ikkje tillatne.",
+    "en": "The US Securities and Exchange Commission has adopted a temporary five-year arrangement exempting trading platforms for tokenised shares from being classified as exchanges, Finansavisen reports, citing Reuters. The tokens must carry the same rights as ordinary shares, the issuing company must be notified and can object, and synthetic products are not allowed."
+   },
+   "titles": {},
+   "topics": [
+    "regulering",
+    "blokkjede"
+   ],
+   "removed": 0,
+   "removed_at": null,
+   "removal_reason": null,
+   "updated_at": "2026-10-04T07:33:24+02:00"
+  },
+  {
+   "site": "kryptonytt",
+   "id": "8ae149a20f5f",
+   "url": "https://www.finansavisen.no/finans/2026/09/28/8383782/pangstart-for-nytt-kryptofond",
+   "canonical_url": "https://finansavisen.no/finans/2026/09/28/8383782/pangstart-for-nytt-kryptofond",
+   "title": "Pangstart for nytt kryptofond",
+   "source": "finansavisen",
+   "source_name": "Finansavisen",
+   "published_at": "2026-09-28T08:01:00+00:00",
+   "first_published_on_site": "2026-10-04T07:33:24+02:00",
+   "last_seen_on_site": "2026-10-04T07:33:24+02:00",
+   "languages": [
+    "nn",
+    "nb",
+    "en"
+   ],
+   "summaries": {
+    "nb": "Finansavisen skriver om et nytt kryptofond som Joakim Hannisdahl har startet under Gersemi Asset Management, bygd på en matematisk handelsmodell. Fondet startet i august.",
+    "nn": "Finansavisen skriv om eit nytt kryptofond som Joakim Hannisdahl har starta under Gersemi Asset Management, bygd på ein matematisk handelsmodell. Fondet starta i august.",
+    "en": "Finansavisen writes about a new crypto fund that Joakim Hannisdahl has launched under Gersemi Asset Management, based on a mathematical trading model. The fund started in August."
+   },
+   "titles": {},
+   "topics": [
+    "krypto"
+   ],
+   "removed": 0,
+   "removed_at": null,
+   "removal_reason": null,
+   "updated_at": "2026-10-04T07:33:24+02:00"
+  },
+  {
+   "site": "kryptonytt",
+   "id": "a3e141afc7ed",
+   "url": "https://itavisen.no/2026/09/22/apple-pay-krypto-stablecoin-betalinger/",
+   "canonical_url": "https://itavisen.no/2026/09/22/apple-pay-krypto-stablecoin-betalinger",
+   "title": "iPhone kan få Bitcoin-støtte",
+   "source": "itavisen",
+   "source_name": "ITavisen",
+   "published_at": "2026-09-21T21:32:00+00:00",
+   "first_published_on_site": "2026-10-04T07:33:24+02:00",
+   "last_seen_on_site": "2026-10-04T07:33:24+02:00",
+   "languages": [
+    "nn",
+    "nb",
+    "en"
+   ],
+   "summaries": {
+    "nb": "ITavisen skriver at Apple har lyst ut en strategistilling knyttet til Apple Pay der det etterspørres kunnskap om stablecoins, tokeniserte bankinnskudd og blokkjedeteknologi. Avisen tolker dette som et tegn på at selskapet vurderer kryptobetalinger, men skriver at ingenting tyder på en slik løsning i Norge med det første, og at tjenester i Europa vil omfattes av MiCA. Saken er spekulativ og bygger på en stillingsutlysning.",
+    "nn": "ITavisen skriv at Apple har lyst ut ei strategistilling knytt til Apple Pay der det blir etterspurt kunnskap om stablecoins, tokeniserte bankinnskot og blokkjedeteknologi. Avisa tolkar dette som eit teikn på at selskapet vurderer kryptobetalingar, men skriv at ingenting tyder på ei slik løysing i Noreg med det første, og at tenester i Europa vil vere omfatta av MiCA. Saka er spekulativ og byggjer på ei stillingsutlysing.",
+    "en": "ITavisen reports that Apple has advertised a strategy role linked to Apple Pay that asks for knowledge of stablecoins, tokenised bank deposits and blockchain technology. The site reads this as a sign that the company is considering crypto payments, but says nothing points to such a service in Norway soon and that European services would fall under MiCA. The story is speculative and based on a job advertisement."
+   },
+   "titles": {},
+   "topics": [
+    "selskaper",
+    "krypto"
+   ],
+   "removed": 0,
+   "removed_at": null,
+   "removal_reason": null,
+   "updated_at": "2026-10-04T07:33:24+02:00"
+  },
+  {
+   "site": "kryptonytt",
+   "id": "b0202ea8241d",
+   "url": "https://www.oa.no/skal-ha-stalet-fra-egen-bedrift-brukte-pengene-pa-krypto/s/80-35-26289",
+   "canonical_url": "https://oa.no/skal-ha-stalet-fra-egen-bedrift-brukte-pengene-pa-krypto/s/80-35-26289",
+   "title": "Skal ha stjålet fra egen bedrift – brukte pengene på krypto",
+   "source": "oa",
+   "source_name": "Oppland Arbeiderblad",
+   "published_at": "2026-09-23T16:08:00+00:00",
+   "first_published_on_site": "2026-10-04T07:33:24+02:00",
+   "last_seen_on_site": "2026-10-04T07:33:24+02:00",
+   "languages": [
+    "nn",
+    "nb",
+    "en"
+   ],
+   "summaries": {
+    "nb": "En mann er tiltalt for grovt underslag fra sin egen bedrift, skriver Oppland Arbeiderblad. Ifølge avisen skal han ha brukt pengene til å kjøpe kryptovaluta.",
+    "nn": "Ein mann er tiltalt for grovt underslag frå si eiga bedrift, skriv Oppland Arbeiderblad. Ifølgje avisa skal han ha brukt pengane til å kjøpe kryptovaluta.",
+    "en": "A man has been indicted for gross embezzlement from his own company, Oppland Arbeiderblad reports. According to the paper, he allegedly used the money to buy cryptocurrency."
+   },
+   "titles": {},
+   "topics": [
+    "krypto"
+   ],
+   "removed": 0,
+   "removed_at": null,
+   "removal_reason": null,
+   "updated_at": "2026-10-04T07:33:24+02:00"
+  },
+  {
+   "site": "kryptonytt",
+   "id": "c1431df81160",
+   "url": "https://podcasters.spotify.com/pod/show/bitcoinsnakk9/episodes/Norway-Wants-to-Ban-Bitcoin-Mining--The-Miners-Already-Left--Rachel-Geyer--EBEA-e3p0bb8",
+   "canonical_url": "https://podcasters.spotify.com/pod/show/bitcoinsnakk9/episodes/Norway-Wants-to-Ban-Bitcoin-Mining--The-Miners-Already-Left--Rachel-Geyer--EBEA-e3p0bb8",
+   "title": "Norway Wants to Ban Bitcoin Mining. The Miners Already Left | Rachel Geyer, EBEA",
+   "source": "bpi",
+   "source_name": "Bitcoinpolitisk institutt Norge (podkast)",
+   "published_at": "2026-09-17T18:30:43+00:00",
+   "first_published_on_site": "2026-10-04T07:33:24+02:00",
+   "last_seen_on_site": "2026-10-04T07:33:24+02:00",
+   "languages": [
+    "nn",
+    "nb",
+    "en"
+   ],
+   "summaries": {
+    "nb": "Episoden er et opptak av foredraget Rachel Geyer, leder i European Bitcoin Energy Association, holdt for Bitcoinpolitisk institutt i Oslo. Hun argumenterer mot det foreslåtte norske forbudet mot bitcoin-utvinning og hevder blant annet at utvinningen bruker under én prosent av norsk strøm, og at de store aktørene i nord allerede legger om mot kunstig intelligens. Foredraget avsluttes med spørsmål fra salen.",
+    "nn": "Episoden er eit opptak av foredraget Rachel Geyer, leiar i European Bitcoin Energy Association, heldt for Bitcoinpolitisk institutt i Oslo. Ho argumenterer mot det foreslåtte norske forbodet mot bitcoin-utvinning og hevdar mellom anna at utvinninga brukar under éin prosent av norsk straum, og at dei store aktørane i nord alt legg om mot kunstig intelligens. Foredraget blir avslutta med spørsmål frå salen.",
+    "en": "The episode is a recording of a talk by Rachel Geyer, chair of the European Bitcoin Energy Association, for Bitcoinpolitisk institutt in Oslo. She argues against Norway's proposed ban on bitcoin mining, claiming among other things that mining uses less than one per cent of Norwegian electricity and that the large operators in the north are already shifting towards artificial intelligence. The talk ends with audience questions."
+   },
+   "titles": {},
+   "topics": [
+    "bitcoin",
+    "regulering"
+   ],
+   "removed": 0,
+   "removed_at": null,
+   "removal_reason": null,
+   "updated_at": "2026-10-04T07:33:24+02:00"
+  },
+  {
+   "site": "kryptonytt",
+   "id": "c5f53740fbfc",
+   "url": "https://podcasters.spotify.com/pod/show/andreas-harding2/episodes/74-GREGARD-MIKKELBORG---Kommende-generasjoner-kan-bare-drmme-om--ha-rd-til-egen-bolig-e3ov0jg",
+   "canonical_url": "https://podcasters.spotify.com/pod/show/andreas-harding2/episodes/74-GREGARD-MIKKELBORG---Kommende-generasjoner-kan-bare-drmme-om--ha-rd-til-egen-bolig-e3ov0jg",
+   "title": "#74 GREGARD MIKKELBORG - Kommende generasjoner kan bare drømme om å ha råd til egen bolig.",
+   "source": "enogtyvetanker",
+   "source_name": "En og tyve tanker (podkast)",
+   "published_at": "2026-09-16T21:54:43+00:00",
+   "first_published_on_site": "2026-10-04T07:33:24+02:00",
+   "last_seen_on_site": "2026-10-04T07:33:24+02:00",
+   "languages": [
+    "nn",
+    "nb",
+    "en"
+   ],
+   "summaries": {
+    "nb": "I episode 74 av En og tyve tanker snakker siviløkonom Gregard Mikkelborg, grunnlegger av nettstedet gullerpenger.no, om det gjeldsbaserte pengesystemet, økonomiske insentiver og kunnskap om «harde penger». Episoden tar utgangspunkt i at boligprisene har steget kraftig siden 1971, og drøfter hvordan prisene kan utvikle seg videre. Podkasten lages i samarbeid med Bare Bitcoin.",
+    "nn": "I episode 74 av En og tyve tanker snakkar siviløkonom Gregard Mikkelborg, grunnleggjar av nettstaden gullerpenger.no, om det gjeldsbaserte pengesystemet, økonomiske insentiv og kunnskap om «harde pengar». Episoden tek utgangspunkt i at bustadprisane har stige kraftig sidan 1971, og drøftar korleis prisane kan utvikle seg vidare. Podkasten blir laga i samarbeid med Bare Bitcoin.",
+    "en": "In episode 74 of En og tyve tanker, economist Gregard Mikkelborg, founder of the website gullerpenger.no, discusses the debt-based monetary system, economic incentives and knowledge of \"hard money\". The episode starts from the sharp rise in Norwegian house prices since 1971 and discusses how prices may develop. The podcast is made in partnership with Bare Bitcoin."
+   },
+   "titles": {},
+   "topics": [
+    "bitcoin"
+   ],
+   "removed": 0,
+   "removed_at": null,
+   "removal_reason": null,
+   "updated_at": "2026-10-04T07:33:24+02:00"
+  },
+  {
+   "site": "kryptonytt",
+   "id": "dbcac6be2b75",
+   "url": "https://www.nettavisen.no/krypto/etterforskning/hordaland-tingrett/fant-hemmelig-passord-laste-opp-krypto-lommeboken/s/80-95-105422",
+   "canonical_url": "https://nettavisen.no/krypto/etterforskning/hordaland-tingrett/fant-hemmelig-passord-laste-opp-krypto-lommeboken/s/80-95-105422",
+   "title": "Fant hemmelig passord: Låste opp krypto-lommeboken",
+   "source": "nettavisen",
+   "source_name": "Nettavisen",
+   "published_at": "2026-09-25T19:16:00+00:00",
+   "first_published_on_site": "2026-10-04T07:33:24+02:00",
+   "last_seen_on_site": "2026-10-04T07:33:24+02:00",
+   "languages": [
+    "nn",
+    "nb",
+    "en"
+   ],
+   "summaries": {
+    "nb": "Politiet har åpnet kryptolommeboken til en student i 20-årene som er siktet i en narkotikasak, etter å ha funnet gjenopprettingskoden under en ransaking, skriver Nettavisen med Bergensavisen som kilde. Ifølge politiadvokat Jørgen Henriksen er verdier for flere hundre tusen kroner tatt i beslag, og Hordaland tingrett har bestemt at den siktede skal sitte i varetekt fram til rettssaken, som etter planen starter i midten av november.",
+    "nn": "Politiet har opna kryptolommeboka til ein student i 20-åra som er sikta i ei narkotikasak, etter å ha funne gjenopprettingskoden under ei ransaking, skriv Nettavisen med Bergensavisen som kjelde. Ifølgje politiadvokat Jørgen Henriksen er verdiar for fleire hundre tusen kroner tekne i beslag, og Hordaland tingrett har bestemt at den sikta skal sitje i varetekt fram til rettssaka, som etter planen startar i midten av november.",
+    "en": "Police have unlocked the crypto wallet of a student in his twenties who is a suspect in a drug case, after finding the recovery phrase during a search, Nettavisen reports, citing Bergensavisen. According to police prosecutor Jørgen Henriksen, assets worth several hundred thousand kroner have been seized, and Hordaland District Court has ordered the suspect held in custody until the trial, scheduled to start in mid-November."
+   },
+   "titles": {},
+   "topics": [
+    "krypto"
+   ],
+   "removed": 0,
+   "removed_at": null,
+   "removal_reason": null,
+   "updated_at": "2026-10-04T07:33:24+02:00"
+  },
+  {
+   "site": "kryptonytt",
+   "id": "f17e66cd2ee6",
+   "url": "https://www.investornytt.no/krypto/spekulantene-tar-gevinst-k33-oyner-ny-bitcoin-opptur/546305",
+   "canonical_url": "https://investornytt.no/krypto/spekulantene-tar-gevinst-k33-oyner-ny-bitcoin-opptur/546305",
+   "title": "K33: Bitcoin kan få ny opptur etter stor derivatopprydding",
+   "source": "investornytt",
+   "source_name": "Investornytt",
+   "published_at": "2026-09-29T12:00:00+00:00",
+   "first_published_on_site": "2026-10-04T07:33:24+02:00",
+   "last_seen_on_site": "2026-10-04T07:33:24+02:00",
+   "languages": [
+    "nn",
+    "nb",
+    "en"
+   ],
+   "summaries": {
+    "nb": "Ifølge ukesrapporten fra K33, som Investornytt omtaler, har bitcoinmarkedet hatt den største nedbyggingen av derivatposisjoner siden oktober 2025 uten store kursfall, og spotinvestorene holder igjen. Analysesjef Vetle Lunde mener dette gir rom for videre oppgang, men peker på høye amerikanske renter som den viktigste motvinden.",
+    "nn": "Ifølgje vekerapporten frå K33, som Investornytt omtalar, har bitcoinmarknaden hatt den største nedbygginga av derivatposisjonar sidan oktober 2025 utan store kursfall, og spotinvestorane held att. Analysesjef Vetle Lunde meiner dette gjev rom for vidare oppgang, men peikar på høge amerikanske renter som den viktigaste motvinden.",
+    "en": "According to K33's weekly report, covered by Investornytt, the bitcoin market has seen its largest unwinding of derivatives positions since October 2025 without major price drops, while spot investors are holding back. Head of research Vetle Lunde believes this leaves room for further gains, but points to high US interest rates as the main headwind."
+   },
+   "titles": {},
+   "topics": [
+    "bitcoin",
+    "selskaper"
+   ],
+   "removed": 0,
+   "removed_at": null,
+   "removal_reason": null,
+   "updated_at": "2026-10-04T07:33:24+02:00"
+  },
+  {
+   "site": "kryptonytt",
+   "id": "f906868d0da6",
+   "url": "https://podcasters.spotify.com/pod/show/andreas-harding2/episodes/75-MAX-HILLEBRAND---The-unseen-cost-of-fiat-e3ph9qh",
+   "canonical_url": "https://podcasters.spotify.com/pod/show/andreas-harding2/episodes/75-MAX-HILLEBRAND---The-unseen-cost-of-fiat-e3ph9qh",
+   "title": "#75 MAX HILLEBRAND - The unseen cost of fiat.",
+   "source": "enogtyvetanker",
+   "source_name": "En og tyve tanker (podkast)",
+   "published_at": "2026-09-28T21:46:39+00:00",
+   "first_published_on_site": "2026-10-04T07:33:24+02:00",
+   "last_seen_on_site": "2026-10-04T07:33:24+02:00",
+   "languages": [
+    "nn",
+    "nb",
+    "en"
+   ],
+   "summaries": {
+    "nb": "I episode 75 av podkasten En og tyve tanker snakker programlederen med Max Hillebrand, som i episodebeskrivelsen omtales som praxeolog og cypherpunk, om det de kaller de usynlige kostnadene ved fiat-penger. Samtalen handler også om den østerrikske skolen i økonomi og om personvern. Podkasten lages i samarbeid med Bare Bitcoin.",
+    "nn": "I episode 75 av podkasten En og tyve tanker snakkar programleiaren med Max Hillebrand, som i episodeskildringa blir omtalt som praxeolog og cypherpunk, om det dei kallar dei usynlege kostnadene ved fiat-pengar. Samtalen handlar òg om den austerrikske skulen i økonomi og om personvern. Podkasten blir laga i samarbeid med Bare Bitcoin.",
+    "en": "In episode 75 of the podcast En og tyve tanker, the host talks to Max Hillebrand, described in the episode notes as a praxeologist and cypherpunk, about what they call the unseen cost of fiat money. The conversation also covers the Austrian school of economics and privacy. The podcast is made in partnership with Bare Bitcoin."
+   },
+   "titles": {},
+   "topics": [
+    "bitcoin"
+   ],
+   "removed": 0,
+   "removed_at": null,
+   "removal_reason": null,
+   "updated_at": "2026-10-04T07:33:24+02:00"
   }
  ],
  "events": [
@@ -484,6 +942,126 @@
    "at": "2026-10-03T23:38:39+02:00",
    "event": "updated",
    "detail": "summaries"
+  },
+  {
+   "seq": 21,
+   "site": "kryptonytt",
+   "id": "f17e66cd2ee6",
+   "at": "2026-10-04T07:33:24+02:00",
+   "event": "published",
+   "detail": null
+  },
+  {
+   "seq": 22,
+   "site": "kryptonytt",
+   "id": "f906868d0da6",
+   "at": "2026-10-04T07:33:24+02:00",
+   "event": "published",
+   "detail": null
+  },
+  {
+   "seq": 23,
+   "site": "kryptonytt",
+   "id": "8ae149a20f5f",
+   "at": "2026-10-04T07:33:24+02:00",
+   "event": "published",
+   "detail": null
+  },
+  {
+   "seq": 24,
+   "site": "kryptonytt",
+   "id": "77a45d553c8b",
+   "at": "2026-10-04T07:33:24+02:00",
+   "event": "published",
+   "detail": null
+  },
+  {
+   "seq": 25,
+   "site": "kryptonytt",
+   "id": "dbcac6be2b75",
+   "at": "2026-10-04T07:33:24+02:00",
+   "event": "published",
+   "detail": null
+  },
+  {
+   "seq": 26,
+   "site": "kryptonytt",
+   "id": "b0202ea8241d",
+   "at": "2026-10-04T07:33:24+02:00",
+   "event": "published",
+   "detail": null
+  },
+  {
+   "seq": 27,
+   "site": "kryptonytt",
+   "id": "379b6008263b",
+   "at": "2026-10-04T07:33:24+02:00",
+   "event": "published",
+   "detail": null
+  },
+  {
+   "seq": 28,
+   "site": "kryptonytt",
+   "id": "a3e141afc7ed",
+   "at": "2026-10-04T07:33:24+02:00",
+   "event": "published",
+   "detail": null
+  },
+  {
+   "seq": 29,
+   "site": "kryptonytt",
+   "id": "014762c21014",
+   "at": "2026-10-04T07:33:24+02:00",
+   "event": "published",
+   "detail": null
+  },
+  {
+   "seq": 30,
+   "site": "kryptonytt",
+   "id": "5682c6aa22dd",
+   "at": "2026-10-04T07:33:24+02:00",
+   "event": "published",
+   "detail": null
+  },
+  {
+   "seq": 31,
+   "site": "kryptonytt",
+   "id": "1abbecf31dff",
+   "at": "2026-10-04T07:33:24+02:00",
+   "event": "published",
+   "detail": null
+  },
+  {
+   "seq": 32,
+   "site": "kryptonytt",
+   "id": "c1431df81160",
+   "at": "2026-10-04T07:33:24+02:00",
+   "event": "published",
+   "detail": null
+  },
+  {
+   "seq": 33,
+   "site": "kryptonytt",
+   "id": "8168421e6cf9",
+   "at": "2026-10-04T07:33:24+02:00",
+   "event": "published",
+   "detail": null
+  },
+  {
+   "seq": 34,
+   "site": "kryptonytt",
+   "id": "c5f53740fbfc",
+   "at": "2026-10-04T07:33:24+02:00",
+   "event": "published",
+   "detail": null
+  },
+  {
+   "seq": 35,
+   "site": "kryptonytt",
+   "id": "4d918e6a3378",
+   "at": "2026-10-04T07:33:24+02:00",
+   "event": "published",
+   "detail": null
   }
  ]
 }
