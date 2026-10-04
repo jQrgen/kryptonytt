@@ -2,6 +2,12 @@
 """Kryptonytt Norge – henter feeds, filtrerer på norske kryptoord, dedupliserer og oppdaterer
 data/news.json og køen queue/review.json.
 
+FRÅ 4. OKT. 2026 ER DETTE IKKJE STANDARD NYHEITSINNHENTING. Norske saker kjem no frå Nordic Crypto
+(tools/import_nordic_crypto.py, køyrd av ./fetch.sh). Denne fila er teken vare på som reserve:
+  ./fetch.sh --legacy-fetch [--days N]   # gammal eiga innhenting (RSS + nyheitssøk)
+  ./fetch.sh --add URL ...               # manuelt tillegg av éi sak (framleis i bruk)
+  .venv/bin/python fetch.py --events-only  # berre arrangementssøket (kalender/«Tidlegare arrangement»)
+
   .venv/bin/python fetch.py            # vanlig daglig kjøring (ser 7 dager tilbake)
   .venv/bin/python fetch.py --days 30  # førstegangskjøring / tilbakeblikk
 
@@ -29,8 +35,10 @@ def save(path, data):
 
 CFG = load(P("sources.json"), None)
 UA = CFG["user_agent"]; DELAY = CFG.get("min_delay_seconds", 2)
-LOG = open(P("logs", dt.datetime.now().strftime("fetch-%Y%m%d-%H%M%S.log")), "w", encoding="utf-8")
+LOG = None  # opna først ved første logglinje (tools/import_nordic_crypto.py importerer denne fila utan å lage tomme loggfiler)
 def log(*a):
+    global LOG
+    if LOG is None: os.makedirs(P("logs"), exist_ok=True); LOG = open(P("logs", dt.datetime.now().strftime("fetch-%Y%m%d-%H%M%S.log")), "w", encoding="utf-8")
     s = " ".join(str(x) for x in a); print(s); LOG.write(s + "\n"); LOG.flush()
 
 # ---------- høflig HTTP: robots.txt, rate limit per vert, ETag-cache ----------
@@ -175,7 +183,9 @@ def main():
     ap.add_argument("--date", help="publiseringsdato for --add (YYYY-MM-DD) hvis siden ikke oppgir den")
     ap.add_argument("--title", help="tittel for --add hvis siden ikke oppgir den")
     ap.add_argument("--origin", help="intern merknad om hvor tipset kom fra for --add, f.eks. \"tips fra Nordic Crypto\" (vises aldri offentlig)")
-    ap.add_argument("--no-events", action="store_true", help="hopp over arrangementsøket"); a = ap.parse_args()
+    ap.add_argument("--no-events", action="store_true", help="hopp over arrangementsøket")
+    ap.add_argument("--events-only", action="store_true", help="hent bare arrangementer (ingen nyheter); brukt av ./fetch.sh når nyhetene kommer fra Nordic Crypto"); a = ap.parse_args()
+    if a.events_only: return
     cutoff = NOW - dt.timedelta(days=a.days)
     news = load(P("data", "news.json"), {"items": []})
     teasers = load(P("state", "teasers.json"), {})

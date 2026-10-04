@@ -6,16 +6,28 @@ Nettsted: https://jqrgen.github.io/kryptonytt/ · Skjermmodus for kontorskjerm: 
 ## Slik virker det
 
 ```
-fetch.sh  ──►  data/news.json, data/events.json  ──►  queue/review.json   (venter på redaksjonen)
+Nordic Crypto (routines/nightly-fetch.sh, 03:41)  ──►  nordic-crypto/data/news.json (country NO)
+                                                          │  tools/import_nordic_crypto.py  (./fetch.sh)
+                                                          ▼
+                              data/news.json, queue/review.json   (venter på redaksjonen, med utkast fra Nordic Crypto)
                                                           │
                               redaksjonen skriver queue/approved.json
                                                           ▼
 build.sh  ──►  site/  (bare godkjent innhold)  ──►  personverngrind  ──►  publish.sh --yes  ──►  gh-pages
 ```
 
-1. **Henting** (`./fetch.sh`, hver natt): leser RSS-feeder fra norske aviser, myndigheter, blogger og podkaster, et nyhetssøk
-   avgrenset til norske domener, og arrangementssider (JSON-LD/iCal). Følger robots.txt, egen brukeragent, minst 2 s mellom
-   forespørsler per nettsted. Henter aldri artikkeltekst bak betalingsmur. Kilder står i `sources.json`.
+1. **Inntak** (`./fetch.sh` / `routines/nightly-intake.sh`, hver natt **etter** Nordic Crypto): Kryptonytt henter og researcher
+   ikke lenger nyheter selv. Nordic Crypto gjør innhentingen for hele Norden (Kryptonytts kilder er slått inn i
+   `nordic-crypto/sources.json`, merket `country: NO`, `merged_from: kryptonytt`), og `tools/import_nordic_crypto.py` henter
+   de norske sakene (`country == "NO"`) inn hit: tittel, URL, utgiver, dato, betalingsmur, tema, Nordic Crypto-status
+   (`nc` + `nc_verification`: godkjent/avvist/venter, `approved_by/at`, `reject_reason`), engelsk sammendrag og nn/nb-oversettelse
+   som **utkast** i køraden (`utkast_frå_nordic_crypto`), kilder (`seen_via`) og bilder bare med lisens og kreditering.
+   Dedup på normalisert URL og tittel; idempotent (kjøres den på nytt, oppdateres bare status og utkast). Kryptonytts egne
+   avgjørelser i `queue/approved.json` endres aldri. Saker Nordic Crypto har avvist, får status `rejected` (`rejected_by: Nordic Crypto`)
+   og listes i `queue/review.json` → `nc_rejected`; vil redaksjonen likevel ha en, legges den i `approved.json` som vanlig.
+   Arrangementssøket (`fetch.py --events-only`, kalender og «Tidligere arrangementer») er fortsatt Kryptonytts eget.
+   Gammel egen henting finnes fortsatt: `./fetch.sh --legacy-fetch [--days N]` (RSS + nyhetssøk som før, følger robots.txt,
+   minst 2 s mellom forespørsler per nettsted, aldri artikkeltekst bak betalingsmur; kilder i `sources.json`).
 2. **Redaksjon**: alle nye saker og arrangementer får status `pending`. Redaksjonen skriver en egen oppsummering på 1–2 setninger
    og godkjenner i `queue/approved.json`. Arrangementer tas bare med når arrangørens egen side eller en offentlig oppføring viser
    dato, sted og arrangør, og arrangementet faktisk handler om krypto, bitcoin eller blokkjede. Betalte og sponsede er merket.
@@ -27,7 +39,9 @@ build.sh  ──►  site/  (bare godkjent innhold)  ──►  personverngrind 
 
 | Hva | Kommando |
 |---|---|
-| Hent nyheter og arrangementer | `./fetch.sh` (valg: `--days N`, `--only id1,id2`, `--no-events`) |
+| Nattinntak (rutine) | `routines/nightly-intake.sh` (venter på Nordic Crypto-loggen, kjører `./fetch.sh`; logg `logs/nightly-YYYYMMDD.txt`) |
+| Hent nyheter (fra Nordic Crypto) og arrangementer | `./fetch.sh` (valg: `--days N` tilbakeblikk for nye saker, `--dry-run`; `KN_EVENTS=0` hopper over arrangementer) |
+| Gammel egen henting (reserve) | `./fetch.sh --legacy-fetch` (valg: `--days N`, `--only id1,id2`, `--no-events`) |
 | Legg til en sak manuelt | `./fetch.sh --add URL --source-name "Navn" --date YYYY-MM-DD --title "Tittel"` (valgfritt `--origin "tips fra Nordic Crypto"`: intern merknad i køen, vises aldri offentlig) |
 | Legg til et arrangement | `.venv/bin/python events.py --add-event URL` (evt. `--title --start --place --organiser --paid ja`) |
 | Bygg og sjekk | `./build.sh` |
