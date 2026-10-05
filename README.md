@@ -6,24 +6,24 @@ Nettsted: https://jqrgen.github.io/kryptonytt/ · Skjermmodus for kontorskjerm: 
 ## Slik virker det
 
 ```
-Nordic Crypto (routines/nightly-fetch.sh, 03:41)  ──►  nordic-crypto/data/news.json (country NO)
+Crypto Nordic (routines/nightly-fetch.sh, 03:41)  ──►  nordic-crypto/data/news.json (country NO)
                                                           │  tools/import_nordic_crypto.py  (./fetch.sh)
                                                           ▼
-                              data/news.json, queue/review.json   (venter på redaksjonen, med utkast fra Nordic Crypto)
+                              data/news.json, queue/review.json   (venter på redaksjonen, med utkast fra Crypto Nordic)
                                                           │
                               redaksjonen skriver queue/approved.json
                                                           ▼
 build.sh  ──►  site/  (bare godkjent innhold)  ──►  personverngrind  ──►  publish.sh --yes  ──►  gh-pages
 ```
 
-1. **Inntak** (`./fetch.sh` / `routines/nightly-intake.sh`, hver natt **etter** Nordic Crypto): Kryptonytt henter og researcher
-   ikke lenger nyheter selv. Nordic Crypto gjør innhentingen for hele Norden (Kryptonytts kilder er slått inn i
+1. **Inntak** (`./fetch.sh` / `routines/nightly-intake.sh`, hver natt **etter** Crypto Nordic): Kryptonytt henter og researcher
+   ikke lenger nyheter selv. Crypto Nordic gjør innhentingen for hele Norden (Kryptonytts kilder er slått inn i
    `nordic-crypto/sources.json`, merket `country: NO`, `merged_from: kryptonytt`), og `tools/import_nordic_crypto.py` henter
-   de norske sakene (`country == "NO"`) inn hit: tittel, URL, utgiver, dato, betalingsmur, tema, Nordic Crypto-status
+   de norske sakene (`country == "NO"`) inn hit: tittel, URL, utgiver, dato, betalingsmur, tema, Crypto Nordic-status
    (`nc` + `nc_verification`: godkjent/avvist/venter, `approved_by/at`, `reject_reason`), engelsk sammendrag og nn/nb-oversettelse
    som **utkast** i køraden (`utkast_frå_nordic_crypto`), kilder (`seen_via`) og bilder bare med lisens og kreditering.
    Dedup på normalisert URL og tittel; idempotent (kjøres den på nytt, oppdateres bare status og utkast). Kryptonytts egne
-   avgjørelser i `queue/approved.json` endres aldri. Saker Nordic Crypto har avvist, får status `rejected` (`rejected_by: Nordic Crypto`)
+   avgjørelser i `queue/approved.json` endres aldri. Saker Crypto Nordic har avvist, får status `rejected` (`rejected_by: Crypto Nordic`)
    og listes i `queue/review.json` → `nc_rejected`; vil redaksjonen likevel ha en, legges den i `approved.json` som vanlig.
    Arrangementssøket (`fetch.py --events-only`, kalender og «Tidligere arrangementer») er fortsatt Kryptonytts eget.
    Gammel egen henting finnes fortsatt: `./fetch.sh --legacy-fetch [--days N]` (RSS + nyhetssøk som før, følger robots.txt,
@@ -39,10 +39,10 @@ build.sh  ──►  site/  (bare godkjent innhold)  ──►  personverngrind 
 
 | Hva | Kommando |
 |---|---|
-| Nattinntak (rutine) | `routines/nightly-intake.sh` (venter på Nordic Crypto-loggen, kjører `./fetch.sh`; logg `logs/nightly-YYYYMMDD.txt`) |
-| Hent nyheter (fra Nordic Crypto) og arrangementer | `./fetch.sh` (valg: `--days N` tilbakeblikk for nye saker, `--dry-run`; `KN_EVENTS=0` hopper over arrangementer) |
+| Nattinntak (rutine) | `routines/nightly-intake.sh` (venter på Crypto Nordic-loggen, kjører `./fetch.sh`; logg `logs/nightly-YYYYMMDD.txt`) |
+| Hent nyheter (fra Crypto Nordic) og arrangementer | `./fetch.sh` (valg: `--days N` tilbakeblikk for nye saker, `--dry-run`; `KN_EVENTS=0` hopper over arrangementer) |
 | Gammel egen henting (reserve) | `./fetch.sh --legacy-fetch` (valg: `--days N`, `--only id1,id2`, `--no-events`) |
-| Legg til en sak manuelt | `./fetch.sh --add URL --source-name "Navn" --date YYYY-MM-DD --title "Tittel"` (valgfritt `--origin "tips fra Nordic Crypto"`: intern merknad i køen, vises aldri offentlig) |
+| Legg til en sak manuelt | `./fetch.sh --add URL --source-name "Navn" --date YYYY-MM-DD --title "Tittel"` (valgfritt `--origin "tips fra Crypto Nordic"`: intern merknad i køen, vises aldri offentlig) |
 | Legg til et arrangement | `.venv/bin/python events.py --add-event URL` (evt. `--title --start --place --organiser --paid ja`) |
 | Bygg og sjekk | `./build.sh` |
 | Publiser | `./publish.sh --yes` |
@@ -84,6 +84,6 @@ Kildesjekken for Kaupr-aktørene står i `research/kaupr-kildesjekk.md`. Kaupr e
 velkomst-e-post, mal for vekesamandrag, Kaupr-opplysning, sjekkliste for jQrgen). `newsletter/digest.py` lagar
 vekesamandraget berre frå publiserte saker. Påmeldingsskjemaet (botnen av kvar side + `/nyhetsbrev/`, nn/nb/en, med
 personvernmerknad) ligg i `tools/newsletter_site.py` og er av til `newsletter/config.json` har `enabled: true`; det sender til
-tipworker i Nordic Crypto-repoet (`/api/subscribe`, `site=kryptonytt`, dobbel stadfesting). Ingenting blir sendt, og det finst
+tipworker i Crypto Nordic-repoet (`/api/subscribe`, `site=kryptonytt`, dobbel stadfesting). Ingenting blir sendt, og det finst
 ingen Substack-konto før jQrgen opprettar han.
 

@@ -7,7 +7,7 @@ innlogging. Ingenting her er publisert til gh-pages, og påmeldingsskjemaet på 
 To kanalar:
 1. **Substack** – sjølve publikasjonen (nettarkiv + e-post og app frå Substack).
 2. **E-postpåmelding på nettstaden** – eige skjema med dobbel stadfesting → Cloudflare Worker (`tipworker/` i
-   Nordic Crypto-repoet, `POST /api/subscribe` med `site=kryptonytt`) → D1-tabellen `subscribers`. Stadfesta adresser blir
+   Crypto Nordic-repoet, `POST /api/subscribe` med `site=kryptonytt`) → D1-tabellen `subscribers`. Stadfesta adresser blir
    eksporterte som CSV (`tipworker/export_subscribers.py --site kryptonytt`) og importerte i Substack, eller sende med ein
    annan leverandør seinare (ikkje valt).
 
@@ -63,7 +63,7 @@ To kanalar:
 | Toppbilete i e-post | `newsletter/assets/email-banner-1100x220.png` |
 | Forsidebilete / delingsbilete | `newsletter/assets/cover-1200x630.png` |
 
-Lag på nytt med `.venv/bin/python newsletter/make_brand_assets.py` (Nordic Crypto-repoet; lagar bileta for begge stadene).
+Lag på nytt med `.venv/bin/python newsletter/make_brand_assets.py` (Crypto Nordic-repoet; lagar bileta for begge stadene).
 Framheva farge i Substack-temaet: **#b45309**.
 
 ## 3. Velkomst-e-post (Substack: Settings › Emails › Welcome email) – utkast
@@ -104,7 +104,7 @@ Framheva farge i Substack-temaet: **#b45309**.
 >
 > – Kryptonytt Norge
 
-(Stadfestings- og velkomst-e-postane til påmeldinga på nettstaden ligg i `tipworker/src/messages.js` i Nordic Crypto-repoet, på nynorsk, bokmål og engelsk.)
+(Stadfestings- og velkomst-e-postane til påmeldinga på nettstaden ligg i `tipworker/src/messages.js` i Crypto Nordic-repoet, på nynorsk, bokmål og engelsk.)
 
 ## 4. Vekesamandrag (laga berre frå godkjende saker)
 
@@ -142,7 +142,7 @@ Saker frå Kaupr er merkte «Kaupr er sponsor» i samandraget.
   7 dagar. Verken IP-adresse eller nettlesarinfo blir lagra. CORS berre for https://jqrgen.github.io.
 - Stadfestings-e-postar blir **ikkje sende** før ein leverandør er vald og `MAIL_PROVIDER` + `MAIL_SEND_ENABLED=1` er sette på
   Workeren. Berre Substack: hald skjemaet av, eller bruk det og importer stadfesta adresser:
-  `.venv/bin/python tipworker/export_subscribers.py --site kryptonytt` (i Nordic Crypto-repoet) → CSV i `state/newsletter/`
+  `.venv/bin/python tipworker/export_subscribers.py --site kryptonytt` (i Crypto Nordic-repoet) → CSV i `state/newsletter/`
   (modus 600, gitignored; kolonnen `email` først) → Substack › Subscribers › Import. Slett CSV-fila etter importen.
 
 ## 7. Sjekkliste for jQrgen (ingenting av dette er gjort)
@@ -151,5 +151,5 @@ Saker frå Kaupr er merkte «Kaupr er sponsor» i samandraget.
 - [ ] Godkjenn namn, avsendarnamn, svaradresse, slagord, om-tekst, kategoriar og profilbilete.
 - [ ] Lim inn velkomst-e-posten (nn eller nb); språk norsk; betalt abonnement av.
 - [ ] Vel leverandør for stadfestings-e-post (Resend, Buttondown, Postmark via webhook, eller berre Substack-import) og avsendaradresse (krev eit domene du styrer, for SPF/DKIM).
-- [ ] Gi ein Cloudflare API-token for å deployere Workeren (`tipworker/deploy.sh` i Nordic Crypto-repoet), og godkjenn så at skjemaet blir slått på.
+- [ ] Gi ein Cloudflare API-token for å deployere Workeren (`tipworker/deploy.sh` i Crypto Nordic-repoet), og godkjenn så at skjemaet blir slått på.
 - [ ] Etter første import: set `substack_url` i `newsletter/config.json`, så lenkjer nettstaden til Substack.

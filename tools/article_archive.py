@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Artikkelarkiv (berre tillegg, aldri sletting) for alt Kryptonytt nokon gong har publisert.
-  archive/articles.db   SQLite (gitignored), skjema i archive/schema.sql (felles med Nordic Crypto, D1-kompatibelt)
+  archive/articles.db   SQLite (gitignored), skjema i archive/schema.sql (felles med Crypto Nordic, D1-kompatibelt)
   archive/articles.json eksport til repoet som reservekopi
 Bruk:
   python3 tools/article_archive.py record [--at ISO]   # morgonrutinen: les site/data/news.json etter publisering

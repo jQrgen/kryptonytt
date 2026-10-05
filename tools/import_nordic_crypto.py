@@ -1,17 +1,17 @@
 #!/usr/bin/env python3
-"""Nyheitsinntak frå Nordic Crypto (standard frå 4. okt. 2026). Kryptonytt hentar og researchar ikkje lenger norske saker sjølv:
-Nordic Crypto (/workspace/nordic-crypto) gjer innhentinga for alle nordiske land, og dette skriptet hentar dei norske sakene derifrå
+"""Nyheitsinntak frå Crypto Nordic (standard frå 4. okt. 2026). Kryptonytt hentar og researchar ikkje lenger norske saker sjølv:
+Crypto Nordic (/workspace/nordic-crypto) gjer innhentinga for alle nordiske land, og dette skriptet hentar dei norske sakene derifrå
 (country == "NO") inn i Kryptonytt sitt format (data/news.json + queue/review.json). Idempotent: kan køyrast så ofte ein vil.
 
-Kva blir kopiert (berre det Nordic Crypto allereie har):
+Kva blir kopiert (berre det Crypto Nordic allereie har):
   - tittel, URL, utgivar (source/source_name), dato, betalingsmur, tema (omsette til Kryptonytt sine)
-  - feltet "nc": Nordic Crypto sin status/verifisering (pending | published | rejected, approved_by/at, reject_reason,
+  - feltet "nc": Crypto Nordic sin status/verifisering (pending | published | rejected, approved_by/at, reject_reason,
     summary_i18n_review), engelsk samandrag, nn/nb-omsetjing (berre når ho er laga frå gjeldande engelsk tekst), title_en,
     kjelder (seen_via) og eventuelle bilete MED lisens og kreditering (bilete utan lisens blir aldri kopierte)
   - teaser til state/teasers.json (berre lokalt arbeidsgrunnlag, blir aldri publisert) og kandidat-entitetar til køen
 Kryptonytt-redaktøren godkjenner framleis kvar sak i queue/approved.json (summary/summary_nn/summary_en). Køraden får eit
 ferdig utkast ("utkast_frå_nordic_crypto") som redaktøren les over; ingenting blir publisert automatisk.
-Saker Nordic Crypto har avvist, blir importerte som status "rejected" (rejected_by "Nordic Crypto") og lista i
+Saker Crypto Nordic har avvist, blir importerte som status "rejected" (rejected_by "Crypto Nordic") og lista i
 queue/review.json -> nc_rejected, slik at redaktøren kan overstyre ved å godkjenne dei i approved.json.
 Kryptonytt sine eigne avgjerder (approved.json items/rejected) blir aldri endra.
 
@@ -37,7 +37,7 @@ def kn_fetch():  # Kryptonytt sine eigne normaliseringar (same id-ar/duplikatsje
     spec.loader.exec_module(m); return m
 
 def nc_freshness():
-    """Når køyrde Nordic Crypto-innhentinga sist? (logs/nightly-YYYYMMDD.txt + data/news.json->updated)"""
+    """Når køyrde Crypto Nordic-innhentinga sist? (logs/nightly-YYYYMMDD.txt + data/news.json->updated)"""
     log = os.path.join(NC, "logs", dt.datetime.now().strftime("nightly-%Y%m%d.txt"))
     done = os.path.exists(log) and "awaiting editor:" in open(log, encoding="utf-8", errors="replace").read()
     upd = load(os.path.join(NC, "data", "news.json"), {}).get("updated")
@@ -47,13 +47,13 @@ def nc_freshness():
 def main():
     ap = argparse.ArgumentParser(); ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--days", type=int, default=14, help="importer nye saker publiserte dei siste N dagane (status/utkast blir oppdaterte for alle)")
-    ap.add_argument("--require-fresh", action="store_true", help="avslutt med kode 3 dersom Nordic Crypto-innhentinga ikkje er ferdig i dag")
-    ap.add_argument("--keep-nc-rejected-pending", action="store_true", help="saker Nordic Crypto har avvist, går til Kryptonytt-køen som pending i staden for rejected")
+    ap.add_argument("--require-fresh", action="store_true", help="avslutt med kode 3 dersom Crypto Nordic-innhentinga ikkje er ferdig i dag")
+    ap.add_argument("--keep-nc-rejected-pending", action="store_true", help="saker Crypto Nordic har avvist, går til Kryptonytt-køen som pending i staden for rejected")
     a = ap.parse_args()
     done, at, age = nc_freshness()
     print(f"nordic crypto: nattinnhenting i dag {'ferdig kl. ' + at if done else 'IKKJE funnen/ferdig'}; data/news.json oppdatert for {age:.1f} t sidan" if age is not None else "nordic crypto: data/news.json manglar")
     if not done and a.require_fresh:
-        print("åtvaring: Nordic Crypto har ikkje køyrt nattinnhentinga i dag – importerer likevel det som finst", file=sys.stderr)
+        print("åtvaring: Crypto Nordic har ikkje køyrt nattinnhentinga i dag – importerer likevel det som finst", file=sys.stderr)
     F = kn_fetch(); norm_url, norm_title, iid, strip = F.norm_url, F.norm_title, F.iid, F.strip_tracking
     lock = open("/tmp/crosssite-handoff.lock", "w"); fcntl.flock(lock, fcntl.LOCK_EX)   # same lås som tools/crosssite_handoff.py
 
@@ -92,9 +92,9 @@ def main():
         return {k: v for k, v in b.items() if v not in (None, [], "")}
     def verification(b):
         s = b.get("status")
-        if s == "published": return f"godkjend hos Nordic Crypto ({b.get('approved_by', 'redaktør')}, {str(b.get('approved_at', ''))[:10]}); omsetjing: {b.get('summary_i18n_review', 'ukjend')}"
-        if s == "rejected": return f"avvist hos Nordic Crypto: {b.get('reject_reason') or 'utan grunn'}"
-        return "ventar på Nordic Crypto-redaktøren"
+        if s == "published": return f"godkjend hos Crypto Nordic ({b.get('approved_by', 'redaktør')}, {str(b.get('approved_at', ''))[:10]}); omsetjing: {b.get('summary_i18n_review', 'ukjend')}"
+        if s == "rejected": return f"avvist hos Crypto Nordic: {b.get('reject_reason') or 'utan grunn'}"
+        return "ventar på Crypto Nordic-redaktøren"
     def kn_topics(it):
         t = {TOPIC_NC_TO_KN[x] for x in it.get("topics", []) if x in TOPIC_NC_TO_KN}
         return sorted(t | set(F.topics_of(f"{it['title']}. {nc_teasers.get(it['id'], '')}")) - ({"krypto"} if t - {"krypto"} else set())) or ["krypto"]
@@ -112,7 +112,7 @@ def main():
             ex = {"id": iid(url), "url": url, "title": it["title"], "source": it.get("source"), "source_name": it.get("source_name") or it.get("source"),
                   "via": "nordic-crypto", "seen_via": ["nordic-crypto"], "published": it["published"], "fetched": it.get("fetched") or NOW.isoformat(timespec="seconds"),
                   "imported": NOW.isoformat(timespec="seconds"), "topics": kn_topics(it), "matched": it.get("matched", []), "paywall": bool(it.get("paywall")),
-                  "status": "pending", "summary": None, "origin": "henta frå Nordic Crypto"}
+                  "status": "pending", "summary": None, "origin": "henta frå Crypto Nordic"}
             news["items"].append(ex); by_url[cu] = ex; by_title[norm_title(ex["title"])] = ex; added.append(ex)
             if nc_teasers.get(it["id"]) and ex["id"] not in teasers: teasers[ex["id"]] = nc_teasers[it["id"]][:600]
         else:
@@ -121,14 +121,14 @@ def main():
             if not ex.get("paywall") and it.get("paywall"): ex["paywall"] = True
             if nc_teasers.get(it["id"]) and not teasers.get(ex["id"]): teasers[ex["id"]] = nc_teasers[it["id"]][:600]
         ex["nc"] = b; ex["nc_verification"] = verification(b); idmap[it["id"]] = ex["id"]
-        # Status: Kryptonytt sine eigne avgjerder vinn alltid. Utan Kryptonytt-avgjerd følgjer køen Nordic Crypto sin avvising.
+        # Status: Kryptonytt sine eigne avgjerder vinn alltid. Utan Kryptonytt-avgjerd følgjer køen Crypto Nordic sin avvising.
         if norm_url(ex["url"]) in kn_decided or any(t in ex["title"].lower() for t in kn_rej_titles) or ex.get("status") == "published": continue
         if b["status"] == "rejected" and not a.keep_nc_rejected_pending and ex.get("status") == "pending":
-            ex.update(status="rejected", rejected_by="Nordic Crypto", reject_reason=f"Avvist hos Nordic Crypto: {b.get('reject_reason') or 'utan grunn'}"); flips.append(("rejected", ex))
-        elif b["status"] != "rejected" and ex.get("rejected_by") == "Nordic Crypto":
+            ex.update(status="rejected", rejected_by="Crypto Nordic", reject_reason=f"Avvist hos Crypto Nordic: {b.get('reject_reason') or 'utan grunn'}"); flips.append(("rejected", ex))
+        elif b["status"] != "rejected" and ex.get("rejected_by") == "Crypto Nordic":
             ex["status"] = "pending"; ex.pop("rejected_by", None); ex.pop("reject_reason", None); flips.append(("pending", ex))
 
-    # Kø: saker som ventar på Kryptonytt-redaktøren, med utkast frå Nordic Crypto
+    # Kø: saker som ventar på Kryptonytt-redaktøren, med utkast frå Crypto Nordic
     items = {i["id"]: i for i in news["items"]}
     rows = {r["id"]: r for r in q.get("items_needing_summary", [])}
     for i in news["items"]:
@@ -138,12 +138,12 @@ def main():
     for rid, r in rows.items():
         i = items.get(rid)
         if not i or not i.get("nc"): continue
-        b = i["nc"]; r["origin"] = i.get("origin") or r.get("origin") or "henta frå Nordic Crypto"; r["nc_verification"] = i["nc_verification"]
+        b = i["nc"]; r["origin"] = i.get("origin") or r.get("origin") or "henta frå Crypto Nordic"; r["nc_verification"] = i["nc_verification"]
         r["nc_sources"] = {"source_name": b.get("source_name"), "seen_via": b.get("seen_via", [])}
         if b.get("image"): r["nc_image"] = b["image"]
         if b.get("summary_en"):
             d = {"url": i["url"], "summary": b.get("summary_nb"), "summary_nn": b.get("summary_nn"), "summary_en": b["summary_en"], "topics": i.get("topics"),
-                 "_merk": "Utkast frå Nordic Crypto (engelsk samandrag + nn/nb-omsetjing). Les over, rett og legg i queue/approved.json -> items; "
+                 "_merk": "Utkast frå Crypto Nordic (engelsk samandrag + nn/nb-omsetjing). Les over, rett og legg i queue/approved.json -> items; "
                           "approved_by/approved_at set du sjølv. Eksterne titlar blir ståande som i kjelda."}
             bad = [k for k in ("summary", "summary_nn") if AIKI.search(d.get(k) or "")]
             if bad: d["_språkregel"] = f"{', '.join(bad)} inneheld «AI»/«KI» – skriv «kunstig intelligens»"
@@ -152,10 +152,10 @@ def main():
         if not r.get("teaser_local_only") and teasers.get(rid): r["teaser_local_only"] = teasers[rid]
     q["items_needing_summary"] = [r for r in rows.values() if items.get(r["id"], {}).get("status") == "pending"]
     q["nc_rejected"] = [{"id": i["id"], "title": i["title"], "url": i["url"], "published": i["published"], "reason": i.get("reject_reason")}
-                        for i in news["items"] if i.get("rejected_by") == "Nordic Crypto" and i.get("status") == "rejected"]
-    q["_nc_how_to"] = ("Norske saker kjem frå Nordic Crypto (tools/import_nordic_crypto.py). nc_verification viser status der. "
-                       "nc_rejected: avviste hos Nordic Crypto – vil du likevel ha ei sak, legg ho i queue/approved.json -> items som vanleg.")
-    # kandidat-entitetar frå Nordic Crypto for dei importerte sakene
+                        for i in news["items"] if i.get("rejected_by") == "Crypto Nordic" and i.get("status") == "rejected"]
+    q["_nc_how_to"] = ("Norske saker kjem frå Crypto Nordic (tools/import_nordic_crypto.py). nc_verification viser status der. "
+                       "nc_rejected: avviste hos Crypto Nordic – vil du likevel ha ei sak, legg ho i queue/approved.json -> items som vanleg.")
+    # kandidat-entitetar frå Crypto Nordic for dei importerte sakene
     org = load(os.path.join(KN, "data", "orgchart.json"), {"entities": []})
     known = {e["name"].lower() for e in org.get("entities", [])} | {n.lower() for n in load(os.path.join(KN, "state", "rejected_candidates.json"), [])}
     seen = {(c["name"].lower(), c.get("item_id")) for c in q.get("candidate_entities", [])}
@@ -164,15 +164,15 @@ def main():
         kid = idmap.get(c.get("item_id"))
         if kid not in new_ids or c["name"].lower() in known or (c["name"].lower(), kid) in seen: continue
         n = {k: v for k, v in c.items() if k not in ("country", "item_id", "status")}
-        n.update(kind={"organisation": "organisasjon"}.get(c.get("kind"), c.get("kind")), item_id=kid, status="new", origin="Nordic Crypto")
+        n.update(kind={"organisation": "organisasjon"}.get(c.get("kind"), c.get("kind")), item_id=kid, status="new", origin="Crypto Nordic")
         q.setdefault("candidate_entities", []).append(n); seen.add((c["name"].lower(), kid)); n_cand += 1
     q["updated"] = NOW.isoformat(timespec="seconds")
     news["items"].sort(key=lambda i: i["published"], reverse=True); news["updated"] = NOW.isoformat(timespec="seconds")
     if not a.dry_run:
         save(newsf, news); save(qf, q); save(tf, teasers)
     today = dt.datetime.now().date()
-    print(f"import frå Nordic Crypto{' (dry-run)' if a.dry_run else ''}: {len(nc_no)} norske saker der, {len(added)} nye her "
-          f"({sum(x['status']=='pending' for x in added)} til redaktøren, {sum(x['status']=='rejected' for x in added)} avviste hos Nordic Crypto), "
+    print(f"import frå Crypto Nordic{' (dry-run)' if a.dry_run else ''}: {len(nc_no)} norske saker der, {len(added)} nye her "
+          f"({sum(x['status']=='pending' for x in added)} til redaktøren, {sum(x['status']=='rejected' for x in added)} avviste hos Crypto Nordic), "
           f"{enriched} fanst frå før (status/utkast oppdatert), {len(flips)} statusendringar, {n_cand} kandidat-entitetar; "
           f"{len(q['items_needing_summary'])} ventar på oppsummering")
     for x in added: print(f"   + {x['published'][:10]} [{x['status']}] {x['source_name']}: {x['title'][:80]}  ({x['nc_verification']})")

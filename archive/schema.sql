@@ -1,4 +1,4 @@
--- Felles skjema for artikkelarkivet til Kryptonytt og Nordic Crypto (SQLite lokalt, kan speglast til Cloudflare D1).
+-- Felles skjema for artikkelarkivet til Kryptonytt og Crypto Nordic (SQLite lokalt, kan speglast til Cloudflare D1).
 -- Regel: rader blir ALDRI sletta. Ei sak som blir teken av nettstaden, får removed = 1 og removed_at.
 -- Versjon 1 (2026-10-03). Endringar skal vere additive (nye kolonnar med standardverdi), aldri DROP.
 CREATE TABLE IF NOT EXISTS articles (
@@ -16,7 +16,7 @@ CREATE TABLE IF NOT EXISTS articles (
   summaries                TEXT NOT NULL DEFAULT '{}', -- JSON-objekt språk -> eiga oppsummering
   titles                   TEXT NOT NULL DEFAULT '{}', -- JSON-objekt språk -> eigen omsett tittel (berre når vi har laga ein)
   topics                   TEXT NOT NULL DEFAULT '[]', -- JSON-liste
-  origin                   TEXT,                     -- intern merknad, t.d. «tips frå Nordic Crypto» (ikkje offentleg)
+  origin                   TEXT,                     -- intern merknad, t.d. «tips frå Crypto Nordic» (ikkje offentleg)
   removed                  INTEGER NOT NULL DEFAULT 0, -- 1 = teken av nettstaden seinare
   removed_at               TEXT,
   removal_reason           TEXT,

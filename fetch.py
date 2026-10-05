@@ -2,7 +2,7 @@
 """Kryptonytt Norge – henter feeds, filtrerer på norske kryptoord, dedupliserer og oppdaterer
 data/news.json og køen queue/review.json.
 
-FRÅ 4. OKT. 2026 ER DETTE IKKJE STANDARD NYHEITSINNHENTING. Norske saker kjem no frå Nordic Crypto
+FRÅ 4. OKT. 2026 ER DETTE IKKJE STANDARD NYHEITSINNHENTING. Norske saker kjem no frå Crypto Nordic
 (tools/import_nordic_crypto.py, køyrd av ./fetch.sh). Denne fila er teken vare på som reserve:
   ./fetch.sh --legacy-fetch [--days N]   # gammal eiga innhenting (RSS + nyheitssøk)
   ./fetch.sh --add URL ...               # manuelt tillegg av éi sak (framleis i bruk)
@@ -182,9 +182,9 @@ def main():
     ap.add_argument("--source-name", help="kildenavn for --add (ellers fra sources.json eller domenet)")
     ap.add_argument("--date", help="publiseringsdato for --add (YYYY-MM-DD) hvis siden ikke oppgir den")
     ap.add_argument("--title", help="tittel for --add hvis siden ikke oppgir den")
-    ap.add_argument("--origin", help="intern merknad om hvor tipset kom fra for --add, f.eks. \"tips fra Nordic Crypto\" (vises aldri offentlig)")
+    ap.add_argument("--origin", help="intern merknad om hvor tipset kom fra for --add, f.eks. \"tips fra Crypto Nordic\" (vises aldri offentlig)")
     ap.add_argument("--no-events", action="store_true", help="hopp over arrangementsøket")
-    ap.add_argument("--events-only", action="store_true", help="hent bare arrangementer (ingen nyheter); brukt av ./fetch.sh når nyhetene kommer fra Nordic Crypto"); a = ap.parse_args()
+    ap.add_argument("--events-only", action="store_true", help="hent bare arrangementer (ingen nyheter); brukt av ./fetch.sh når nyhetene kommer fra Crypto Nordic"); a = ap.parse_args()
     if a.events_only: return
     cutoff = NOW - dt.timedelta(days=a.days)
     news = load(P("data", "news.json"), {"items": []})
@@ -214,7 +214,7 @@ def main():
               "seen_via": [src], "published": published.isoformat(), "fetched": NOW.isoformat(timespec="seconds"),
               "topics": topics_of(text), "matched": hits, "paywall": bool(SRC.get(outlet, {}).get("paywall", False)),
               "status": "pending", "summary": None}
-        if origin: it["origin"] = origin  # intern merknad (f.eks. «tips fra Nordic Crypto»), vises aldri på nettstedet
+        if origin: it["origin"] = origin  # intern merknad (f.eks. «tips fra Crypto Nordic»), vises aldri på nettstedet
         news["items"].append(it); by_url[cu] = it; by_title[norm_title(title)] = it
         teasers[it["id"]] = teaser[:600]; new.append(it)
 
