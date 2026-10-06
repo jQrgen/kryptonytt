@@ -1,6 +1,22 @@
 {
- "updated": "2026-10-04T13:36:49+00:00",
+ "updated": "2026-10-06T03:13:29+00:00",
  "items": [
+  {
+   "id": "fb9e8ca4fb40",
+   "url": "https://www.finansavisen.no/valuta/2026/10/05/8385368/smasparere-hamstret-krypto-under-renteuro",
+   "title": "Småsparere hamstret krypto under renteuro",
+   "source": "finansavisen",
+   "source_name": "Finansavisen",
+   "published": "2026-10-05T06:06:00+00:00",
+   "topics": [
+    "krypto",
+    "selskaper"
+   ],
+   "summary": "Småsparere fortsatte å kjøpe krypto gjennom renteuroen i september, skriver Finansavisen. Hos Firi nettokjøpte kundene for 16,1 millioner kroner, og ifølge Firi-sjef Thuc Hoang er bitcoin fortsatt det kundene kjøper mest av.",
+   "summary_nn": "Småsparar heldt fram med å kjøpe krypto gjennom renteuroa i september, skriv Finansavisen. Hos Firi nettokjøpte kundane for 16,1 millionar kroner, og ifølgje Firi-sjef Thuc Hoang er bitcoin framleis det kundane kjøper mest av.",
+   "summary_en": "Retail investors kept buying crypto through the interest-rate turmoil in September, Finansavisen reports. Firi's customers were net buyers of NOK 16.1 million, and according to Firi CEO Thuc Hoang, bitcoin is still what customers buy most.",
+   "paywall": true
+  },
   {
    "id": "1a95167a3af8",
    "url": "https://www.aftenposten.no/norge/i/vlQARB/tiltalt-for-dopsalg-mot-kryptovaluta-paa-det-moerke-nettet",
@@ -123,9 +139,9 @@
     "krypto",
     "selskaper"
    ],
-   "summary": "Den finske kryptomegleren Coinmotion har valgt K33 til å utføre større, institusjonelle handler, mens Coinmotion beholder kundeforholdet. Begge selskapene har MiCA-tillatelse.",
-   "summary_nn": "Den finske kryptomeklaren Coinmotion har valt K33 til å utføre større, institusjonelle handlar, medan Coinmotion held på kundeforholdet. Begge selskapa har MiCA-løyve.",
-   "summary_en": "Finnish crypto broker Coinmotion has chosen K33 to execute larger institutional trades, while Coinmotion keeps the customer relationship. Both companies hold MiCA licences.",
+   "summary": "Den finske kryptomegleren Coinmotion har valgt K33 til å utføre større, institusjonelle handler, mens Coinmotion beholder kundeforholdet. Begge selskapene har MiCA-tillatelse. Opplysning: Kaupr er sponsor av Kryptonytt.",
+   "summary_nn": "Den finske kryptomeklaren Coinmotion har valt K33 til å utføre større, institusjonelle handlar, medan Coinmotion held på kundeforholdet. Begge selskapa har MiCA-løyve. Opplysning: Kaupr er sponsor av Kryptonytt.",
+   "summary_en": "Finnish crypto broker Coinmotion has chosen K33 to execute larger institutional trades, while Coinmotion keeps the customer relationship. Both companies hold MiCA licences. Disclosure: Kaupr sponsors Kryptonytt.",
    "paywall": false,
    "links": [
     {
@@ -225,9 +241,9 @@
     "krypto",
     "selskaper"
    ],
-   "summary": "NBX fikk MiCA-tillatelse i første halvår, men driftsinntektene falt 45 prosent til 6,05 millioner kroner, og tapet etter skatt økte til 16,6 millioner, ifølge selskapets halvårsrapport.",
-   "summary_nn": "NBX fekk MiCA-løyve i første halvår, men driftsinntektene fall 45 prosent til 6,05 millionar kroner, og tapet etter skatt auka til 16,6 millionar, ifølgje halvårsrapporten til selskapet.",
-   "summary_en": "NBX obtained a MiCA licence in the first half of the year, but operating revenue fell 45 per cent to NOK 6.05 million and the loss after tax grew to NOK 16.6 million, according to the company's half-year report.",
+   "summary": "NBX fikk MiCA-tillatelse i første halvår, men driftsinntektene falt 45 prosent til 6,05 millioner kroner, og tapet etter skatt økte til 16,6 millioner, ifølge selskapets halvårsrapport. Opplysning: Kaupr er sponsor av Kryptonytt.",
+   "summary_nn": "NBX fekk MiCA-løyve i første halvår, men driftsinntektene fall 45 prosent til 6,05 millionar kroner, og tapet etter skatt auka til 16,6 millionar, ifølgje halvårsrapporten til selskapet. Opplysning: Kaupr er sponsor av Kryptonytt.",
+   "summary_en": "NBX obtained a MiCA licence in the first half of the year, but operating revenue fell 45 per cent to NOK 6.05 million and the loss after tax grew to NOK 16.6 million, according to the company's half-year report. Disclosure: Kaupr sponsors Kryptonytt.",
    "paywall": false,
    "links": [
     {
@@ -348,9 +364,9 @@
     "blokkjede",
     "selskaper"
    ],
-   "summary": "DNB er med i CBMT, en sandkasse der europeiske banker tester tokeniserte bankinnskudd, og tar med norske kroner inn i testene, ifølge Kaupr.",
-   "summary_nn": "DNB er med i CBMT, ei sandkasse der europeiske bankar testar tokeniserte bankinnskot, og tek norske kroner med inn i testane, ifølgje Kaupr.",
-   "summary_en": "DNB is taking part in CBMT, a sandbox where European banks test tokenised bank deposits, and is bringing Norwegian kroner into the tests, according to Kaupr.",
+   "summary": "DNB er med i CBMT, en sandkasse der europeiske banker tester tokeniserte bankinnskudd, og tar med norske kroner inn i testene, ifølge Kaupr. Opplysning: Kaupr er sponsor av Kryptonytt.",
+   "summary_nn": "DNB er med i CBMT, ei sandkasse der europeiske bankar testar tokeniserte bankinnskot, og tek norske kroner med inn i testane, ifølgje Kaupr. Opplysning: Kaupr er sponsor av Kryptonytt.",
+   "summary_en": "DNB is taking part in CBMT, a sandbox where European banks test tokenised bank deposits, and is bringing Norwegian kroner into the tests, according to Kaupr. Disclosure: Kaupr sponsors Kryptonytt.",
    "paywall": false
   },
   {
@@ -395,9 +411,9 @@
     "bitcoin",
     "selskaper"
    ],
-   "summary": "Sander Andersen, styreleder i H100 Group, mener bitcoinselskaper under én milliard dollar bør kjøpe hverandre, og at det å stå stille er den største risikoen, ifølge Kaupr.",
-   "summary_nn": "Sander Andersen, styreleiar i H100 Group, meiner at bitcoinselskap som er verde under éin milliard dollar, bør kjøpe kvarandre, og at det å stå stille er den største risikoen, ifølgje Kaupr.",
-   "summary_en": "Sander Andersen, chair of H100 Group, believes bitcoin companies worth less than one billion dollars should buy each other, and that standing still is the biggest risk, according to Kaupr.",
+   "summary": "Sander Andersen, styreleder i H100 Group, mener bitcoinselskaper under én milliard dollar bør kjøpe hverandre, og at det å stå stille er den største risikoen, ifølge Kaupr. Opplysning: Kaupr er sponsor av Kryptonytt.",
+   "summary_nn": "Sander Andersen, styreleiar i H100 Group, meiner at bitcoinselskap som er verde under éin milliard dollar, bør kjøpe kvarandre, og at det å stå stille er den største risikoen, ifølgje Kaupr. Opplysning: Kaupr er sponsor av Kryptonytt.",
+   "summary_en": "Sander Andersen, chair of H100 Group, believes bitcoin companies worth less than one billion dollars should buy each other, and that standing still is the biggest risk, according to Kaupr. Disclosure: Kaupr sponsors Kryptonytt.",
    "paywall": false
   },
   {
@@ -411,9 +427,9 @@
     "blokkjede",
     "regulering"
    ],
-   "summary": "Norges Bank navnga i et LinkedIn-innlegg 07.09.2026 tolv finansinstitusjoner i arbeidet med å utforske tokenisering, blant dem DNB, Nordea og SpareBank 1. Innlegget er ikke publisert på norges-bank.no.",
-   "summary_nn": "Noregs Bank namngav i eit LinkedIn-innlegg 07.09.2026 tolv finansinstitusjonar i arbeidet med å utforske tokenisering, mellom dei DNB, Nordea og SpareBank 1. Innlegget er ikkje publisert på norges-bank.no.",
-   "summary_en": "In a LinkedIn post on 7 September 2026, Norges Bank named twelve financial institutions involved in its work on exploring tokenisation, including DNB, Nordea and SpareBank 1. The post has not been published on norges-bank.no.",
+   "summary": "Norges Bank navnga i et LinkedIn-innlegg 07.09.2026 tolv finansinstitusjoner i arbeidet med å utforske tokenisering, blant dem DNB, Nordea og SpareBank 1. Innlegget er ikke publisert på norges-bank.no. Opplysning: Kaupr er sponsor av Kryptonytt.",
+   "summary_nn": "Noregs Bank namngav i eit LinkedIn-innlegg 07.09.2026 tolv finansinstitusjonar i arbeidet med å utforske tokenisering, mellom dei DNB, Nordea og SpareBank 1. Innlegget er ikkje publisert på norges-bank.no. Opplysning: Kaupr er sponsor av Kryptonytt.",
+   "summary_en": "In a LinkedIn post on 7 September 2026, Norges Bank named twelve financial institutions involved in its work on exploring tokenisation, including DNB, Nordea and SpareBank 1. The post has not been published on norges-bank.no. Disclosure: Kaupr sponsors Kryptonytt.",
    "paywall": false,
    "links": [
     {
