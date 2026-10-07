@@ -1,6 +1,55 @@
 {
- "updated": "2026-10-06T03:13:29+00:00",
+ "updated": "2026-10-07T03:25:40+00:00",
  "items": [
+  {
+   "id": "c3c7d269dc30",
+   "url": "https://www.adressa.no/nyheter/innenriks/i/ElywEo/teknologiraadet-hardt-ut-mot-norsk-datasenterpolitikk-ingen-har-vurdert-samfunnsnytten",
+   "title": "Teknologirådet hardt ut mot norsk datasenterpolitikk: – Ingen har vurdert samfunnsnytten",
+   "source": "adressa",
+   "source_name": "Adresseavisen (NTB)",
+   "published": "2026-10-07T12:00:00+00:00",
+   "topics": [
+    "regulering"
+   ],
+   "summary": "Teknologirådet mener norsk datasenterpolitikk er feilslått, skriver NTB i Adresseavisen. Ifølge rådet er rundt 90 prosent av kapasiteten eid eller kontrollert fra utlandet, og de fire største eierne, blant dem Bitdeer, driver hovedsakelig med trening av modeller for kunstig intelligens, globale tjenester og kryptoutvinning. Anbefalinger til regjering og Storting kommer i en ny rapport senere i høst.",
+   "summary_nn": "Teknologirådet meiner norsk datasenterpolitikk er feilslått, skriv NTB i Adresseavisen. Ifølgje rådet er om lag 90 prosent av kapasiteten eigd eller kontrollert frå utlandet, og dei fire største eigarane, mellom dei Bitdeer, driv hovudsakleg med trening av modellar for kunstig intelligens, globale tenester og kryptoutvinning. Tilrådingar til regjering og Storting kjem i ein ny rapport seinare i haust.",
+   "summary_en": "The Norwegian Board of Technology says Norway's data centre policy has failed, NTB reports in Adresseavisen. According to the board, about 90 per cent of capacity is owned or controlled from abroad, and the four largest owners, including Bitdeer, mainly run artificial intelligence model training, global services and crypto mining. Recommendations to the government and parliament will follow in a new report later this autumn.",
+   "paywall": true
+  },
+  {
+   "id": "632ec75297d8",
+   "url": "https://www.investornytt.no/krypto/k33-mener-bitcoinselgerne-er-utslitt/546866",
+   "title": "K33: Utslitte bitcoinselgere kan løfte bitcoin-kursen",
+   "source": "investornytt",
+   "source_name": "Investornytt",
+   "published": "2026-10-06T12:00:00+00:00",
+   "topics": [
+    "bitcoin",
+    "selskaper"
+   ],
+   "summary": "I ukesrapporten «Ahead of the Curve» mener K33-analysesjef Vetle Lunde at salgspresset i bitcoin har avtatt så mye at det kan gi grunnlag for videre oppgang, skriver Investornytt. K33 tror bunnen trolig kom mot slutten av andre kvartal, men peker på stigende amerikanske renter som den største risikoen på kort sikt.",
+   "summary_nn": "I vekerapporten «Ahead of the Curve» meiner K33-analysesjef Vetle Lunde at seljarpresset i bitcoin har avteke så mykje at det kan gje grunnlag for vidare oppgang, skriv Investornytt. K33 trur botnen truleg kom mot slutten av andre kvartal, men peikar på stigande amerikanske renter som den største risikoen på kort sikt.",
+   "summary_en": "In the weekly report Ahead of the Curve, K33 head of research Vetle Lunde argues that selling pressure in bitcoin has eased enough to support further gains, Investornytt reports. K33 believes the bottom probably came towards the end of the second quarter, but points to rising US interest rates as the biggest short-term risk.",
+   "paywall": false
+  },
+  {
+   "id": "e88e8e0c9a77",
+   "url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Representantforslag/2026-2027/dok8-202627-006s/",
+   "title": "Rødt foreslår midlertidig stans for nye datasentre",
+   "title_nn": "Raudt føreslår mellombels stans for nye datasenter",
+   "title_en": "Red Party proposes temporary halt to new data centres",
+   "source": "stortinget",
+   "source_name": "Stortinget",
+   "published": "2026-10-05T12:00:00+00:00",
+   "topics": [
+    "regulering",
+    "bitcoin"
+   ],
+   "summary": "Fire stortingsrepresentanter fra Rødt foreslår en midlertidig stans i tildelingen av strøm og nettkapasitet til nye datasentre, til nytt regelverk er på plass, og vil at prosjekter på 25 MW eller mer skal legges fram for Stortinget. Forslaget peker på at Stortinget tre ganger på to år har bedt regjeringen om et forbud mot kraftkrevende kryptoutvinning uten at noe forbud er på plass. Det er et forslag, ikke et vedtak.",
+   "summary_nn": "Fire stortingsrepresentantar frå Raudt føreslår ein mellombels stans i tildelinga av straum og nettkapasitet til nye datasenter, til nytt regelverk er på plass, og vil at prosjekt på 25 MW eller meir skal leggjast fram for Stortinget. Forslaget peikar på at Stortinget tre gonger på to år har bede regjeringa om eit forbod mot kraftkrevjande kryptoutvinning utan at noko forbod er på plass. Det er eit forslag, ikkje eit vedtak.",
+   "summary_en": "Four Red Party MPs propose a temporary halt to allocating power and grid capacity to new data centres until new rules are in place, and want projects of 25 MW or more to be put before parliament. The proposal notes that parliament has asked the government three times in two years for a ban on power-intensive crypto mining without any ban being introduced. It is a proposal, not a decision.",
+   "paywall": false
+  },
   {
    "id": "fb9e8ca4fb40",
    "url": "https://www.finansavisen.no/valuta/2026/10/05/8385368/smasparere-hamstret-krypto-under-renteuro",
