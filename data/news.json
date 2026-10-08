@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-07T03:25:40+00:00",
+ "updated": "2026-10-08T03:27:24+00:00",
  "items": [
   {
    "id": "c3c7d269dc30",
@@ -15,6 +15,22 @@
    "summary_nn": "Teknologirådet meiner norsk datasenterpolitikk er feilslått, skriv NTB i Adresseavisen. Ifølgje rådet er om lag 90 prosent av kapasiteten eigd eller kontrollert frå utlandet, og dei fire største eigarane, mellom dei Bitdeer, driv hovudsakleg med trening av modellar for kunstig intelligens, globale tenester og kryptoutvinning. Tilrådingar til regjering og Storting kjem i ein ny rapport seinare i haust.",
    "summary_en": "The Norwegian Board of Technology says Norway's data centre policy has failed, NTB reports in Adresseavisen. According to the board, about 90 per cent of capacity is owned or controlled from abroad, and the four largest owners, including Bitdeer, mainly run artificial intelligence model training, global services and crypto mining. Recommendations to the government and parliament will follow in a new report later this autumn.",
    "paywall": true
+  },
+  {
+   "id": "9755cf9957e9",
+   "url": "https://www.sagat.no/innrommer-litt-kryptoutvinning/19.59848",
+   "title": "Innrømmer «litt» kryptoutvinning",
+   "source": "sagat.no",
+   "source_name": "Ságat",
+   "published": "2026-10-07T12:00:00+00:00",
+   "topics": [
+    "bitcoin",
+    "selskaper"
+   ],
+   "summary": "Dataselskapet Arctic Core AS innrømmer nå at det skal drive med «litt» kryptoutvinning i Kautokeino, skriver Ságat. Finansdirektør Christoffer Løvdal og daglig leder Ola Stene-Johansen i Lokotech Group AS sier at anlegget hovedsakelig skal brukes til testing og lagring av utstyr, og at kryptoutvinning for å skaffe inntekter i testfasen ikke endrer det.",
+   "summary_nn": "Dataselskapet Arctic Core AS vedgår no at det skal drive med «litt» kryptoutvinning i Kautokeino, skriv Ságat. Finansdirektør Christoffer Løvdal og dagleg leiar Ola Stene-Johansen i Lokotech Group AS seier at anlegget hovudsakleg skal brukast til testing og lagring av utstyr, og at kryptoutvinning for å skaffe inntekter i testfasen ikkje endrar det.",
+   "summary_en": "The data company Arctic Core AS now admits it will do \"a little\" crypto mining in Kautokeino, Ságat reports. CFO Christoffer Løvdal and CEO Ola Stene-Johansen of Lokotech Group AS say the facility will mainly be used to test and store equipment, and that mining crypto for revenue during the test phase does not change that.",
+   "paywall": false
   },
   {
    "id": "632ec75297d8",
@@ -49,6 +65,48 @@
    "summary_nn": "Fire stortingsrepresentantar frå Raudt føreslår ein mellombels stans i tildelinga av straum og nettkapasitet til nye datasenter, til nytt regelverk er på plass, og vil at prosjekt på 25 MW eller meir skal leggjast fram for Stortinget. Forslaget peikar på at Stortinget tre gonger på to år har bede regjeringa om eit forbod mot kraftkrevjande kryptoutvinning utan at noko forbod er på plass. Det er eit forslag, ikkje eit vedtak.",
    "summary_en": "Four Red Party MPs propose a temporary halt to allocating power and grid capacity to new data centres until new rules are in place, and want projects of 25 MW or more to be put before parliament. The proposal notes that parliament has asked the government three times in two years for a ban on power-intensive crypto mining without any ban being introduced. It is a proposal, not a decision.",
    "paywall": false
+  },
+  {
+   "id": "bc7a45cb184e",
+   "url": "https://stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Representantforslag/2026-2027/dok8-202627-009s/",
+   "title": "SV vil ha «panikklov» for datasentre og oppfølging av kryptoforbudet",
+   "title_nn": "SV vil ha «panikklov» for datasenter og oppfølging av kryptoforbodet",
+   "title_en": "Socialist Left Party wants a \"panic law\" for data centres and follow-up of the crypto mining ban",
+   "source": "stortinget",
+   "source_name": "Stortinget",
+   "published": "2026-10-05T12:00:00+00:00",
+   "topics": [
+    "regulering",
+    "bitcoin"
+   ],
+   "summary": "Ni stortingsrepresentanter fra SV, blant dem Lars Haltbrekken og Kirsti Bergstø, foreslår en midlertidig lov etter modell av panikkloven fra 1906 som setter nye datasentre på vent til næringen er regulert, og et nasjonalt konsesjonssystem. De ber også regjeringen raskt komme tilbake med hvordan Stortingets vedtak om å forby kryptoutvinning i Norge skal følges opp. Det er et forslag, ikke et vedtak.",
+   "summary_nn": "Ni stortingsrepresentantar frå SV, mellom dei Lars Haltbrekken og Kirsti Bergstø, føreslår ei mellombels lov etter modell av panikklova frå 1906 som set nye datasenter på vent til næringa er regulert, og eit nasjonalt konsesjonssystem. Dei ber òg regjeringa snarleg kome tilbake med korleis vedtaket i Stortinget om å forby kryptoutvinning i Noreg skal følgjast opp. Det er eit forslag, ikkje eit vedtak.",
+   "summary_en": "Nine Socialist Left Party MPs, including Lars Haltbrekken and Kirsti Bergstø, propose a temporary law modelled on the 1906 \"panic law\" that would put new data centres on hold until the industry is regulated, plus a national licensing system. They also ask the government to report back soon on how parliament's decision to ban crypto mining in Norway will be followed up. It is a proposal, not a decision.",
+   "paywall": false
+  },
+  {
+   "id": "47156e99927b",
+   "url": "https://www.kaupr.io/nyheter/ace-digital-tjente-6-3-millioner-kroner-i-tredje-kvartal",
+   "title": "Ace Digital tjente 6,3 millioner kroner i tredje kvartal",
+   "source": "kaupr",
+   "source_name": "Kaupr",
+   "published": "2026-10-05T12:00:00+00:00",
+   "topics": [
+    "bitcoin",
+    "selskaper"
+   ],
+   "summary": "Det Oslo-noterte bitcoinselskapet Ace Digital fikk et resultat på 6,3 millioner kroner i tredje kvartal og er nå gjeldfritt, ifølge selskapets egen, ureviderte kvartalsoppdatering, skriver Kaupr. Bitcoinbeholdningen økte fra 1,6 til 5,3 bitcoin uten at selskapet kjøpte bitcoin; økningen kom fra opsjoner, og selskapet anslår den samlede bitcoineksponeringen til rundt 57 bitcoin.",
+   "summary_nn": "Det Oslo-noterte bitcoinselskapet Ace Digital fekk eit resultat på 6,3 millionar kroner i tredje kvartal og er no gjeldfritt, ifølgje den ureviderte kvartalsoppdateringa til selskapet, skriv Kaupr. Bitcoinbehaldninga auka frå 1,6 til 5,3 bitcoin utan at selskapet kjøpte bitcoin; auken kom frå opsjonar, og selskapet anslår den samla bitcoineksponeringa til om lag 57 bitcoin.",
+   "summary_en": "Oslo-listed bitcoin company Ace Digital made a profit of NOK 6.3 million in the third quarter and is now debt-free, according to its own unaudited quarterly update, Kaupr reports. Its bitcoin holding rose from 1.6 to 5.3 bitcoin without the company buying any; the increase came from options, and the company estimates its total bitcoin exposure at around 57 bitcoin.",
+   "paywall": false,
+   "links": [
+    {
+     "label": "Ace Digitals kvartalsmelding på MFN (primærkilde)",
+     "url": "https://mfn.se/all/a/ace-digital/aced-ace-digital-q3-2026-update",
+     "label_nn": "Kvartalsmeldinga til Ace Digital på MFN (primærkjelde)",
+     "label_en": "Ace Digital's quarterly release on MFN (primary source)"
+    }
+   ]
   },
   {
    "id": "fb9e8ca4fb40",
@@ -188,9 +246,9 @@
     "krypto",
     "selskaper"
    ],
-   "summary": "Den finske kryptomegleren Coinmotion har valgt K33 til å utføre større, institusjonelle handler, mens Coinmotion beholder kundeforholdet. Begge selskapene har MiCA-tillatelse. Opplysning: Kaupr er sponsor av Kryptonytt.",
-   "summary_nn": "Den finske kryptomeklaren Coinmotion har valt K33 til å utføre større, institusjonelle handlar, medan Coinmotion held på kundeforholdet. Begge selskapa har MiCA-løyve. Opplysning: Kaupr er sponsor av Kryptonytt.",
-   "summary_en": "Finnish crypto broker Coinmotion has chosen K33 to execute larger institutional trades, while Coinmotion keeps the customer relationship. Both companies hold MiCA licences. Disclosure: Kaupr sponsors Kryptonytt.",
+   "summary": "Den finske kryptomegleren Coinmotion har valgt K33 til å utføre større, institusjonelle handler, mens Coinmotion beholder kundeforholdet. Begge selskapene har MiCA-tillatelse.",
+   "summary_nn": "Den finske kryptomeklaren Coinmotion har valt K33 til å utføre større, institusjonelle handlar, medan Coinmotion held på kundeforholdet. Begge selskapa har MiCA-løyve.",
+   "summary_en": "Finnish crypto broker Coinmotion has chosen K33 to execute larger institutional trades, while Coinmotion keeps the customer relationship. Both companies hold MiCA licences.",
    "paywall": false,
    "links": [
     {
@@ -290,9 +348,9 @@
     "krypto",
     "selskaper"
    ],
-   "summary": "NBX fikk MiCA-tillatelse i første halvår, men driftsinntektene falt 45 prosent til 6,05 millioner kroner, og tapet etter skatt økte til 16,6 millioner, ifølge selskapets halvårsrapport. Opplysning: Kaupr er sponsor av Kryptonytt.",
-   "summary_nn": "NBX fekk MiCA-løyve i første halvår, men driftsinntektene fall 45 prosent til 6,05 millionar kroner, og tapet etter skatt auka til 16,6 millionar, ifølgje halvårsrapporten til selskapet. Opplysning: Kaupr er sponsor av Kryptonytt.",
-   "summary_en": "NBX obtained a MiCA licence in the first half of the year, but operating revenue fell 45 per cent to NOK 6.05 million and the loss after tax grew to NOK 16.6 million, according to the company's half-year report. Disclosure: Kaupr sponsors Kryptonytt.",
+   "summary": "NBX fikk MiCA-tillatelse i første halvår, men driftsinntektene falt 45 prosent til 6,05 millioner kroner, og tapet etter skatt økte til 16,6 millioner, ifølge selskapets halvårsrapport.",
+   "summary_nn": "NBX fekk MiCA-løyve i første halvår, men driftsinntektene fall 45 prosent til 6,05 millionar kroner, og tapet etter skatt auka til 16,6 millionar, ifølgje halvårsrapporten til selskapet.",
+   "summary_en": "NBX obtained a MiCA licence in the first half of the year, but operating revenue fell 45 per cent to NOK 6.05 million and the loss after tax grew to NOK 16.6 million, according to the company's half-year report.",
    "paywall": false,
    "links": [
     {
@@ -413,9 +471,9 @@
     "blokkjede",
     "selskaper"
    ],
-   "summary": "DNB er med i CBMT, en sandkasse der europeiske banker tester tokeniserte bankinnskudd, og tar med norske kroner inn i testene, ifølge Kaupr. Opplysning: Kaupr er sponsor av Kryptonytt.",
-   "summary_nn": "DNB er med i CBMT, ei sandkasse der europeiske bankar testar tokeniserte bankinnskot, og tek norske kroner med inn i testane, ifølgje Kaupr. Opplysning: Kaupr er sponsor av Kryptonytt.",
-   "summary_en": "DNB is taking part in CBMT, a sandbox where European banks test tokenised bank deposits, and is bringing Norwegian kroner into the tests, according to Kaupr. Disclosure: Kaupr sponsors Kryptonytt.",
+   "summary": "DNB er med i CBMT, en sandkasse der europeiske banker tester tokeniserte bankinnskudd, og tar med norske kroner inn i testene, ifølge Kaupr.",
+   "summary_nn": "DNB er med i CBMT, ei sandkasse der europeiske bankar testar tokeniserte bankinnskot, og tek norske kroner med inn i testane, ifølgje Kaupr.",
+   "summary_en": "DNB is taking part in CBMT, a sandbox where European banks test tokenised bank deposits, and is bringing Norwegian kroner into the tests, according to Kaupr.",
    "paywall": false
   },
   {
@@ -428,9 +486,9 @@
    "topics": [
     "selskaper"
    ],
-   "summary": "Firi lanserer appen sin i Sverige med svensk BankID, Swish og innskudd i svenske kroner, skriver Kaupr. Firi har til nå vært i Norge og Danmark og fikk MiCA-tillatelse i mai; ifølge landssjef Ted Scheiman går selskapet inn i et marked der rundt 1,1 millioner svensker eier krypto og konkurransen er hard. Opplysning: Kaupr er sponsor av Kryptonytt.",
-   "summary_nn": "Firi lanserer appen sin i Sverige med svensk BankID, Swish og innskot i svenske kroner, skriv Kaupr. Firi har til no vore i Noreg og Danmark og fekk MiCA-løyve i mai; ifølgje landssjef Ted Scheiman går selskapet inn i ein marknad der om lag 1,1 millionar svenskar eig krypto og konkurransen er hard. Opplysning: Kaupr er sponsor av Kryptonytt.",
-   "summary_en": "Firi is launching its app in Sweden with Swedish BankID, Swish and deposits in Swedish kronor, Kaupr reports. Firi has so far operated in Norway and Denmark and received its MiCA licence in May; according to country manager Ted Scheiman, it is entering a market where around 1.1 million Swedes own crypto and competition is tough. Disclosure: Kaupr sponsors Kryptonytt.",
+   "summary": "Firi lanserer appen sin i Sverige med svensk BankID, Swish og innskudd i svenske kroner, skriver Kaupr. Firi har til nå vært i Norge og Danmark og fikk MiCA-tillatelse i mai; ifølge landssjef Ted Scheiman går selskapet inn i et marked der rundt 1,1 millioner svensker eier krypto og konkurransen er hard.",
+   "summary_nn": "Firi lanserer appen sin i Sverige med svensk BankID, Swish og innskot i svenske kroner, skriv Kaupr. Firi har til no vore i Noreg og Danmark og fekk MiCA-løyve i mai; ifølgje landssjef Ted Scheiman går selskapet inn i ein marknad der om lag 1,1 millionar svenskar eig krypto og konkurransen er hard.",
+   "summary_en": "Firi is launching its app in Sweden with Swedish BankID, Swish and deposits in Swedish kronor, Kaupr reports. Firi has so far operated in Norway and Denmark and received its MiCA licence in May; according to country manager Ted Scheiman, it is entering a market where around 1.1 million Swedes own crypto and competition is tough.",
    "paywall": false
   },
   {
@@ -460,9 +518,9 @@
     "bitcoin",
     "selskaper"
    ],
-   "summary": "Sander Andersen, styreleder i H100 Group, mener bitcoinselskaper under én milliard dollar bør kjøpe hverandre, og at det å stå stille er den største risikoen, ifølge Kaupr. Opplysning: Kaupr er sponsor av Kryptonytt.",
-   "summary_nn": "Sander Andersen, styreleiar i H100 Group, meiner at bitcoinselskap som er verde under éin milliard dollar, bør kjøpe kvarandre, og at det å stå stille er den største risikoen, ifølgje Kaupr. Opplysning: Kaupr er sponsor av Kryptonytt.",
-   "summary_en": "Sander Andersen, chair of H100 Group, believes bitcoin companies worth less than one billion dollars should buy each other, and that standing still is the biggest risk, according to Kaupr. Disclosure: Kaupr sponsors Kryptonytt.",
+   "summary": "Sander Andersen, styreleder i H100 Group, mener bitcoinselskaper under én milliard dollar bør kjøpe hverandre, og at det å stå stille er den største risikoen, ifølge Kaupr.",
+   "summary_nn": "Sander Andersen, styreleiar i H100 Group, meiner at bitcoinselskap som er verde under éin milliard dollar, bør kjøpe kvarandre, og at det å stå stille er den største risikoen, ifølgje Kaupr.",
+   "summary_en": "Sander Andersen, chair of H100 Group, believes bitcoin companies worth less than one billion dollars should buy each other, and that standing still is the biggest risk, according to Kaupr.",
    "paywall": false
   },
   {
@@ -476,9 +534,9 @@
     "blokkjede",
     "regulering"
    ],
-   "summary": "Norges Bank navnga i et LinkedIn-innlegg 07.09.2026 tolv finansinstitusjoner i arbeidet med å utforske tokenisering, blant dem DNB, Nordea og SpareBank 1. Innlegget er ikke publisert på norges-bank.no. Opplysning: Kaupr er sponsor av Kryptonytt.",
-   "summary_nn": "Noregs Bank namngav i eit LinkedIn-innlegg 07.09.2026 tolv finansinstitusjonar i arbeidet med å utforske tokenisering, mellom dei DNB, Nordea og SpareBank 1. Innlegget er ikkje publisert på norges-bank.no. Opplysning: Kaupr er sponsor av Kryptonytt.",
-   "summary_en": "In a LinkedIn post on 7 September 2026, Norges Bank named twelve financial institutions involved in its work on exploring tokenisation, including DNB, Nordea and SpareBank 1. The post has not been published on norges-bank.no. Disclosure: Kaupr sponsors Kryptonytt.",
+   "summary": "Norges Bank navnga i et LinkedIn-innlegg 07.09.2026 tolv finansinstitusjoner i arbeidet med å utforske tokenisering, blant dem DNB, Nordea og SpareBank 1. Innlegget er ikke publisert på norges-bank.no.",
+   "summary_nn": "Noregs Bank namngav i eit LinkedIn-innlegg 07.09.2026 tolv finansinstitusjonar i arbeidet med å utforske tokenisering, mellom dei DNB, Nordea og SpareBank 1. Innlegget er ikkje publisert på norges-bank.no.",
+   "summary_en": "In a LinkedIn post on 7 September 2026, Norges Bank named twelve financial institutions involved in its work on exploring tokenisation, including DNB, Nordea and SpareBank 1. The post has not been published on norges-bank.no.",
    "paywall": false,
    "links": [
     {
