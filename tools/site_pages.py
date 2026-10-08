@@ -170,10 +170,10 @@ def industry_map(ctx, root, home):
             out.append(f'<section class="icat {cls}" aria-label="{E(name)}"><h3>{E(name)}</h3><div class="tiles">{"".join(cats[k])}</div></section>')
         else:
             out.append(f'<section class="icat {cls} empty"><h3>{E(name)}</h3><p>{L("Ingen kjeldebelagde aktørar i kartet enno.", "Ingen kildebelagte aktører i kartet ennå.", "No sourced organisations in the map yet.")}</p></section>')
-    if any("kaupr.io/pages" in x.get("url", "") for e in ents for x in e.get("sources", [])):  # openheit: Kaupr er sponsor og kjelde
-        out.append('<p class="meta kaupr-note">' + L("Nokre aktørar er henta frå Kaupr sine Onchain Pages. Kaupr er sponsor av Kryptonytt og ei av kjeldene våre. Kvar slik aktør er sjekka mot selskapet si eiga nettside eller offentlege register (Brønnøysund, ESMA) før han kom med, og Kaupr er oppgitt som kjelde.",
-            "Noen aktører er hentet fra Kauprs Onchain Pages. Kaupr er sponsor av Kryptonytt og en av kildene våre. Hver slik aktør er sjekket mot selskapets egen nettside eller offentlige registre (Brønnøysund, ESMA) før den kom med, og Kaupr er oppgitt som kilde.",
-            "Some organisations come from Kaupr’s Onchain Pages. Kaupr sponsors Kryptonytt and is one of our sources. Each one was checked against the company’s own website or public registers (Brønnøysund, ESMA) before being included, and Kaupr is credited as a source.") + '</p>')
+    if any("kaupr.io/pages" in x.get("url", "") for e in ents for x in e.get("sources", [])):  # openheit: Kaupr er kjelde (ikkje sponsor)
+        out.append('<p class="meta kaupr-note">' + L("Nokre aktørar er henta frå Kaupr sine Onchain Pages. Kvar slik aktør er sjekka mot selskapet si eiga nettside eller offentlege register (Brønnøysund, ESMA) før han kom med, og Kaupr er oppgitt som kjelde.",
+            "Noen aktører er hentet fra Kauprs Onchain Pages. Hver slik aktør er sjekket mot selskapets egen nettside eller offentlige registre (Brønnøysund, ESMA) før den kom med, og Kaupr er oppgitt som kilde.",
+            "Some organisations come from Kaupr’s Onchain Pages. Each one was checked against the company’s own website or public registers (Brønnøysund, ESMA) before being included, and Kaupr is credited as a source.") + '</p>')
     return '<div class="imap">' + "".join(out) + "</div>"
 
 def build_org(ctx):
@@ -188,9 +188,9 @@ def build_org(ctx):
 "Companies, organisations, authorities and people in public professional roles, as covered in the news we link to. Every entry and every connection links to its source. Click a card for details and links across the private and public sectors.")}</p>
 <p class="meta"><a href="#industrikart">{L("Industrikart: aktørane etter kategori ↓", "Industrikart: aktørene etter kategori ↓", "Industry map: organisations by category ↓")}</a>{rules}</p>
 {nbnote}
-<p class="meta kaupr-note">{L(f'Openheit: Kaupr er sponsor av Kryptonytt og ei av kjeldene våre. Aktørar henta frå Kaupr sine Onchain Pages er sjekka mot eiga nettside eller offentlege register, og Kaupr er oppgitt som kjelde. <a href="{home}om/#sponsor">Meir om dette</a>.',
-f'Åpenhet: Kaupr er sponsor av Kryptonytt og en av kildene våre. Aktører hentet fra Kauprs Onchain Pages er sjekket mot egen nettside eller offentlige registre, og Kaupr er oppgitt som kilde. <a href="{home}om/#sponsor">Mer om dette</a>.',
-f'Disclosure: Kaupr sponsors Kryptonytt and is one of our sources. Organisations taken from Kaupr’s Onchain Pages were checked against their own websites or public registers, and Kaupr is credited as a source. <a href="{home}om/#sponsor">More about this</a>.')}</p>
+<p class="meta kaupr-note">{L(f'Openheit: Aktørar henta frå Kaupr sine Onchain Pages er sjekka mot eiga nettside eller offentlege register, og Kaupr er oppgitt som kjelde. <a href="{home}om/#sponsor">Meir om dette</a>.',
+f'Åpenhet: Aktører hentet fra Kauprs Onchain Pages er sjekket mot egen nettside eller offentlige registre, og Kaupr er oppgitt som kilde. <a href="{home}om/#sponsor">Mer om dette</a>.',
+f'Disclosure: Organisations taken from Kaupr’s Onchain Pages were checked against their own websites or public registers, and Kaupr is credited as a source. <a href="{home}om/#sponsor">More about this</a>.')}</p>
 {('<details class="notice" open lang="nb"><summary><b>' + L("Oversikt: slik heng norsk kryptoregulering og -bransje saman", "Oversikt: slik henger norsk kryptoregulering og -bransje sammen", "Overview: how Norwegian crypto regulation and the industry fit together") + '</b> (' + L("per", "per", "as of") + ' ' + E(org.get("updated") or "") + ')</summary>' + "".join(f"<p>{E(x)}</p>" for x in summ) + '</details>') if summ else ''}
 {('<details class="notice" lang="nb"><summary>' + L("Atterhald", "Forbehold", "Caveats") + '</summary><ul>' + "".join(f"<li>{E(x)}</li>" for x in org.get("caveats", [])) + '</ul></details>') if org.get("caveats") else ''}
 <div class="filters"><div class="seg" role="group" aria-label="{L("Vis sektor", "Vis sektor", "Show sector")}"><button type="button" data-v="begge" aria-pressed="true">{L("Begge", "Begge", "Both")}</button><button type="button" data-v="privat" aria-pressed="false">{ORG_T[S.lang]["Privat sektor"]}</button><button type="button" data-v="offentlig" aria-pressed="false">{ORG_T[S.lang]["Offentlig sektor"]}</button></div>

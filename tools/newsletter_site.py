@@ -69,7 +69,7 @@ def build_newsletter():
     if not endpoint(): return
     sub = CFG.get("substack_url")
     body = (f'<h1>{E(T("title"))}</h1>\n<p class="lead">{E(T("lead"))}</p>\n{form()}\n<div class="prose"><p class="notice">{T("priv")}</p>\n'
-            + (f'<p><a href="{E(sub)}" rel="noopener">Substack</a></p>\n' if sub else "") + f'<p class="meta">{T("kaupr")}</p></div>')
+            + (f'<p><a href="{E(sub)}" rel="noopener">Substack</a></p>\n' if sub else "") + '</div>')
     page("nyhetsbrev", T("title") + " – Kryptonytt Norge", "nyhetsbrev", body, T("desc"))
     d = out_dir("newsletter"); os.makedirs(d, exist_ok=True)   # /newsletter/ -> /nyhetsbrev/ (engelsk adresse)
     open(os.path.join(d, "index.html"), "w", encoding="utf-8").write(

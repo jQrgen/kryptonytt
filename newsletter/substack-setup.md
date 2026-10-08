@@ -1,3 +1,5 @@
+> **Merk 08.10.2026:** Kaupr er ikkje sponsor av Kryptonytt. Alle sponsorlinjer om Kaupr under er utgåtte og skal ikkje brukast. Kaupr blir berre nemnd når vi siterer ei Kaupr-sak.
+
 # Kryptonytt Norge – oppsett for nyheitsbrev (Substack + e-post)
 
 Status: **førebudd, ingenting er oppretta eller sendt.** Det finst ingen Substack-konto enno; jQrgen opprettar han med si eiga

@@ -2,10 +2,16 @@
  "_doc": "Endringslogg for nettstaden (ikkje daglege nyheiter). Nyaste først. Felt: date (YYYY-MM-DD), text (bokmål), text_nn (nynorsk), text_en (engelsk). «feature» gjer at oppføringa berre blir vist når funksjonen er slått på; datoen blir då dagen han gjekk live (queue/approved.json -> <feature>.live_date).",
  "entries": [
   {
+   "date": "2026-10-08",
+   "text": "Retting: Kaupr er ikke sponsor av Kryptonytt. Vi har fjernet sponsoropplysningene om Kaupr fra sakene, Om-siden, organisasjonskartet og nyhetsbrevet. Kaupr er fortsatt en av nyhetskildene våre og blir nevnt når vi siterer en Kaupr-sak.",
+   "text_nn": "Retting: Kaupr er ikkje sponsor av Kryptonytt. Vi har fjerna sponsoropplysningane om Kaupr frå sakene, Om-sida, organisasjonskartet og nyheitsbrevet. Kaupr er framleis ei av nyheitskjeldene våre og blir nemnd når vi siterer ei Kaupr-sak.",
+   "text_en": "Correction: Kaupr is not a sponsor of Kryptonytt. We have removed the Kaupr sponsor disclosures from stories, the About page, the org chart and the newsletter. Kaupr is still one of our news sources and is named when we cite a Kaupr story."
+  },
+  {
    "date": "2026-10-03",
-   "text": "Organisasjonskartet er utvidet med flere personer i offentlige yrkesroller fra Enhetsregisteret, nye aktører (blant annet fra Kauprs Onchain Pages, sjekket mot egne nettsider og offentlige registre), en ny kategori «Internasjonale aktører i Norge» i industrikartet og offentlige profillenker for noen personer. Kaupr er sponsor; se Om-siden.",
-   "text_nn": "Organisasjonskartet er utvida med fleire personar i offentlege yrkesroller frå Enhetsregisteret, nye aktørar (mellom anna frå Kaupr sine Onchain Pages, sjekka mot eigne nettsider og offentlege register), ein ny kategori «Internasjonale aktørar i Noreg» i industrikartet og offentlege profillenkjer for nokre personar. Kaupr er sponsor; sjå Om-sida.",
-   "text_en": "The org chart now has more people in public professional roles from the Brønnøysund Register, new organisations (including from Kaupr’s Onchain Pages, checked against their own websites and public registers), a new “International players in Norway” category in the industry map, and public profile links for some people. Kaupr is a sponsor; see the About page."
+   "text": "Organisasjonskartet er utvidet med flere personer i offentlige yrkesroller fra Enhetsregisteret, nye aktører (blant annet fra Kauprs Onchain Pages, sjekket mot egne nettsider og offentlige registre), en ny kategori «Internasjonale aktører i Norge» i industrikartet og offentlige profillenker for noen personer.",
+   "text_nn": "Organisasjonskartet er utvida med fleire personar i offentlege yrkesroller frå Enhetsregisteret, nye aktørar (mellom anna frå Kaupr sine Onchain Pages, sjekka mot eigne nettsider og offentlege register), ein ny kategori «Internasjonale aktørar i Noreg» i industrikartet og offentlege profillenkjer for nokre personar.",
+   "text_en": "The org chart now has more people in public professional roles from the Brønnøysund Register, new organisations (including from Kaupr’s Onchain Pages, checked against their own websites and public registers), a new “International players in Norway” category in the industry map, and public profile links for some people."
   },
   {
    "feature": "reglar",

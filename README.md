@@ -77,7 +77,7 @@ Rettelser og fjerning: opprett en sak på https://github.com/jQrgen/kryptonytt/i
 `tools/import_industrikart.py` tar dem inn med status `pending`; `tools/apply_approvals.py` publiserer dem bare når id-en står i
 `queue/approved.json` → `entities.approve` / `profiles.approve` (avvis med `.reject`), og lister alt som venter i `queue/review.json` → `org_pending` / `profiles_pending`.
 Kategorien «Internasjonale aktørar i Noreg» (`industry: "internasjonal"`) er for globale aktører med verifiserbar norsk aktivitet.
-Kildesjekken for Kaupr-aktørene står i `research/kaupr-kildesjekk.md`. Kaupr er sponsor og kilde; industrikartet viser en opplysningsmerknad når en publisert aktør har Kaupr som kilde.
+Kildesjekken for Kaupr-aktørene står i `research/kaupr-kildesjekk.md`. Kaupr er kun en nyhetskilde, ikke sponsor (jQrgens beslutning 08.10.2026); industrikartet viser en kildemerknad når en publisert aktør har Kaupr som kilde.
 
 ## Nyheitsbrev (Substack + e-post) – førebudd, AV
 `newsletter/substack-setup.md` (namn, underdomene, tekstar på nynorsk og bokmål, profilbilete i `newsletter/assets/`,

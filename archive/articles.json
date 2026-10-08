@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "site": "kryptonytt",
- "exported_at": "2026-10-07T07:24:54+02:00",
+ "exported_at": "2026-10-08T07:24:13+02:00",
  "articles": [
   {
    "site": "kryptonytt",
@@ -13,16 +13,16 @@
    "source_name": "Kaupr",
    "published_at": "2026-09-24T12:00:00+00:00",
    "first_published_on_site": "2026-10-03T16:57:45+02:00",
-   "last_seen_on_site": "2026-10-07T07:24:54+02:00",
+   "last_seen_on_site": "2026-10-08T07:24:13+02:00",
    "languages": [
     "nn",
     "nb",
     "en"
    ],
    "summaries": {
-    "nb": "Den finske kryptomegleren Coinmotion har valgt K33 til å utføre større, institusjonelle handler, mens Coinmotion beholder kundeforholdet. Begge selskapene har MiCA-tillatelse. Opplysning: Kaupr er sponsor av Kryptonytt.",
-    "nn": "Den finske kryptomeklaren Coinmotion har valt K33 til å utføre større, institusjonelle handlar, medan Coinmotion held på kundeforholdet. Begge selskapa har MiCA-løyve. Opplysning: Kaupr er sponsor av Kryptonytt.",
-    "en": "Finnish crypto broker Coinmotion has chosen K33 to execute larger institutional trades, while Coinmotion keeps the customer relationship. Both companies hold MiCA licences. Disclosure: Kaupr sponsors Kryptonytt."
+    "nb": "Den finske kryptomegleren Coinmotion har valgt K33 til å utføre større, institusjonelle handler, mens Coinmotion beholder kundeforholdet. Begge selskapene har MiCA-tillatelse.",
+    "nn": "Den finske kryptomeklaren Coinmotion har valt K33 til å utføre større, institusjonelle handlar, medan Coinmotion held på kundeforholdet. Begge selskapa har MiCA-løyve.",
+    "en": "Finnish crypto broker Coinmotion has chosen K33 to execute larger institutional trades, while Coinmotion keeps the customer relationship. Both companies hold MiCA licences."
    },
    "titles": {},
    "topics": [
@@ -32,7 +32,7 @@
    "removed": 0,
    "removed_at": null,
    "removal_reason": null,
-   "updated_at": "2026-10-07T07:24:54+02:00"
+   "updated_at": "2026-10-08T07:24:13+02:00"
   },
   {
    "site": "kryptonytt",
@@ -44,7 +44,7 @@
    "source_name": "Aftenposten",
    "published_at": "2026-10-02T11:07:26+00:00",
    "first_published_on_site": "2026-10-03T16:57:45+02:00",
-   "last_seen_on_site": "2026-10-07T07:24:54+02:00",
+   "last_seen_on_site": "2026-10-08T07:24:13+02:00",
    "languages": [
     "nn",
     "nb",
@@ -63,7 +63,7 @@
    "removed": 0,
    "removed_at": null,
    "removal_reason": null,
-   "updated_at": "2026-10-07T07:24:54+02:00"
+   "updated_at": "2026-10-08T07:24:13+02:00"
   },
   {
    "site": "kryptonytt",
@@ -75,16 +75,16 @@
    "source_name": "Kaupr",
    "published_at": "2026-09-08T12:00:00+00:00",
    "first_published_on_site": "2026-10-03T16:57:45+02:00",
-   "last_seen_on_site": "2026-10-07T07:24:54+02:00",
+   "last_seen_on_site": "2026-10-08T07:24:13+02:00",
    "languages": [
     "nn",
     "nb",
     "en"
    ],
    "summaries": {
-    "nb": "Norges Bank navnga i et LinkedIn-innlegg 07.09.2026 tolv finansinstitusjoner i arbeidet med å utforske tokenisering, blant dem DNB, Nordea og SpareBank 1. Innlegget er ikke publisert på norges-bank.no. Opplysning: Kaupr er sponsor av Kryptonytt.",
-    "nn": "Noregs Bank namngav i eit LinkedIn-innlegg 07.09.2026 tolv finansinstitusjonar i arbeidet med å utforske tokenisering, mellom dei DNB, Nordea og SpareBank 1. Innlegget er ikkje publisert på norges-bank.no. Opplysning: Kaupr er sponsor av Kryptonytt.",
-    "en": "In a LinkedIn post on 7 September 2026, Norges Bank named twelve financial institutions involved in its work on exploring tokenisation, including DNB, Nordea and SpareBank 1. The post has not been published on norges-bank.no. Disclosure: Kaupr sponsors Kryptonytt."
+    "nb": "Norges Bank navnga i et LinkedIn-innlegg 07.09.2026 tolv finansinstitusjoner i arbeidet med å utforske tokenisering, blant dem DNB, Nordea og SpareBank 1. Innlegget er ikke publisert på norges-bank.no.",
+    "nn": "Noregs Bank namngav i eit LinkedIn-innlegg 07.09.2026 tolv finansinstitusjonar i arbeidet med å utforske tokenisering, mellom dei DNB, Nordea og SpareBank 1. Innlegget er ikkje publisert på norges-bank.no.",
+    "en": "In a LinkedIn post on 7 September 2026, Norges Bank named twelve financial institutions involved in its work on exploring tokenisation, including DNB, Nordea and SpareBank 1. The post has not been published on norges-bank.no."
    },
    "titles": {},
    "topics": [
@@ -94,7 +94,7 @@
    "removed": 0,
    "removed_at": null,
    "removal_reason": null,
-   "updated_at": "2026-10-07T07:24:54+02:00"
+   "updated_at": "2026-10-08T07:24:13+02:00"
   },
   {
    "site": "kryptonytt",
@@ -106,7 +106,7 @@
    "source_name": "Stortinget",
    "published_at": "2026-09-18T12:00:00+00:00",
    "first_published_on_site": "2026-10-03T16:57:45+02:00",
-   "last_seen_on_site": "2026-10-07T07:24:54+02:00",
+   "last_seen_on_site": "2026-10-08T07:24:13+02:00",
    "languages": [
     "nn",
     "nb",
@@ -128,7 +128,7 @@
    "removed": 0,
    "removed_at": null,
    "removal_reason": null,
-   "updated_at": "2026-10-07T07:24:54+02:00"
+   "updated_at": "2026-10-08T07:24:13+02:00"
   },
   {
    "site": "kryptonytt",
@@ -140,16 +140,16 @@
    "source_name": "Kaupr",
    "published_at": "2026-09-16T12:00:00+00:00",
    "first_published_on_site": "2026-10-03T16:57:45+02:00",
-   "last_seen_on_site": "2026-10-07T07:24:54+02:00",
+   "last_seen_on_site": "2026-10-08T07:24:13+02:00",
    "languages": [
     "nn",
     "nb",
     "en"
    ],
    "summaries": {
-    "nb": "DNB er med i CBMT, en sandkasse der europeiske banker tester tokeniserte bankinnskudd, og tar med norske kroner inn i testene, ifølge Kaupr. Opplysning: Kaupr er sponsor av Kryptonytt.",
-    "nn": "DNB er med i CBMT, ei sandkasse der europeiske bankar testar tokeniserte bankinnskot, og tek norske kroner med inn i testane, ifølgje Kaupr. Opplysning: Kaupr er sponsor av Kryptonytt.",
-    "en": "DNB is taking part in CBMT, a sandbox where European banks test tokenised bank deposits, and is bringing Norwegian kroner into the tests, according to Kaupr. Disclosure: Kaupr sponsors Kryptonytt."
+    "nb": "DNB er med i CBMT, en sandkasse der europeiske banker tester tokeniserte bankinnskudd, og tar med norske kroner inn i testene, ifølge Kaupr.",
+    "nn": "DNB er med i CBMT, ei sandkasse der europeiske bankar testar tokeniserte bankinnskot, og tek norske kroner med inn i testane, ifølgje Kaupr.",
+    "en": "DNB is taking part in CBMT, a sandbox where European banks test tokenised bank deposits, and is bringing Norwegian kroner into the tests, according to Kaupr."
    },
    "titles": {},
    "topics": [
@@ -159,7 +159,7 @@
    "removed": 0,
    "removed_at": null,
    "removal_reason": null,
-   "updated_at": "2026-10-07T07:24:54+02:00"
+   "updated_at": "2026-10-08T07:24:13+02:00"
   },
   {
    "site": "kryptonytt",
@@ -171,7 +171,7 @@
    "source_name": "Shifter",
    "published_at": "2026-09-15T12:00:00+00:00",
    "first_published_on_site": "2026-10-03T16:57:45+02:00",
-   "last_seen_on_site": "2026-10-07T07:24:54+02:00",
+   "last_seen_on_site": "2026-10-08T07:24:13+02:00",
    "languages": [
     "nn",
     "nb",
@@ -190,7 +190,7 @@
    "removed": 0,
    "removed_at": null,
    "removal_reason": null,
-   "updated_at": "2026-10-07T07:24:54+02:00"
+   "updated_at": "2026-10-08T07:24:13+02:00"
   },
   {
    "site": "kryptonytt",
@@ -202,16 +202,16 @@
    "source_name": "Kaupr",
    "published_at": "2026-09-18T12:00:00+00:00",
    "first_published_on_site": "2026-10-03T16:57:45+02:00",
-   "last_seen_on_site": "2026-10-07T07:24:54+02:00",
+   "last_seen_on_site": "2026-10-08T07:24:13+02:00",
    "languages": [
     "nn",
     "nb",
     "en"
    ],
    "summaries": {
-    "nb": "NBX fikk MiCA-tillatelse i første halvår, men driftsinntektene falt 45 prosent til 6,05 millioner kroner, og tapet etter skatt økte til 16,6 millioner, ifølge selskapets halvårsrapport. Opplysning: Kaupr er sponsor av Kryptonytt.",
-    "nn": "NBX fekk MiCA-løyve i første halvår, men driftsinntektene fall 45 prosent til 6,05 millionar kroner, og tapet etter skatt auka til 16,6 millionar, ifølgje halvårsrapporten til selskapet. Opplysning: Kaupr er sponsor av Kryptonytt.",
-    "en": "NBX obtained a MiCA licence in the first half of the year, but operating revenue fell 45 per cent to NOK 6.05 million and the loss after tax grew to NOK 16.6 million, according to the company's half-year report. Disclosure: Kaupr sponsors Kryptonytt."
+    "nb": "NBX fikk MiCA-tillatelse i første halvår, men driftsinntektene falt 45 prosent til 6,05 millioner kroner, og tapet etter skatt økte til 16,6 millioner, ifølge selskapets halvårsrapport.",
+    "nn": "NBX fekk MiCA-løyve i første halvår, men driftsinntektene fall 45 prosent til 6,05 millionar kroner, og tapet etter skatt auka til 16,6 millionar, ifølgje halvårsrapporten til selskapet.",
+    "en": "NBX obtained a MiCA licence in the first half of the year, but operating revenue fell 45 per cent to NOK 6.05 million and the loss after tax grew to NOK 16.6 million, according to the company's half-year report."
    },
    "titles": {},
    "topics": [
@@ -221,7 +221,7 @@
    "removed": 0,
    "removed_at": null,
    "removal_reason": null,
-   "updated_at": "2026-10-07T07:24:54+02:00"
+   "updated_at": "2026-10-08T07:24:13+02:00"
   },
   {
    "site": "kryptonytt",
@@ -233,7 +233,7 @@
    "source_name": "NBX (børsmelding)",
    "published_at": "2026-09-17T12:00:00+00:00",
    "first_published_on_site": "2026-10-03T16:57:45+02:00",
-   "last_seen_on_site": "2026-10-07T07:24:54+02:00",
+   "last_seen_on_site": "2026-10-08T07:24:13+02:00",
    "languages": [
     "nn",
     "nb",
@@ -255,7 +255,7 @@
    "removed": 0,
    "removed_at": null,
    "removal_reason": null,
-   "updated_at": "2026-10-07T07:24:54+02:00"
+   "updated_at": "2026-10-08T07:24:13+02:00"
   },
   {
    "site": "kryptonytt",
@@ -267,16 +267,16 @@
    "source_name": "Kaupr",
    "published_at": "2026-09-13T12:00:00+00:00",
    "first_published_on_site": "2026-10-03T16:57:45+02:00",
-   "last_seen_on_site": "2026-10-07T07:24:54+02:00",
+   "last_seen_on_site": "2026-10-08T07:24:13+02:00",
    "languages": [
     "nn",
     "nb",
     "en"
    ],
    "summaries": {
-    "nb": "Sander Andersen, styreleder i H100 Group, mener bitcoinselskaper under én milliard dollar bør kjøpe hverandre, og at det å stå stille er den største risikoen, ifølge Kaupr. Opplysning: Kaupr er sponsor av Kryptonytt.",
-    "nn": "Sander Andersen, styreleiar i H100 Group, meiner at bitcoinselskap som er verde under éin milliard dollar, bør kjøpe kvarandre, og at det å stå stille er den største risikoen, ifølgje Kaupr. Opplysning: Kaupr er sponsor av Kryptonytt.",
-    "en": "Sander Andersen, chair of H100 Group, believes bitcoin companies worth less than one billion dollars should buy each other, and that standing still is the biggest risk, according to Kaupr. Disclosure: Kaupr sponsors Kryptonytt."
+    "nb": "Sander Andersen, styreleder i H100 Group, mener bitcoinselskaper under én milliard dollar bør kjøpe hverandre, og at det å stå stille er den største risikoen, ifølge Kaupr.",
+    "nn": "Sander Andersen, styreleiar i H100 Group, meiner at bitcoinselskap som er verde under éin milliard dollar, bør kjøpe kvarandre, og at det å stå stille er den største risikoen, ifølgje Kaupr.",
+    "en": "Sander Andersen, chair of H100 Group, believes bitcoin companies worth less than one billion dollars should buy each other, and that standing still is the biggest risk, according to Kaupr."
    },
    "titles": {},
    "topics": [
@@ -286,7 +286,7 @@
    "removed": 0,
    "removed_at": null,
    "removal_reason": null,
-   "updated_at": "2026-10-07T07:24:54+02:00"
+   "updated_at": "2026-10-08T07:24:13+02:00"
   },
   {
    "site": "kryptonytt",
@@ -298,7 +298,7 @@
    "source_name": "Euronews",
    "published_at": "2026-10-01T12:00:00+00:00",
    "first_published_on_site": "2026-10-03T16:57:45+02:00",
-   "last_seen_on_site": "2026-10-07T07:24:54+02:00",
+   "last_seen_on_site": "2026-10-08T07:24:13+02:00",
    "languages": [
     "nn",
     "nb",
@@ -321,7 +321,7 @@
    "removed": 0,
    "removed_at": null,
    "removal_reason": null,
-   "updated_at": "2026-10-07T07:24:54+02:00"
+   "updated_at": "2026-10-08T07:24:13+02:00"
   },
   {
    "site": "kryptonytt",
@@ -333,7 +333,7 @@
    "source_name": "Digi.no",
    "published_at": "2026-09-20T14:24:55+00:00",
    "first_published_on_site": "2026-10-04T07:33:24+02:00",
-   "last_seen_on_site": "2026-10-07T07:24:54+02:00",
+   "last_seen_on_site": "2026-10-08T07:24:13+02:00",
    "languages": [
     "nn",
     "nb",
@@ -351,7 +351,7 @@
    "removed": 0,
    "removed_at": null,
    "removal_reason": null,
-   "updated_at": "2026-10-07T07:24:54+02:00"
+   "updated_at": "2026-10-08T07:24:13+02:00"
   },
   {
    "site": "kryptonytt",
@@ -363,7 +363,7 @@
    "source_name": "E24",
    "published_at": "2026-09-18T11:36:00+00:00",
    "first_published_on_site": "2026-10-04T07:33:24+02:00",
-   "last_seen_on_site": "2026-10-07T07:24:54+02:00",
+   "last_seen_on_site": "2026-10-08T07:24:13+02:00",
    "languages": [
     "nn",
     "nb",
@@ -382,7 +382,7 @@
    "removed": 0,
    "removed_at": null,
    "removal_reason": null,
-   "updated_at": "2026-10-07T07:24:54+02:00"
+   "updated_at": "2026-10-08T07:24:13+02:00"
   },
   {
    "site": "kryptonytt",
@@ -394,7 +394,7 @@
    "source_name": "Finansavisen",
    "published_at": "2026-09-23T05:24:00+00:00",
    "first_published_on_site": "2026-10-04T07:33:24+02:00",
-   "last_seen_on_site": "2026-10-07T07:24:54+02:00",
+   "last_seen_on_site": "2026-10-08T07:24:13+02:00",
    "languages": [
     "nn",
     "nb",
@@ -412,7 +412,7 @@
    "removed": 0,
    "removed_at": null,
    "removal_reason": null,
-   "updated_at": "2026-10-07T07:24:54+02:00"
+   "updated_at": "2026-10-08T07:24:13+02:00"
   },
   {
    "site": "kryptonytt",
@@ -424,16 +424,16 @@
    "source_name": "Kaupr",
    "published_at": "2026-09-15T12:00:00+00:00",
    "first_published_on_site": "2026-10-04T07:33:24+02:00",
-   "last_seen_on_site": "2026-10-07T07:24:54+02:00",
+   "last_seen_on_site": "2026-10-08T07:24:13+02:00",
    "languages": [
     "nn",
     "nb",
     "en"
    ],
    "summaries": {
-    "nb": "Firi lanserer appen sin i Sverige med svensk BankID, Swish og innskudd i svenske kroner, skriver Kaupr. Firi har til nå vært i Norge og Danmark og fikk MiCA-tillatelse i mai; ifølge landssjef Ted Scheiman går selskapet inn i et marked der rundt 1,1 millioner svensker eier krypto og konkurransen er hard. Opplysning: Kaupr er sponsor av Kryptonytt.",
-    "nn": "Firi lanserer appen sin i Sverige med svensk BankID, Swish og innskot i svenske kroner, skriv Kaupr. Firi har til no vore i Noreg og Danmark og fekk MiCA-løyve i mai; ifølgje landssjef Ted Scheiman går selskapet inn i ein marknad der om lag 1,1 millionar svenskar eig krypto og konkurransen er hard. Opplysning: Kaupr er sponsor av Kryptonytt.",
-    "en": "Firi is launching its app in Sweden with Swedish BankID, Swish and deposits in Swedish kronor, Kaupr reports. Firi has so far operated in Norway and Denmark and received its MiCA licence in May; according to country manager Ted Scheiman, it is entering a market where around 1.1 million Swedes own crypto and competition is tough. Disclosure: Kaupr sponsors Kryptonytt."
+    "nb": "Firi lanserer appen sin i Sverige med svensk BankID, Swish og innskudd i svenske kroner, skriver Kaupr. Firi har til nå vært i Norge og Danmark og fikk MiCA-tillatelse i mai; ifølge landssjef Ted Scheiman går selskapet inn i et marked der rundt 1,1 millioner svensker eier krypto og konkurransen er hard.",
+    "nn": "Firi lanserer appen sin i Sverige med svensk BankID, Swish og innskot i svenske kroner, skriv Kaupr. Firi har til no vore i Noreg og Danmark og fekk MiCA-løyve i mai; ifølgje landssjef Ted Scheiman går selskapet inn i ein marknad der om lag 1,1 millionar svenskar eig krypto og konkurransen er hard.",
+    "en": "Firi is launching its app in Sweden with Swedish BankID, Swish and deposits in Swedish kronor, Kaupr reports. Firi has so far operated in Norway and Denmark and received its MiCA licence in May; according to country manager Ted Scheiman, it is entering a market where around 1.1 million Swedes own crypto and competition is tough."
    },
    "titles": {},
    "topics": [
@@ -442,7 +442,7 @@
    "removed": 0,
    "removed_at": null,
    "removal_reason": null,
-   "updated_at": "2026-10-07T07:24:54+02:00"
+   "updated_at": "2026-10-08T07:24:13+02:00"
   },
   {
    "site": "kryptonytt",
@@ -454,7 +454,7 @@
    "source_name": "Finansavisen",
    "published_at": "2026-09-20T07:41:00+00:00",
    "first_published_on_site": "2026-10-04T07:33:24+02:00",
-   "last_seen_on_site": "2026-10-07T07:24:54+02:00",
+   "last_seen_on_site": "2026-10-08T07:24:13+02:00",
    "languages": [
     "nn",
     "nb",
@@ -475,7 +475,7 @@
    "removed": 0,
    "removed_at": null,
    "removal_reason": null,
-   "updated_at": "2026-10-07T07:24:54+02:00"
+   "updated_at": "2026-10-08T07:24:13+02:00"
   },
   {
    "site": "kryptonytt",
@@ -487,7 +487,7 @@
    "source_name": "Finansavisen",
    "published_at": "2026-09-27T09:53:00+00:00",
    "first_published_on_site": "2026-10-04T07:33:24+02:00",
-   "last_seen_on_site": "2026-10-07T07:24:54+02:00",
+   "last_seen_on_site": "2026-10-08T07:24:13+02:00",
    "languages": [
     "nn",
     "nb",
@@ -505,7 +505,7 @@
    "removed": 0,
    "removed_at": null,
    "removal_reason": null,
-   "updated_at": "2026-10-07T07:24:54+02:00"
+   "updated_at": "2026-10-08T07:24:13+02:00"
   },
   {
    "site": "kryptonytt",
@@ -517,7 +517,7 @@
    "source_name": "Finansavisen",
    "published_at": "2026-09-17T10:59:00+00:00",
    "first_published_on_site": "2026-10-04T07:33:24+02:00",
-   "last_seen_on_site": "2026-10-07T07:24:54+02:00",
+   "last_seen_on_site": "2026-10-08T07:24:13+02:00",
    "languages": [
     "nn",
     "nb",
@@ -536,7 +536,7 @@
    "removed": 0,
    "removed_at": null,
    "removal_reason": null,
-   "updated_at": "2026-10-07T07:24:54+02:00"
+   "updated_at": "2026-10-08T07:24:13+02:00"
   },
   {
    "site": "kryptonytt",
@@ -548,7 +548,7 @@
    "source_name": "Finansavisen",
    "published_at": "2026-09-28T08:01:00+00:00",
    "first_published_on_site": "2026-10-04T07:33:24+02:00",
-   "last_seen_on_site": "2026-10-07T07:24:54+02:00",
+   "last_seen_on_site": "2026-10-08T07:24:13+02:00",
    "languages": [
     "nn",
     "nb",
@@ -566,7 +566,7 @@
    "removed": 0,
    "removed_at": null,
    "removal_reason": null,
-   "updated_at": "2026-10-07T07:24:54+02:00"
+   "updated_at": "2026-10-08T07:24:13+02:00"
   },
   {
    "site": "kryptonytt",
@@ -578,7 +578,7 @@
    "source_name": "ITavisen",
    "published_at": "2026-09-21T21:32:00+00:00",
    "first_published_on_site": "2026-10-04T07:33:24+02:00",
-   "last_seen_on_site": "2026-10-07T07:24:54+02:00",
+   "last_seen_on_site": "2026-10-08T07:24:13+02:00",
    "languages": [
     "nn",
     "nb",
@@ -597,7 +597,7 @@
    "removed": 0,
    "removed_at": null,
    "removal_reason": null,
-   "updated_at": "2026-10-07T07:24:54+02:00"
+   "updated_at": "2026-10-08T07:24:13+02:00"
   },
   {
    "site": "kryptonytt",
@@ -609,7 +609,7 @@
    "source_name": "Oppland Arbeiderblad",
    "published_at": "2026-09-23T16:08:00+00:00",
    "first_published_on_site": "2026-10-04T07:33:24+02:00",
-   "last_seen_on_site": "2026-10-07T07:24:54+02:00",
+   "last_seen_on_site": "2026-10-08T07:24:13+02:00",
    "languages": [
     "nn",
     "nb",
@@ -627,7 +627,7 @@
    "removed": 0,
    "removed_at": null,
    "removal_reason": null,
-   "updated_at": "2026-10-07T07:24:54+02:00"
+   "updated_at": "2026-10-08T07:24:13+02:00"
   },
   {
    "site": "kryptonytt",
@@ -639,7 +639,7 @@
    "source_name": "Bitcoinpolitisk institutt Norge (podkast)",
    "published_at": "2026-09-17T18:30:43+00:00",
    "first_published_on_site": "2026-10-04T07:33:24+02:00",
-   "last_seen_on_site": "2026-10-07T07:24:54+02:00",
+   "last_seen_on_site": "2026-10-08T07:24:13+02:00",
    "languages": [
     "nn",
     "nb",
@@ -658,7 +658,7 @@
    "removed": 0,
    "removed_at": null,
    "removal_reason": null,
-   "updated_at": "2026-10-07T07:24:54+02:00"
+   "updated_at": "2026-10-08T07:24:13+02:00"
   },
   {
    "site": "kryptonytt",
@@ -670,7 +670,7 @@
    "source_name": "En og tyve tanker (podkast)",
    "published_at": "2026-09-16T21:54:43+00:00",
    "first_published_on_site": "2026-10-04T07:33:24+02:00",
-   "last_seen_on_site": "2026-10-07T07:24:54+02:00",
+   "last_seen_on_site": "2026-10-08T07:24:13+02:00",
    "languages": [
     "nn",
     "nb",
@@ -688,7 +688,7 @@
    "removed": 0,
    "removed_at": null,
    "removal_reason": null,
-   "updated_at": "2026-10-07T07:24:54+02:00"
+   "updated_at": "2026-10-08T07:24:13+02:00"
   },
   {
    "site": "kryptonytt",
@@ -700,7 +700,7 @@
    "source_name": "Nettavisen",
    "published_at": "2026-09-25T19:16:00+00:00",
    "first_published_on_site": "2026-10-04T07:33:24+02:00",
-   "last_seen_on_site": "2026-10-07T07:24:54+02:00",
+   "last_seen_on_site": "2026-10-08T07:24:13+02:00",
    "languages": [
     "nn",
     "nb",
@@ -718,7 +718,7 @@
    "removed": 0,
    "removed_at": null,
    "removal_reason": null,
-   "updated_at": "2026-10-07T07:24:54+02:00"
+   "updated_at": "2026-10-08T07:24:13+02:00"
   },
   {
    "site": "kryptonytt",
@@ -730,7 +730,7 @@
    "source_name": "Investornytt",
    "published_at": "2026-09-29T12:00:00+00:00",
    "first_published_on_site": "2026-10-04T07:33:24+02:00",
-   "last_seen_on_site": "2026-10-07T07:24:54+02:00",
+   "last_seen_on_site": "2026-10-08T07:24:13+02:00",
    "languages": [
     "nn",
     "nb",
@@ -749,7 +749,7 @@
    "removed": 0,
    "removed_at": null,
    "removal_reason": null,
-   "updated_at": "2026-10-07T07:24:54+02:00"
+   "updated_at": "2026-10-08T07:24:13+02:00"
   },
   {
    "site": "kryptonytt",
@@ -761,7 +761,7 @@
    "source_name": "En og tyve tanker (podkast)",
    "published_at": "2026-09-28T21:46:39+00:00",
    "first_published_on_site": "2026-10-04T07:33:24+02:00",
-   "last_seen_on_site": "2026-10-07T07:24:54+02:00",
+   "last_seen_on_site": "2026-10-08T07:24:13+02:00",
    "languages": [
     "nn",
     "nb",
@@ -779,7 +779,7 @@
    "removed": 0,
    "removed_at": null,
    "removal_reason": null,
-   "updated_at": "2026-10-07T07:24:54+02:00"
+   "updated_at": "2026-10-08T07:24:13+02:00"
   },
   {
    "site": "kryptonytt",
@@ -791,7 +791,7 @@
    "source_name": "Finansavisen",
    "published_at": "2026-10-05T06:06:00+00:00",
    "first_published_on_site": "2026-10-06T07:28:55+02:00",
-   "last_seen_on_site": "2026-10-07T07:24:54+02:00",
+   "last_seen_on_site": "2026-10-08T07:24:13+02:00",
    "languages": [
     "nn",
     "nb",
@@ -810,7 +810,7 @@
    "removed": 0,
    "removed_at": null,
    "removal_reason": null,
-   "updated_at": "2026-10-07T07:24:54+02:00"
+   "updated_at": "2026-10-08T07:24:13+02:00"
   },
   {
    "site": "kryptonytt",
@@ -822,7 +822,7 @@
    "source_name": "Investornytt",
    "published_at": "2026-10-06T12:00:00+00:00",
    "first_published_on_site": "2026-10-07T07:24:54+02:00",
-   "last_seen_on_site": "2026-10-07T07:24:54+02:00",
+   "last_seen_on_site": "2026-10-08T07:24:13+02:00",
    "languages": [
     "nn",
     "nb",
@@ -841,7 +841,7 @@
    "removed": 0,
    "removed_at": null,
    "removal_reason": null,
-   "updated_at": "2026-10-07T07:24:54+02:00"
+   "updated_at": "2026-10-08T07:24:13+02:00"
   },
   {
    "site": "kryptonytt",
@@ -853,7 +853,7 @@
    "source_name": "Adresseavisen (NTB)",
    "published_at": "2026-10-07T12:00:00+00:00",
    "first_published_on_site": "2026-10-07T07:24:54+02:00",
-   "last_seen_on_site": "2026-10-07T07:24:54+02:00",
+   "last_seen_on_site": "2026-10-08T07:24:13+02:00",
    "languages": [
     "nn",
     "nb",
@@ -871,7 +871,7 @@
    "removed": 0,
    "removed_at": null,
    "removal_reason": null,
-   "updated_at": "2026-10-07T07:24:54+02:00"
+   "updated_at": "2026-10-08T07:24:13+02:00"
   },
   {
    "site": "kryptonytt",
@@ -883,7 +883,7 @@
    "source_name": "Stortinget",
    "published_at": "2026-10-05T12:00:00+00:00",
    "first_published_on_site": "2026-10-07T07:24:54+02:00",
-   "last_seen_on_site": "2026-10-07T07:24:54+02:00",
+   "last_seen_on_site": "2026-10-08T07:24:13+02:00",
    "languages": [
     "nn",
     "nb",
@@ -905,7 +905,103 @@
    "removed": 0,
    "removed_at": null,
    "removal_reason": null,
-   "updated_at": "2026-10-07T07:24:54+02:00"
+   "updated_at": "2026-10-08T07:24:13+02:00"
+  },
+  {
+   "site": "kryptonytt",
+   "id": "47156e99927b",
+   "url": "https://www.kaupr.io/nyheter/ace-digital-tjente-6-3-millioner-kroner-i-tredje-kvartal",
+   "canonical_url": "https://kaupr.io/nyheter/ace-digital-tjente-6-3-millioner-kroner-i-tredje-kvartal",
+   "title": "Ace Digital tjente 6,3 millioner kroner i tredje kvartal",
+   "source": "kaupr",
+   "source_name": "Kaupr",
+   "published_at": "2026-10-05T12:00:00+00:00",
+   "first_published_on_site": "2026-10-08T07:24:13+02:00",
+   "last_seen_on_site": "2026-10-08T07:24:13+02:00",
+   "languages": [
+    "nn",
+    "nb",
+    "en"
+   ],
+   "summaries": {
+    "nb": "Det Oslo-noterte bitcoinselskapet Ace Digital fikk et resultat på 6,3 millioner kroner i tredje kvartal og er nå gjeldfritt, ifølge selskapets egen, ureviderte kvartalsoppdatering, skriver Kaupr. Bitcoinbeholdningen økte fra 1,6 til 5,3 bitcoin uten at selskapet kjøpte bitcoin; økningen kom fra opsjoner, og selskapet anslår den samlede bitcoineksponeringen til rundt 57 bitcoin.",
+    "nn": "Det Oslo-noterte bitcoinselskapet Ace Digital fekk eit resultat på 6,3 millionar kroner i tredje kvartal og er no gjeldfritt, ifølgje den ureviderte kvartalsoppdateringa til selskapet, skriv Kaupr. Bitcoinbehaldninga auka frå 1,6 til 5,3 bitcoin utan at selskapet kjøpte bitcoin; auken kom frå opsjonar, og selskapet anslår den samla bitcoineksponeringa til om lag 57 bitcoin.",
+    "en": "Oslo-listed bitcoin company Ace Digital made a profit of NOK 6.3 million in the third quarter and is now debt-free, according to its own unaudited quarterly update, Kaupr reports. Its bitcoin holding rose from 1.6 to 5.3 bitcoin without the company buying any; the increase came from options, and the company estimates its total bitcoin exposure at around 57 bitcoin."
+   },
+   "titles": {},
+   "topics": [
+    "bitcoin",
+    "selskaper"
+   ],
+   "removed": 0,
+   "removed_at": null,
+   "removal_reason": null,
+   "updated_at": "2026-10-08T07:24:13+02:00"
+  },
+  {
+   "site": "kryptonytt",
+   "id": "9755cf9957e9",
+   "url": "https://www.sagat.no/innrommer-litt-kryptoutvinning/19.59848",
+   "canonical_url": "https://sagat.no/innrommer-litt-kryptoutvinning/19.59848",
+   "title": "Innrømmer «litt» kryptoutvinning",
+   "source": "sagat.no",
+   "source_name": "Ságat",
+   "published_at": "2026-10-07T12:00:00+00:00",
+   "first_published_on_site": "2026-10-08T07:24:13+02:00",
+   "last_seen_on_site": "2026-10-08T07:24:13+02:00",
+   "languages": [
+    "nn",
+    "nb",
+    "en"
+   ],
+   "summaries": {
+    "nb": "Dataselskapet Arctic Core AS innrømmer nå at det skal drive med «litt» kryptoutvinning i Kautokeino, skriver Ságat. Finansdirektør Christoffer Løvdal og daglig leder Ola Stene-Johansen i Lokotech Group AS sier at anlegget hovedsakelig skal brukes til testing og lagring av utstyr, og at kryptoutvinning for å skaffe inntekter i testfasen ikke endrer det.",
+    "nn": "Dataselskapet Arctic Core AS vedgår no at det skal drive med «litt» kryptoutvinning i Kautokeino, skriv Ságat. Finansdirektør Christoffer Løvdal og dagleg leiar Ola Stene-Johansen i Lokotech Group AS seier at anlegget hovudsakleg skal brukast til testing og lagring av utstyr, og at kryptoutvinning for å skaffe inntekter i testfasen ikkje endrar det.",
+    "en": "The data company Arctic Core AS now admits it will do \"a little\" crypto mining in Kautokeino, Ságat reports. CFO Christoffer Løvdal and CEO Ola Stene-Johansen of Lokotech Group AS say the facility will mainly be used to test and store equipment, and that mining crypto for revenue during the test phase does not change that."
+   },
+   "titles": {},
+   "topics": [
+    "bitcoin",
+    "selskaper"
+   ],
+   "removed": 0,
+   "removed_at": null,
+   "removal_reason": null,
+   "updated_at": "2026-10-08T07:24:13+02:00"
+  },
+  {
+   "site": "kryptonytt",
+   "id": "bc7a45cb184e",
+   "url": "https://stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Representantforslag/2026-2027/dok8-202627-009s/",
+   "canonical_url": "https://stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Representantforslag/2026-2027/dok8-202627-009s",
+   "title": "SV vil ha «panikklov» for datasentre og oppfølging av kryptoforbudet",
+   "source": "stortinget",
+   "source_name": "Stortinget",
+   "published_at": "2026-10-05T12:00:00+00:00",
+   "first_published_on_site": "2026-10-08T07:24:13+02:00",
+   "last_seen_on_site": "2026-10-08T07:24:13+02:00",
+   "languages": [
+    "nn",
+    "nb",
+    "en"
+   ],
+   "summaries": {
+    "nb": "Ni stortingsrepresentanter fra SV, blant dem Lars Haltbrekken og Kirsti Bergstø, foreslår en midlertidig lov etter modell av panikkloven fra 1906 som setter nye datasentre på vent til næringen er regulert, og et nasjonalt konsesjonssystem. De ber også regjeringen raskt komme tilbake med hvordan Stortingets vedtak om å forby kryptoutvinning i Norge skal følges opp. Det er et forslag, ikke et vedtak.",
+    "nn": "Ni stortingsrepresentantar frå SV, mellom dei Lars Haltbrekken og Kirsti Bergstø, føreslår ei mellombels lov etter modell av panikklova frå 1906 som set nye datasenter på vent til næringa er regulert, og eit nasjonalt konsesjonssystem. Dei ber òg regjeringa snarleg kome tilbake med korleis vedtaket i Stortinget om å forby kryptoutvinning i Noreg skal følgjast opp. Det er eit forslag, ikkje eit vedtak.",
+    "en": "Nine Socialist Left Party MPs, including Lars Haltbrekken and Kirsti Bergstø, propose a temporary law modelled on the 1906 \"panic law\" that would put new data centres on hold until the industry is regulated, plus a national licensing system. They also ask the government to report back soon on how parliament's decision to ban crypto mining in Norway will be followed up. It is a proposal, not a decision."
+   },
+   "titles": {
+    "nn": "SV vil ha «panikklov» for datasenter og oppfølging av kryptoforbodet",
+    "en": "Socialist Left Party wants a \"panic law\" for data centres and follow-up of the crypto mining ban"
+   },
+   "topics": [
+    "regulering",
+    "bitcoin"
+   ],
+   "removed": 0,
+   "removed_at": null,
+   "removal_reason": null,
+   "updated_at": "2026-10-08T07:24:13+02:00"
   }
  ],
  "events": [
@@ -1260,6 +1356,78 @@
    "at": "2026-10-07T07:24:54+02:00",
    "event": "published",
    "detail": null
+  },
+  {
+   "seq": 45,
+   "site": "kryptonytt",
+   "id": "9755cf9957e9",
+   "at": "2026-10-08T07:24:13+02:00",
+   "event": "published",
+   "detail": null
+  },
+  {
+   "seq": 46,
+   "site": "kryptonytt",
+   "id": "bc7a45cb184e",
+   "at": "2026-10-08T07:24:13+02:00",
+   "event": "published",
+   "detail": null
+  },
+  {
+   "seq": 47,
+   "site": "kryptonytt",
+   "id": "47156e99927b",
+   "at": "2026-10-08T07:24:13+02:00",
+   "event": "published",
+   "detail": null
+  },
+  {
+   "seq": 48,
+   "site": "kryptonytt",
+   "id": "12425cc1e7ff",
+   "at": "2026-10-08T07:24:13+02:00",
+   "event": "updated",
+   "detail": "summaries"
+  },
+  {
+   "seq": 49,
+   "site": "kryptonytt",
+   "id": "831bb86ab20c",
+   "at": "2026-10-08T07:24:13+02:00",
+   "event": "updated",
+   "detail": "summaries"
+  },
+  {
+   "seq": 50,
+   "site": "kryptonytt",
+   "id": "5f757489d23c",
+   "at": "2026-10-08T07:24:13+02:00",
+   "event": "updated",
+   "detail": "summaries"
+  },
+  {
+   "seq": 51,
+   "site": "kryptonytt",
+   "id": "4d918e6a3378",
+   "at": "2026-10-08T07:24:13+02:00",
+   "event": "updated",
+   "detail": "summaries"
+  },
+  {
+   "seq": 52,
+   "site": "kryptonytt",
+   "id": "eb685890cbc3",
+   "at": "2026-10-08T07:24:13+02:00",
+   "event": "updated",
+   "detail": "summaries"
+  },
+  {
+   "seq": 53,
+   "site": "kryptonytt",
+   "id": "2034a42ac260",
+   "at": "2026-10-08T07:24:13+02:00",
+   "event": "updated",
+   "detail": "summaries"
   }
  ]
 }
